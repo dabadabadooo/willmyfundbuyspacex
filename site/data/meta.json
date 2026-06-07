@@ -1,0 +1,55 @@
+{
+  "project": "Who Owns SpaceX \u2014 a plain-English tracker",
+  "last_updated_utc": "2026-06-07T01:20:17+00:00",
+  "ipo": {
+    "status": "Not trading yet",
+    "expected_pricing_date": "2026-06-11",
+    "expected_first_trade_date": "2026-06-12",
+    "expected_price_usd": 135,
+    "expected_shares_offered": 556600000,
+    "expected_raise_usd": 75000000000,
+    "expected_valuation_usd": 1750000000000,
+    "ticker": "SPCX",
+    "exchange": "Nasdaq",
+    "file_number": "333-296070",
+    "cik": 1181412
+  },
+  "counts": {
+    "issuer_filings": 9,
+    "fund_positions": 63,
+    "institutional_13f": 0,
+    "principal_holders": 9,
+    "disclosed_fund_exposure_usd": 28763232407.67,
+    "insider_voting_pct": 86.0
+  },
+  "sources": [
+    {
+      "label": "SpaceX's filings on the SEC's EDGAR database",
+      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=1181412&type=&dateb=&owner=include&count=40"
+    },
+    {
+      "label": "SEC search for funds that list SpaceX in their holdings reports",
+      "url": "https://efts.sec.gov/LATEST/search-index?q=%22Space+Exploration+Technologies%22&forms=NPORT-P"
+    },
+    {
+      "label": "Expected IPO details, as reported by Reuters, Bloomberg and CNBC (June 2026)",
+      "url": "https://www.reuters.com/"
+    },
+    {
+      "label": "SpaceX's IPO filing \u2014 the ownership section",
+      "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026040364/0001628280-26-040364-index.htm"
+    },
+    {
+      "label": "U.S. Labor Department \u2014 retirement-plan (Form 5500) data",
+      "url": "https://www.dol.gov/agencies/ebsa/about-ebsa/our-activities/public-disclosure/foia/form-5500-datasets"
+    }
+  ],
+  "notes": [
+    "Right now, before the IPO, who gets shares is private \u2014 it isn't announced as it happens. The \u201cFunds that own it\u201d tab lists mutual funds that already report owning a piece of SpaceX in their official holdings reports.",
+    "Most of SpaceX is owned privately \u2014 by insiders, employees, and venture-capital firms \u2014 and never shows up in fund reports. The \u201cInsiders & big owners\u201d tab comes from SpaceX's IPO filing, which lists everyone who owns more than 5% of a class of shares, plus the company's officers and directors.",
+    "Many funds listed here are common 401(k) and IRA choices (their ticker codes are shown), and target-date funds can own SpaceX indirectly \u2014 see the \u201cRetirement & 401(k)\u201d tab.",
+    "The \u201cBig investors\u201d tab fills in after those investors file their first quarterly holdings reports covering the IPO quarter, around mid-August 2026.",
+    "Fund totals add up every share class from each fund's most recent report. The \u201cValue at IPO price\u201d figures under \u201cInsiders & big owners\u201d are just the share count times the expected starting price \u2014 not a real market value. Every row links to the official filing it came from."
+  ],
+  "disclaimer": "This site is for information only. It's not financial advice, and it's not an offer to buy or sell anything. The numbers come from public filings, which can lag real life by weeks or months."
+}

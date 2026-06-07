@@ -1,0 +1,409 @@
+{
+  "scope_note": "Who gets IPO shares is kept private, so this is a list of who has said they're buying \u2014 or who already owns a piece \u2014 based on news reports and the companies' own announcements. Each entry is labeled by how trustworthy the source is and links to it. None of this is a sales pitch, and SpaceX is not selling IPO shares through any outside 'allocation' website.",
+  "confidence_levels": {
+    "official": "Straight from the source \u2014 the company's own filing, press release, or website.",
+    "reported": "From a named, well-known news outlet.",
+    "unconfirmed": "From a single weak source or rumor \u2014 treat with caution."
+  },
+  "status_legend": {
+    "negotiating": "In talks \u2014 not final",
+    "allocation_secured": "Has lined up IPO shares to hand out or keep",
+    "expected": "Says it plans to buy, or is widely expected to, once it's trading",
+    "holds_now": "Already owns SpaceX (before the IPO)",
+    "via_transaction": "Got its SpaceX from a merger or deal, not by buying on the market",
+    "declined": "Publicly said no to SpaceX",
+    "concerns": "Publicly raised worries about how it's run or its price"
+  },
+  "items": [
+    {
+      "entity": "Saudi Public Investment Fund (PIF)",
+      "type": "Government investment fund",
+      "claim": "Reported to be negotiating a large cornerstone order of about $5B, mainly to keep its existing under-1% stake from being watered down when new shares are created.",
+      "amount_usd": 5000000000,
+      "status": "negotiating",
+      "confidence": "reported",
+      "as_of": "2026-04",
+      "source": {
+        "outlet": "Reuters (reported via TradingKey)",
+        "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/261788158-spacexipo-spacex-ipo-xai-tradingkey",
+        "date": "2026-04-16"
+      },
+      "note": "Sources stressed the talks were still going with nothing signed; terms could change. Other Middle Eastern funds were also reported to be talking."
+    },
+    {
+      "entity": "Charles Schwab, Fidelity, Robinhood, SoFi & E*TRADE",
+      "type": "Brokerage apps",
+      "claim": "SpaceX's IPO filing names these five apps as places where ordinary investors can ask for shares and potentially buy at the IPO price. Fidelity dropped its usual $500,000 minimum to $2,000 for this deal.",
+      "amount_usd": null,
+      "status": "allocation_secured",
+      "confidence": "official",
+      "as_of": "2026-06-03",
+      "source": {
+        "outlet": "SEC S-1 / CNBC",
+        "url": "https://www.cnbc.com/2026/05/21/retail-investors-get-direct-access-to-spacex-ipo-through-major-brokerage-platforms.html",
+        "date": "2026-05-21"
+      },
+      "note": "Whether you get shares depends on each firm's rules and demand; Robinhood picks at random and leaves out IRAs. Moomoo, Webull, TradeStation and Zacks Trade were not named in the filing."
+    },
+    {
+      "entity": "ERShares Private-Public Crossover ETF (XOVR)",
+      "type": "Fund that already owns SpaceX",
+      "claim": "Reported to hold SpaceX as its biggest single holding, around 23% of the fund, giving its investors a way in before the IPO.",
+      "amount_usd": null,
+      "status": "holds_now",
+      "confidence": "reported",
+      "as_of": "2026-06-04",
+      "source": {
+        "outlet": "etf.com",
+        "url": "https://www.etf.com/sections/news/spacex-ipo-every-etf-will-hold-spcx-and-when",
+        "date": "2026-06-04"
+      },
+      "note": "To double-check: this didn't show up in our scan of SEC filings and should be reconciled against the fund's own holdings report."
+    },
+    {
+      "entity": "Procure Space ETF (UFO)",
+      "type": "Space-sector fund",
+      "claim": "Reported as planning to hold SpaceX after the IPO; the fund passed $1B in assets in late May 2026 amid the IPO buzz.",
+      "amount_usd": null,
+      "status": "expected",
+      "confidence": "reported",
+      "as_of": "2026-06-04",
+      "source": {
+        "outlet": "etf.com",
+        "url": "https://www.etf.com/sections/news/spacex-ipo-every-etf-will-hold-spcx-and-when",
+        "date": "2026-06-04"
+      },
+      "note": "A 'NASA' space fund was named in the same report as another fund expected to hold SpaceX."
+    },
+    {
+      "entity": "ARK Invest (ARKX / ARK Venture Fund)",
+      "type": "Investment firm",
+      "claim": "Published its own SpaceX IPO guide. ARK's Venture Fund already owns SpaceX privately, and its ARKX fund is expected to be among the first to buy in after the IPO.",
+      "amount_usd": null,
+      "status": "expected",
+      "confidence": "official",
+      "as_of": "2026-04-01",
+      "source": {
+        "outlet": "ARK Invest",
+        "url": "https://www.ark-funds.com/articles/venture-fund/arks-guide-to-the-spacex-ipo",
+        "date": "2026-04-01"
+      },
+      "note": "ARK's Venture Fund holding also appears in the \u201cFunds that own it\u201d tab."
+    },
+    {
+      "entity": "The Private Shares Fund (PRIVX)",
+      "type": "Specialized fund",
+      "claim": "Openly advertises SpaceX among its private holdings as a way to own a piece before the IPO.",
+      "amount_usd": null,
+      "status": "holds_now",
+      "confidence": "official",
+      "as_of": "2026",
+      "source": {
+        "outlet": "Private Shares Fund",
+        "url": "https://privatesharesfund.com/spacex/how-to-invest/",
+        "date": "2026"
+      },
+      "note": "Its holding also appears in the \u201cFunds that own it\u201d tab."
+    },
+    {
+      "entity": "EchoStar",
+      "type": "Company that owns a stake",
+      "claim": "Reported to have received up to $8.5B of SpaceX stock (valued at $212 a share) as part of the payment in a roughly $17B sale of wireless spectrum, and to have set up 'EchoStar Capital' to manage the stake.",
+      "amount_usd": 8500000000,
+      "status": "via_transaction",
+      "confidence": "reported",
+      "as_of": "2026",
+      "source": {
+        "outlet": "KeepTrack (summarizing EchoStar disclosures)",
+        "url": "https://keeptrack.space/deep-dive/who-owns-spacex",
+        "date": "2026"
+      },
+      "note": "The details should be confirmed in EchoStar's own reports to the SEC."
+    },
+    {
+      "entity": "Google / Alphabet",
+      "type": "Company that owns a stake",
+      "claim": "A long-time investor; reported at roughly 5% after its stake was watered down (about 6.11% at the end of 2025), per Alaska state filings.",
+      "amount_usd": null,
+      "status": "holds_now",
+      "confidence": "reported",
+      "as_of": "2025-12",
+      "source": {
+        "outlet": "TradingKey",
+        "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/261788158-spacexipo-spacex-ipo-xai-tradingkey",
+        "date": "2026-04-16"
+      },
+      "note": "SpaceX's June IPO filing names only Musk and Antonio Gracias above the 5% mark, so Google now seems to sit just under it \u2014 an example of newer filings overriding older reports."
+    },
+    {
+      "entity": "Nvidia, Qatar Investment Authority, Abu Dhabi MGX, Cisco",
+      "type": "Investors from the xAI merger",
+      "claim": "Became SpaceX shareholders through the February 2026 all-stock merger with xAI, not through the IPO.",
+      "amount_usd": null,
+      "status": "via_transaction",
+      "confidence": "reported",
+      "as_of": "2026-02",
+      "source": {
+        "outlet": "KeepTrack",
+        "url": "https://keeptrack.space/deep-dive/who-owns-spacex",
+        "date": "2026"
+      },
+      "note": "An existing stake now folded into the company that's going public."
+    },
+    {
+      "entity": "Broad index funds (VOO, IVV, SPY, QQQ)",
+      "type": "Index funds",
+      "claim": "Index funds don't own SpaceX today. Once it's trading, funds that track the Nasdaq-100 (like QQQ), the Russell indexes, or FTSE's global indexes will have to start buying SpaceX soon under new rules for adding big companies quickly; but S&P 500 funds (VOO, IVV, SPY) won't add it right away \u2014 on June 5, 2026 S&P kept its rule that a company must be profitable and have traded for about a year first. SpaceX can still go into S&P's broader 'total market' indexes.",
+      "amount_usd": null,
+      "status": "expected",
+      "confidence": "reported",
+      "as_of": "2026-06-05",
+      "source": {
+        "outlet": "CNBC / Reuters",
+        "url": "https://www.cnbc.com/2026/06/05/spacex-blocked-from-early-us-benchmark-index-entry-as-sp-reaffirms-existing-rules.html",
+        "date": "2026-06-05"
+      },
+      "note": "Earlier estimates of this index-driven buying ran into the tens of billions; the timing now depends on which index."
+    },
+    {
+      "entity": "Reported investor demand",
+      "type": "General market buzz",
+      "claim": "Investor demand for the deal reportedly jumped to around $150B before the early-June investor meetings \u2014 far more than the shares on offer.",
+      "amount_usd": null,
+      "status": "expected",
+      "confidence": "unconfirmed",
+      "as_of": "2026-06-06",
+      "source": {
+        "outlet": "Crypto Briefing",
+        "url": "https://cryptobriefing.com/spacex-75b-ipo-retail-investors-2/",
+        "date": "2026-06-06"
+      },
+      "note": "Demand figures like this come before pricing and can't be independently checked; included as context only."
+    },
+    {
+      "entity": "Big mutual funds & index funds (per Reuters/Goldman)",
+      "type": "Investment firms & index funds",
+      "claim": "Reuters reported that big mutual funds and index funds are building up cash and getting ready to sell some of their large holdings to make room for SpaceX (and OpenAI); a Goldman note said funds did the same before each of the four largest past IPOs.",
+      "amount_usd": null,
+      "status": "expected",
+      "confidence": "reported",
+      "as_of": "2026-05-27",
+      "source": {
+        "outlet": "Reuters (via Investing.com)",
+        "url": "https://www.investing.com/news/stock-market-news/us-funds-set-aside-cash-as-spacex-and-openaiprepare-to-go-public-analysts-say-4711619",
+        "date": "2026-05-27"
+      },
+      "note": "New S&P 500 and Nasdaq-100 rules are expected to speed SpaceX into those indexes, which would force index funds to buy."
+    },
+    {
+      "entity": "Japan public share sale",
+      "type": "Public share sale abroad",
+      "claim": "SpaceX registered with Japan's financial regulator (the Kanto Local Finance Bureau) to sell shares to the public in Japan, through the banks running the IPO.",
+      "amount_usd": null,
+      "status": "allocation_secured",
+      "confidence": "official",
+      "as_of": "2026-06-05",
+      "source": {
+        "outlet": "SEC FWP (SpaceX)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026041013/0001628280-26-041013-index.htm",
+        "date": "2026-06-05"
+      },
+      "note": "The banks named include Goldman Sachs, Morgan Stanley, BofA Securities, Citigroup, J.P. Morgan, Barclays, Deutsche Bank, RBC Capital Markets and UBS, among others."
+    },
+    {
+      "entity": "UK share sale via Marex Financial",
+      "type": "Public share sale abroad",
+      "claim": "SpaceX opened a UK share sale to people who live in the UK, through an online platform run by Marex Financial and approved by the UK regulator (the FCA).",
+      "amount_usd": null,
+      "status": "allocation_secured",
+      "confidence": "official",
+      "as_of": "2026-06-04",
+      "source": {
+        "outlet": "SEC FWP (SpaceX)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026040874/0001628280-26-040874-index.htm",
+        "date": "2026-06-04"
+      },
+      "note": "Marex ran a website with a plain summary and factsheet for the UK offer."
+    },
+    {
+      "entity": "Australia & Canada share sales",
+      "type": "Public share sale abroad",
+      "claim": "SpaceX filed the paperwork to offer shares in Australia (an Australian version of the U.S. prospectus) and in Canada (a Canadian prospectus), extending the sale into those countries.",
+      "amount_usd": null,
+      "status": "allocation_secured",
+      "confidence": "official",
+      "as_of": "2026-06-04",
+      "source": {
+        "outlet": "SEC FWP (SpaceX)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026040610/0001628280-26-040610-index.htm",
+        "date": "2026-06-04"
+      },
+      "note": "Filed alongside a dedicated IPO website (case studies, a factsheet, and the investor slides) mentioned in the same filing."
+    },
+    {
+      "entity": "Abu Dhabi (ADIA) & other Gulf funds",
+      "type": "Government investment funds",
+      "claim": "Reported as existing SpaceX investors from 2023 funding rounds (alongside Saudi Arabia's PIF); Abu Dhabi's MGX and Qatar's QIA also came in through the February 2026 xAI merger.",
+      "amount_usd": null,
+      "status": "holds_now",
+      "confidence": "reported",
+      "as_of": "2023",
+      "source": {
+        "outlet": "KeepTrack",
+        "url": "https://keeptrack.space/deep-dive/who-owns-spacex",
+        "date": "2026"
+      },
+      "note": "An existing stake, separate from any new big IPO order such as PIF's reported $5B talks."
+    },
+    {
+      "entity": "BlackRock",
+      "type": "Investment firm",
+      "claim": "Reportedly discussed putting $5\u201310B into the IPO, from the $536B of funds it actively manages; the final amount could change with the price.",
+      "amount_usd": 5000000000,
+      "status": "negotiating",
+      "confidence": "reported",
+      "as_of": "2026-05-16",
+      "source": {
+        "outlet": "The Information (via Reuters)",
+        "url": "https://www.investing.com/news/stock-market-news/blackrock-weighs-multibilliondollar-investment-in-spacex-ipo-the-information-reports-4694472",
+        "date": "2026-05-16"
+      },
+      "note": "Would be one of the largest single IPO orders; BlackRock declined to comment."
+    },
+    {
+      "entity": "Ontario Teachers' Pension Plan (OTPP)",
+      "type": "Pension fund",
+      "claim": "An early backer: it put in about $300M in a 2019 round and has added since; the stake could be worth up to about $11B on paper at the $1.75T value. The pension says the IPO isn't necessarily the point where it plans to sell.",
+      "amount_usd": null,
+      "status": "holds_now",
+      "confidence": "reported",
+      "as_of": "2026-06",
+      "source": {
+        "outlet": "The Globe and Mail",
+        "url": "https://www.theglobeandmail.com/business/article-ontario-teachers-pension-plan-spacex-ipo-investment/",
+        "date": "2026-06-06"
+      },
+      "note": "Held through its Teachers' Venture Growth arm; the plan manages about $279B for around 346,000 members."
+    },
+    {
+      "entity": "AkademikerPension (Denmark)",
+      "type": "Pension fund",
+      "claim": "Put SpaceX on its do-not-invest list before the IPO \u2014 it won't buy in the offering, from other shareholders, or through index funds \u2014 calling it 'grossly overvalued' (about 80% too expensive) with a 'catastrophic' setup, since Musk controls about 85% of the votes.",
+      "amount_usd": null,
+      "status": "declined",
+      "confidence": "reported",
+      "as_of": "2026-05-29",
+      "source": {
+        "outlet": "Reuters / Bloomberg",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/danish-pension-fund-excludes-spacex-132954371.html",
+        "date": "2026-05-29"
+      },
+      "note": "A roughly $25B fund; it says it would invest if the price and control concerns were fixed."
+    },
+    {
+      "entity": "CalPERS, NYC & NY State pension funds",
+      "type": "US public pension funds",
+      "claim": "In May, the heads of CalPERS, the NYC Retirement Systems and the NY State Common Retirement Fund (together over $1T) sent a joint letter to Musk calling SpaceX's setup 'extreme' \u2014 the 'most management-favorable governance structure ever brought to the US public markets at this scale' \u2014 objecting to Musk being able to block his own removal, forcing shareholder disputes into private arbitration instead of court, and the company's choice of where it's legally based.",
+      "amount_usd": null,
+      "status": "concerns",
+      "confidence": "reported",
+      "as_of": "2026-05",
+      "source": {
+        "outlet": "Bloomberg / Reuters (via The Next Web)",
+        "url": "https://thenextweb.com/news/danish-pension-spacex-blacklist-governance-overvalued",
+        "date": "2026-05-29"
+      },
+      "note": "A public objection about how the company is run; not by itself a decision to buy or avoid the stock."
+    },
+    {
+      "entity": "Founders Fund, a16z, Sequoia, Baillie Gifford, Fidelity, T. Rowe",
+      "type": "Venture-capital & fund backers",
+      "claim": "Named among SpaceX's biggest backers before the IPO. Most venture-capital stakes are private and below the 5% level that must be disclosed, so they don't show up in the filings on this site (Fidelity and T. Rowe do \u2014 see \u201cFunds that own it\u201d).",
+      "amount_usd": null,
+      "status": "holds_now",
+      "confidence": "reported",
+      "as_of": "2026-05",
+      "source": {
+        "outlet": "Chief Investment Officer (ai-cio.com)",
+        "url": "https://www.ai-cio.com/news/danish-pension-fund-blacklists-spacex/",
+        "date": "2026-05-29"
+      },
+      "note": "Shows how much SpaceX ownership sits in private hands, outside public filings."
+    },
+    {
+      "entity": "Interactive Brokers (UK)",
+      "type": "Brokerage app (outside the US)",
+      "claim": "Interactive Brokers' UK arm (overseen by the UK regulator, the FCA) opened the SpaceX IPO to eligible UK residents, with a sign-up window from June 4 to 6:00 PM on June 10, 2026; getting shares isn't guaranteed and depends on how many the broker receives.",
+      "amount_usd": null,
+      "status": "allocation_secured",
+      "confidence": "official",
+      "as_of": "2026-06-05",
+      "source": {
+        "outlet": "Interactive Brokers (via Yahoo Finance)",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/interactive-brokers-opens-spacex-ipo-124221873.html",
+        "date": "2026-06-05"
+      },
+      "note": "The shares won't be listed on a UK exchange; this adds to the UK options alongside Marex."
+    },
+    {
+      "entity": "Tema Space Innovators ETF (NASA)",
+      "type": "Fund (owns SpaceX through a special vehicle)",
+      "claim": "Launched March 30, 2026 and grew to about $2.6B, becoming the largest space fund largely because it owns SpaceX directly through a special holding vehicle \u2014 one of the few funds ordinary investors can buy that does. SpaceX was about 6.9\u20137.5% of the fund (down from ~10% at launch, as new money diluted it); the manager says it has no plan to sell after the IPO.",
+      "amount_usd": null,
+      "status": "holds_now",
+      "confidence": "reported",
+      "as_of": "2026-06-03",
+      "source": {
+        "outlet": "CNBC",
+        "url": "https://www.cnbc.com/2026/05/30/spacex-ipo-invest.html",
+        "date": "2026-05-30"
+      },
+      "note": "The fund's SpaceX stake is carried at an estimated value and will move toward the real trading price after the IPO; like XOVR, it may have paid extra to get in and may charge fees."
+    },
+    {
+      "entity": "Private pre-IPO marketplaces",
+      "type": "Buying privately before the IPO",
+      "claim": "Before the IPO, wealthier 'accredited' investors could buy into SpaceX on private marketplaces (like Forge Global, EquityZen, Hiive, and Nasdaq Private Market) and through funds that hold it in a special vehicle (XOVR, NASA). These usually cost more than the last official price and can carry extra fees.",
+      "amount_usd": null,
+      "status": "via_transaction",
+      "confidence": "reported",
+      "as_of": "2026-06",
+      "source": {
+        "outlet": "Bloomberg",
+        "url": "https://www.bloomberg.com/professional/insights/markets/spacex-fever-launches-the-biggest-space-etf-you-never-heard-of/",
+        "date": "2026-06"
+      },
+      "note": "Caution: websites that promise to 'submit you for an allocation,' and some crypto tokens that claim to represent SpaceX shares, are not official and are often scams. The only ways to buy in the IPO that SpaceX itself named are the five US apps, plus the UK, Japan, Australia and Canada sales listed here."
+    },
+    {
+      "entity": "Norway's sovereign wealth fund",
+      "type": "Government investment fund",
+      "claim": "The world's largest government investment fund (about $2.2T) said in April it was in talks with SpaceX and weighing whether to invest; its deputy CEO confirmed the talks but gave no details.",
+      "amount_usd": null,
+      "status": "negotiating",
+      "confidence": "reported",
+      "as_of": "2026-04-23",
+      "source": {
+        "outlet": "Reuters (via Global Banking & Finance)",
+        "url": "https://www.globalbankingandfinance.com/norway-wealth-fund-assessing-whether-invest-spacex/",
+        "date": "2026-04-23"
+      },
+      "note": "An early look from April (before the IPO filing), not a confirmed order; the fund keeps about half its money in the US."
+    },
+    {
+      "entity": "Korean asset managers (Mirae Asset, Korea Investment Mgmt)",
+      "type": "Funds abroad",
+      "claim": "Korean firms are bringing IPO demand home: Mirae Asset Securities, one of the banks on the deal, moved to bring more than $1B (and is seeking up to about $5B) of SpaceX shares to Korea for big and professional investors; Korea Investment Management is joining the IPO and will add shares to its ACE U.S. Space Tech fund and a space/defense fund, aiming for as much as 25% in SpaceX. Ordinary Koreans can't sign up directly because of rules on private share sales.",
+      "amount_usd": null,
+      "status": "allocation_secured",
+      "confidence": "reported",
+      "as_of": "2026-06-04",
+      "source": {
+        "outlet": "The Korea Herald",
+        "url": "https://www.koreaherald.com/article/10716042",
+        "date": "2026-04-13"
+      },
+      "note": "The Korea Exchange put a 'caution' label on the TIGER U.S. Space Tech fund after it traded more than 12% above the value of what it holds; index-tracking Korean funds can't add SpaceX until it joins the index they follow."
+    }
+  ]
+}

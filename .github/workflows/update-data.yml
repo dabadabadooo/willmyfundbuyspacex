@@ -1,0 +1,50 @@
+name: Update SpaceX fund data
+
+# Refreshes the data every 6 hours (and on manual trigger). EDGAR fund data
+# changes quarterly; SpaceX's own filings change often during the IPO window,
+# so a frequent-but-light cadence keeps the site current. Commits only when
+# something actually changed, which triggers a redeploy on your static host.
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-data
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Fetch EDGAR data
+        env:
+          # Set this repo variable: Settings → Secrets and variables → Actions
+          # → Variables → New variable: SEC_USER_AGENT = "Your Project you@yourdomain.com"
+          # SEC requires a descriptive User-Agent with real contact info.
+          SEC_USER_AGENT: ${{ vars.SEC_USER_AGENT }}
+          MAX_HITS: "1200"
+          MAX_FETCH: "480"
+        run: python3 scripts/fetch_edgar.py
+
+      - name: Commit changes if any
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if [ -n "$(git status --porcelain site/data)" ]; then
+            git add site/data
+            git commit -m "data: refresh SpaceX fund exposure ($(date -u +%Y-%m-%dT%H:%MZ))"
+            git push
+          else
+            echo "No data changes."
+          fi

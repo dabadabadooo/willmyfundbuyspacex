@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Who Owns SpaceX — a plain-English tracker</title>
+<meta name="description" content="A free, public list of who owns a piece of SpaceX — the funds that hold it now, and the big investors buying into the SPCX IPO. Every number links to the official government filing it came from." />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='4' fill='%233e63dd'/%3E%3Cellipse cx='16' cy='16' rx='13' ry='6' fill='none' stroke='%238b8d98' stroke-width='1.5'/%3E%3C/svg%3E" />
+<style>
+  :root {
+    color-scheme: light;
+    --bg: #fcfcfd; --panel: #ffffff; --panel-2: #f8f8fb;
+    --border: #e6e6ea; --border-strong: #d6d6dd;
+    --text: #1a1d21; --muted: #60646c; --subtle: #8b8d98;
+    --accent: #3e63dd; --accent-hover: #3358d4; --accent-bg: #eef1fd;
+    --bar: rgba(62,99,221,0.14);
+    --radius: 12px; --radius-sm: 8px; --header-h: 56px;
+    --shadow: 0 1px 2px rgba(0,0,0,0.04), 0 1px 3px rgba(0,0,0,0.03);
+    --mono: ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas, monospace;
+    --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      color-scheme: dark;
+      --bg: #0e0e10; --panel: #161618; --panel-2: #1b1c1f;
+      --border: #28292d; --border-strong: #34353a;
+      --text: #ededef; --muted: #a1a1ab; --subtle: #797a83;
+      --accent: #849dff; --accent-hover: #9db1ff; --accent-bg: #1a1f3a;
+      --bar: rgba(132,157,255,0.18);
+      --shadow: 0 1px 2px rgba(0,0,0,0.4);
+    }
+  }
+  html[data-theme="dark"] {
+    color-scheme: dark;
+    --bg: #0e0e10; --panel: #161618; --panel-2: #1b1c1f;
+    --border: #28292d; --border-strong: #34353a;
+    --text: #ededef; --muted: #a1a1ab; --subtle: #797a83;
+    --accent: #849dff; --accent-hover: #9db1ff; --accent-bg: #1a1f3a;
+    --bar: rgba(132,157,255,0.18); --shadow: 0 1px 2px rgba(0,0,0,0.4);
+  }
+  html[data-theme="light"] {
+    color-scheme: light;
+    --bg: #fcfcfd; --panel: #ffffff; --panel-2: #f8f8fb;
+    --border: #e6e6ea; --border-strong: #d6d6dd;
+    --text: #1a1d21; --muted: #60646c; --subtle: #8b8d98;
+    --accent: #3e63dd; --accent-hover: #3358d4; --accent-bg: #eef1fd;
+    --bar: rgba(62,99,221,0.14); --shadow: 0 1px 2px rgba(0,0,0,0.04), 0 1px 3px rgba(0,0,0,0.03);
+  }
+
+  /* ---- base = mobile-first ------------------------------------------- */
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; background: var(--bg); min-height: 100%; }
+  body {
+    margin: 0; min-height: 100vh; background: var(--bg); color: var(--text);
+    font-family: var(--sans); font-size: 15px; line-height: 1.55;
+    overflow-x: clip;                 /* hard guard against horizontal bleed */
+    -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;
+  }
+  img, svg, table { max-width: 100%; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { color: var(--accent-hover); text-decoration: underline; }
+  .wrap { width: 100%; max-width: 1080px; margin: 0 auto; padding: 0 16px; }
+  .hidden { display: none !important; }
+  .callout { background: var(--accent-bg); border: 1px solid var(--border-strong); border-radius: var(--radius); padding: 14px 16px; margin: 8px 0 14px; font-size: 14px; line-height: 1.55; }
+  .fine { color: var(--subtle); font-size: 12px; margin: 10px 2px 0; line-height: 1.5; }
+  .fundname .sub { color: var(--subtle); font-size: 11px; font-weight: 400; margin-left: 6px; white-space: nowrap; }
+  .rcard { padding: 16px; margin: 14px 0; }
+  .rlead { margin: 0; font-size: 15px; line-height: 1.55; }
+  .rblock { background: var(--panel); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow); padding: 16px; margin-bottom: 12px; }
+  .rblock h4 { margin: 0 0 8px; font-size: 14px; letter-spacing: -0.01em; }
+  .rtext { margin: 0; color: var(--muted); font-size: 14px; line-height: 1.55; }
+  .tickwrap { margin: 12px 0 2px; display: flex; flex-direction: column; gap: 2px; }
+  .tickrow { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; padding: 9px 0; border-bottom: 1px solid var(--border); }
+  .tickrow:last-child { border-bottom: none; }
+  .tfund { font-weight: 560; font-size: 13.5px; flex: 1 1 55%; min-width: 0; }
+  .tpct { color: var(--subtle); font-size: 12px; font-variant-numeric: tabular-nums; }
+  .ttix { display: flex; flex-wrap: wrap; gap: 4px; flex-basis: 100%; }
+  .tick { font-family: var(--mono); font-size: 11px; background: var(--panel-2); border: 1px solid var(--border); border-radius: 5px; padding: 1px 6px; color: var(--muted); }
+  .tickers-inline { display: inline-flex; flex-wrap: wrap; gap: 4px; margin-left: 8px; vertical-align: middle; }
+
+  /* Top bar */
+  header.bar {
+    position: sticky; top: 0; z-index: 20;
+    background: var(--bg);
+    backdrop-filter: saturate(180%) blur(8px);
+    border-bottom: 1px solid var(--border);
+  }
+  .bar-inner { display: flex; align-items: center; justify-content: space-between; height: var(--header-h); gap: 10px; }
+  .brand { display: flex; align-items: center; gap: 9px; font-weight: 600; letter-spacing: -0.01em; min-width: 0; }
+  .brand span { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .brand svg { width: 22px; height: 22px; display: block; flex: 0 0 auto; }
+  .bar-right { display: flex; align-items: center; gap: 10px; color: var(--muted); font-size: 13px; }
+  #updated { display: none; white-space: nowrap; }
+  .theme-btn {
+    border: 1px solid var(--border-strong); background: var(--panel); color: var(--muted);
+    border-radius: 7px; padding: 5px 9px; font-size: 12px; cursor: pointer; font-family: var(--sans);
+    flex: 0 0 auto; white-space: nowrap;
+  }
+  .theme-btn:hover { color: var(--text); border-color: var(--subtle); }
+
+  /* Hero */
+  .hero { padding: 30px 0 18px; }
+  h1 { font-size: 23px; line-height: 1.18; letter-spacing: -0.02em; margin: 0 0 10px; font-weight: 680; }
+  .lede { color: var(--muted); font-size: 15px; max-width: 64ch; margin: 0; }
+  .pill {
+    display: inline-flex; align-items: center; gap: 6px; font-size: 12.5px; font-weight: 500;
+    padding: 3px 10px; border-radius: 999px; border: 1px solid var(--border-strong);
+    background: var(--accent-bg); color: var(--accent); margin-bottom: 16px;
+  }
+  .pill .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--accent); }
+
+  /* Stat cards — 1 col on mobile */
+  .stats { display: grid; grid-template-columns: 1fr; gap: 12px; margin: 22px 0 8px; }
+  .stat { background: var(--panel); border: 1px solid var(--border); border-radius: var(--radius); padding: 15px 16px; box-shadow: var(--shadow); }
+  .stat .k { font-size: 12px; color: var(--subtle); text-transform: uppercase; letter-spacing: 0.04em; }
+  .stat .v { font-size: 23px; font-weight: 660; margin-top: 6px; letter-spacing: -0.01em; font-variant-numeric: tabular-nums; overflow-wrap: anywhere; }
+  .stat .s { font-size: 12.5px; color: var(--muted); margin-top: 2px; }
+
+  .card { background: var(--panel); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow); }
+  section { margin: 20px 0; }
+
+  /* Facts grid — 2 col on mobile */
+  .facts { padding: 16px; }
+  .facts h3, .note h3 { margin: 0 0 12px; font-size: 13px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--subtle); font-weight: 600; }
+  .fgrid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px 20px; }
+  .fitem { min-width: 0; }
+  .fitem .fk { font-size: 12.5px; color: var(--muted); }
+  .fitem .fv { font-size: 15px; font-weight: 560; font-variant-numeric: tabular-nums; overflow-wrap: anywhere; }
+
+  /* Note */
+  .note { padding: 16px; border-left: 3px solid var(--accent); }
+  .note ul { margin: 0; padding-left: 18px; color: var(--muted); font-size: 13.5px; }
+  .note li { margin: 5px 0; }
+
+  /* Tabs — scrollable if cramped, never bleed */
+  .tabs { display: flex; gap: 2px; border-bottom: 1px solid var(--border); overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+  .tabs::-webkit-scrollbar { display: none; }
+  .tab {
+    appearance: none; background: none; border: none; cursor: pointer; font-family: var(--sans);
+    padding: 11px 12px; font-size: 14px; color: var(--muted); border-bottom: 2px solid transparent;
+    margin-bottom: -1px; font-weight: 500; flex: 0 0 auto; white-space: nowrap;
+  }
+  .tab:hover { color: var(--text); }
+  .tab[aria-selected="true"] { color: var(--text); border-bottom-color: var(--accent); }
+  .tab .cnt { color: var(--subtle); font-variant-numeric: tabular-nums; font-weight: 400; }
+
+  .toolbar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; padding: 14px 0 12px; gap: 10px; }
+  .search {
+    flex: 1 1 100%; max-width: none; border: 1px solid var(--border-strong); background: var(--panel);
+    color: var(--text); border-radius: var(--radius-sm); padding: 9px 11px; font-size: 16px; font-family: var(--sans);
+  }
+  .search:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-bg); }
+  .toolbar .meta { font-size: 13px; color: var(--subtle); }
+
+  /* Tables — stacked cards on mobile */
+  .tablecard { background: none; border: none; box-shadow: none; overflow: visible; }
+  table { width: 100%; border-collapse: collapse; font-size: 14px; }
+  thead { display: none; }
+  tbody { display: block; }
+  tbody tr { display: block; border: 1px solid var(--border); border-radius: 10px; background: var(--panel); box-shadow: var(--shadow); padding: 4px 14px; margin-bottom: 10px; }
+  tbody td { display: flex; gap: 14px; justify-content: space-between; align-items: baseline; padding: 9px 0; border-bottom: 1px solid var(--border); text-align: right; overflow-wrap: anywhere; }
+  tbody tr td:last-child { border-bottom: none; }
+  tbody td::before { content: attr(data-label); color: var(--muted); font-weight: 500; text-align: left; flex: 0 0 auto; white-space: nowrap; }
+  td.num { font-variant-numeric: tabular-nums; font-family: var(--mono); }
+  /* fund name + manager become the card header */
+  tbody td.fundname { display: block; text-align: left; border-bottom: none; padding: 8px 0 2px; font-size: 15px; font-weight: 600; }
+  tbody td.fundname::before { content: none; }
+  tbody td.sub { display: block; text-align: left; color: var(--muted); font-size: 12.5px; padding: 0 0 9px; border-bottom: 1px solid var(--border); }
+  tbody td.sub::before { content: none; }
+  .form-tag { font-family: var(--mono); font-size: 11.5px; background: var(--panel-2); border: 1px solid var(--border); border-radius: 5px; padding: 2px 6px; color: var(--muted); white-space: nowrap; }
+  .ext { font-size: 13px; white-space: nowrap; }
+  .ext svg { width: 11px; height: 11px; vertical-align: -1px; margin-left: 2px; }
+  .pctcell .bar { display: none; }
+  td.empty { display: block; text-align: center; padding: 34px 16px; color: var(--muted); }
+  td.empty::before { content: none; }
+  .empty { padding: 36px 20px; text-align: center; color: var(--muted); }
+  .empty .big { font-size: 16px; color: var(--text); font-weight: 560; margin-bottom: 6px; }
+  .empty .clock { font-size: 26px; margin-bottom: 10px; }
+
+  footer { border-top: 1px solid var(--border); margin-top: 36px; padding: 24px 0 44px; color: var(--muted); font-size: 13px; }
+  footer .src a { display: inline-block; margin: 0 14px 6px 0; }
+  .disclaimer { margin-top: 12px; color: var(--subtle); font-size: 12.5px; max-width: 70ch; }
+
+  /* Insiders callout + Retirement blocks + ticker chips */
+  .callout { background: var(--accent-bg); border: 1px solid var(--border-strong); border-radius: var(--radius); padding: 14px 16px; margin: 8px 0 14px; font-size: 14px; line-height: 1.55; }
+  .fine { color: var(--subtle); font-size: 12px; margin: 10px 2px 0; line-height: 1.5; }
+  .fine a, .callout a, .rtext a { color: var(--accent); text-decoration: none; }
+  .fine a:hover, .callout a:hover, .rtext a:hover { text-decoration: underline; }
+  .rcard { padding: 16px; margin: 14px 0; }
+  .rlead { margin: 0; font-size: 15px; line-height: 1.5; }
+  .rblock { background: var(--panel); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow); padding: 16px; margin-bottom: 12px; }
+  .rblock h4 { margin: 0 0 8px; font-size: 14px; letter-spacing: -0.01em; }
+  .rtext { margin: 0; color: var(--muted); font-size: 14px; line-height: 1.55; }
+  .tickwrap { margin: 12px 0 2px; display: flex; flex-direction: column; }
+  .tickrow { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; padding: 9px 0; border-bottom: 1px solid var(--border); }
+  .tickrow:last-child { border-bottom: none; }
+  .tfund { font-weight: 560; font-size: 13.5px; flex: 1 1 55%; min-width: 0; }
+  .tpct { color: var(--subtle); font-size: 12px; font-variant-numeric: tabular-nums; }
+  .ttix { display: flex; flex-wrap: wrap; gap: 4px; flex-basis: 100%; }
+  .tick { font-family: var(--mono); font-size: 11px; background: var(--panel-2); border: 1px solid var(--border); border-radius: 5px; padding: 1px 6px; color: var(--muted); }
+  .tickers-inline { display: inline-flex; flex-wrap: wrap; gap: 4px; margin-left: 8px; vertical-align: middle; }
+
+  /* Reported commitments */
+  .ccard { background: var(--panel); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow); padding: 14px 16px; margin-bottom: 10px; }
+  .chead { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; flex-wrap: wrap; }
+  .centity { font-weight: 600; font-size: 14.5px; letter-spacing: -0.01em; }
+  .ctype { color: var(--subtle); font-size: 12px; margin: 3px 0 8px; }
+  .cclaim { margin: 0; font-size: 14px; line-height: 1.55; }
+  .cfoot { margin-top: 10px; font-size: 12px; color: var(--subtle); display: flex; flex-wrap: wrap; gap: 6px 10px; align-items: center; }
+  .cfoot a { color: var(--accent); text-decoration: none; }
+  .cfoot a:hover { text-decoration: underline; }
+  .camt { font-family: var(--mono); font-variant-numeric: tabular-nums; font-weight: 560; color: var(--text); }
+  .cnote { margin: 8px 0 0; font-size: 12px; color: var(--subtle); line-height: 1.5; }
+  .badge { font-size: 10.5px; font-weight: 640; letter-spacing: 0.02em; text-transform: uppercase; padding: 2px 7px; border-radius: 999px; border: 1px solid transparent; white-space: nowrap; }
+  .b-official { color: #2ea06b; background: rgba(46,160,107,0.12); border-color: rgba(46,160,107,0.30); }
+  .b-reported { color: var(--accent); background: var(--accent-bg); border-color: var(--border-strong); }
+  .b-unconfirmed { color: #b9881f; background: rgba(212,167,44,0.14); border-color: rgba(212,167,44,0.35); }
+  .status-chip { font-family: var(--mono); font-size: 10.5px; color: var(--muted); background: var(--panel-2); border: 1px solid var(--border); border-radius: 5px; padding: 1px 6px; }
+
+  /* ---- >= 520px : two-up stats, inline search ----------------------- */
+  @media (min-width: 520px) {
+    .stats { grid-template-columns: repeat(2, 1fr); }
+    .search { flex: 1 1 auto; max-width: 320px; }
+  }
+  /* ---- >= 560px : show the updated timestamp ------------------------ */
+  @media (min-width: 560px) { #updated { display: inline; } }
+
+  /* ---- >= 640px : real tables + roomier layout ---------------------- */
+  @media (min-width: 640px) {
+    .wrap { padding: 0 24px; }
+    .hero { padding: 44px 0 24px; }
+    h1 { font-size: 30px; }
+    .lede { font-size: 16px; }
+    .facts, .note { padding: 18px 20px; }
+    .fgrid { grid-template-columns: repeat(3, 1fr); }
+    .toolbar { padding: 14px 4px 12px; }
+    .search { font-size: 14px; }
+
+    .tablecard { background: var(--panel); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow); overflow: hidden; }
+    .scroll { overflow-x: auto; }
+    table { display: table; }
+    thead { display: table-header-group; }
+    thead th {
+      position: sticky; top: var(--header-h); background: var(--panel-2); z-index: 1;
+      text-align: left; font-weight: 600; color: var(--muted); font-size: 12px;
+      text-transform: uppercase; letter-spacing: 0.03em; padding: 10px 16px;
+      border-bottom: 1px solid var(--border); white-space: nowrap; user-select: none;
+    }
+    th.sortable { cursor: pointer; }
+    th.sortable:hover { color: var(--text); }
+    th .arrow { opacity: 0; margin-left: 4px; font-size: 10px; }
+    th[aria-sort="ascending"] .arrow, th[aria-sort="descending"] .arrow { opacity: 1; }
+    th.num { text-align: right; font-variant-numeric: tabular-nums; }
+    tbody { display: table-row-group; }
+    tbody tr { display: table-row; border: none; border-radius: 0; background: none; box-shadow: none; padding: 0; margin: 0; }
+    tbody tr:hover { background: var(--panel-2); }
+    tbody td { display: table-cell; padding: 12px 16px; border-bottom: 1px solid var(--border); vertical-align: middle; text-align: left; }
+    tbody tr:last-child td { border-bottom: none; }
+    tbody td::before { content: none; }
+    tbody td.fundname { display: table-cell; font-weight: 560; font-size: 14px; padding: 12px 16px; border-bottom: 1px solid var(--border); }
+    tbody td.sub { display: table-cell; color: var(--muted); font-size: 12.5px; padding: 12px 16px; border-bottom: 1px solid var(--border); }
+    td.num { text-align: right; font-family: var(--mono); }
+    .pctcell { position: relative; }
+    .pctcell .bar { display: block; position: absolute; left: 8px; right: 8px; bottom: 6px; height: 3px; border-radius: 2px; background: var(--bar); }
+    .pctcell .bar > span { display: block; height: 100%; border-radius: 2px; background: var(--accent); }
+    td.empty { display: table-cell; text-align: center; padding: 40px 24px; }
+  }
+  /* ---- >= 880px : four-up stats ------------------------------------- */
+  @media (min-width: 880px) { .stats { grid-template-columns: repeat(4, 1fr); } }
+</style>
+</head>
+<body>
+<header class="bar">
+  <div class="wrap bar-inner">
+    <div class="brand">
+      <svg viewBox="0 0 32 32"><circle cx="16" cy="16" r="3.6" fill="var(--accent)"/><ellipse cx="16" cy="16" rx="13" ry="6" fill="none" stroke="var(--subtle)" stroke-width="1.5"/><ellipse cx="16" cy="16" rx="13" ry="6" fill="none" stroke="var(--subtle)" stroke-width="1.5" transform="rotate(60 16 16)"/></svg>
+      <span>SPCX Fund Tracker</span>
+    </div>
+    <div class="bar-right">
+      <span id="updated"></span>
+      <button class="theme-btn" id="themeBtn" aria-label="Toggle theme">◐ Theme</button>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="hero">
+    <span class="pill"><span class="dot"></span><span id="status">Pre-IPO</span></span>
+    <h1>Who owns SpaceX</h1>
+    <p class="lede">A free, public list of who owns a piece of SpaceX — the funds that already report holding it, and (once it starts trading as <strong>SPCX</strong>) the big investors that buy in. Every number links straight to the official government filing it came from, so you can check it yourself.</p>
+  </div>
+
+  <div class="stats" id="stats"></div>
+
+  <section class="card facts">
+    <h3>The planned share sale</h3>
+    <div class="fgrid" id="facts"></div>
+  </section>
+
+  <section class="card note">
+    <h3>What this page shows</h3>
+    <ul id="notes"></ul>
+  </section>
+
+  <section>
+    <div class="tabs" role="tablist">
+      <button class="tab" role="tab" aria-selected="true" data-tab="holders">Funds that own it <span class="cnt" id="c-holders"></span></button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="insiders">Insiders &amp; big owners <span class="cnt" id="c-insiders"></span></button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="retire">Retirement &amp; 401(k)</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="commit">Who's reportedly buying <span class="cnt" id="c-commit"></span></button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="filings">SpaceX documents <span class="cnt" id="c-filings"></span></button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="f13">Big investors <span class="cnt" id="c-f13"></span></button>
+    </div>
+
+    <!-- Holders -->
+    <div data-panel="holders">
+      <div class="toolbar">
+        <input class="search" id="search" type="search" placeholder="Search for a fund or company…" />
+        <span class="meta" id="holders-meta"></span>
+      </div>
+      <div class="card tablecard scroll">
+        <table id="holders-table">
+          <thead>
+            <tr>
+              <th class="sortable" data-key="fund">Fund <span class="arrow"></span></th>
+              <th class="sortable" data-key="registrant">Fund company <span class="arrow"></span></th>
+              <th class="sortable num" data-key="value_usd" aria-sort="descending">SpaceX held ($) <span class="arrow">▼</span></th>
+              <th class="sortable num" data-key="pct_of_fund">% of the fund <span class="arrow"></span></th>
+              <th class="sortable num" data-key="period">As of <span class="arrow"></span></th>
+              <th>Source</th>
+            </tr>
+          </thead>
+          <tbody id="holders-body"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Insiders & 5% owners (S-1) -->
+    <div data-panel="insiders" class="hidden">
+      <div class="callout" id="insiders-headline"></div>
+      <div class="toolbar"><span class="meta" id="insiders-meta"></span></div>
+      <div class="card tablecard scroll">
+        <table>
+          <thead>
+            <tr><th>Owner</th><th class="num">Shares owned</th><th class="num">Voting power</th><th class="num">Value at IPO price</th></tr>
+          </thead>
+          <tbody id="insiders-body"></tbody>
+        </table>
+      </div>
+      <p class="fine" id="insiders-note"></p>
+    </div>
+
+    <!-- Retirement & 401(k) -->
+    <div data-panel="retire" class="hidden">
+      <div id="retire-body"></div>
+    </div>
+
+    <!-- Reported commitments -->
+    <div data-panel="commit" class="hidden">
+      <div class="callout" id="commit-disclaimer"></div>
+      <div class="toolbar"><span class="meta" id="commit-legend"></span></div>
+      <div id="commit-body"></div>
+    </div>
+
+    <!-- Filings -->
+    <div data-panel="filings" class="hidden">
+      <div class="toolbar"><span class="meta" id="filings-meta"></span></div>
+      <div class="card tablecard scroll">
+        <table>
+          <thead>
+            <tr><th>Type</th><th>What it is</th><th class="num">Filed</th><th>View</th></tr>
+          </thead>
+          <tbody id="filings-body"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- 13F -->
+    <div data-panel="f13" class="hidden">
+      <div class="card" id="f13-card"></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="src" id="sources"></div>
+    <p class="disclaimer" id="disclaimer"></p>
+    <p class="disclaimer" id="copyright">&copy; 2026 &mdash; This is a free, independent project &mdash; not a company, and nothing here is for sale. It exists so everyday people can see whose money (mutual funds, pensions, 401(k)s) is going into the SpaceX IPO. You're welcome to read, share, or quote it; a link back is appreciated. All the figures come from public U.S. government records &mdash; filings with the SEC and the Department of Labor &mdash; that anyone is allowed to look up and that no one owns. We just gather them and link to the originals so you can check them yourself. &ldquo;SpaceX,&rdquo; the fund and company names, and other brands belong to their owners; this site is not affiliated with, authorized by, or endorsed by SpaceX or any fund, bank, or broker named here.</p>
+  </div>
+</footer>
+
+<script>
+/* Embedded snapshot — used only if fetching ./data/*.json fails (e.g. opened
+   from disk or in a sandbox). In production the live JSON is fetched first. */
+const SEED = /*__SEED__*/{"meta":{"project":"Who Owns SpaceX \u2014 a plain-English tracker","last_updated_utc":"2026-06-07T01:20:17+00:00","ipo":{"status":"Not trading yet","expected_pricing_date":"2026-06-11","expected_first_trade_date":"2026-06-12","expected_price_usd":135,"expected_shares_offered":556600000,"expected_raise_usd":75000000000,"expected_valuation_usd":1750000000000,"ticker":"SPCX","exchange":"Nasdaq","file_number":"333-296070","cik":1181412},"counts":{"issuer_filings":9,"fund_positions":63,"institutional_13f":0,"principal_holders":9,"disclosed_fund_exposure_usd":28763232407.67,"insider_voting_pct":86.0},"sources":[{"label":"SpaceX's filings on the SEC's EDGAR database","url":"https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=1181412&type=&dateb=&owner=include&count=40"},{"label":"SEC search for funds that list SpaceX in their holdings reports","url":"https://efts.sec.gov/LATEST/search-index?q=%22Space+Exploration+Technologies%22&forms=NPORT-P"},{"label":"Expected IPO details, as reported by Reuters, Bloomberg and CNBC (June 2026)","url":"https://www.reuters.com/"},{"label":"SpaceX's IPO filing \u2014 the ownership section","url":"https://www.sec.gov/Archives/edgar/data/1181412/000162828026040364/0001628280-26-040364-index.htm"},{"label":"U.S. Labor Department \u2014 retirement-plan (Form 5500) data","url":"https://www.dol.gov/agencies/ebsa/about-ebsa/our-activities/public-disclosure/foia/form-5500-datasets"}],"notes":["Right now, before the IPO, who gets shares is private \u2014 it isn't announced as it happens. The \u201cFunds that own it\u201d tab lists mutual funds that already report owning a piece of SpaceX in their official holdings reports.","Most of SpaceX is owned privately \u2014 by insiders, employees, and venture-capital firms \u2014 and never shows up in fund reports. The \u201cInsiders & big owners\u201d tab comes from SpaceX's IPO filing, which lists everyone who owns more than 5% of a class of shares, plus the company's officers and directors.","Many funds listed here are common 401(k) and IRA choices (their ticker codes are shown), and target-date funds can own SpaceX indirectly \u2014 see the \u201cRetirement & 401(k)\u201d tab.","The \u201cBig investors\u201d tab fills in after those investors file their first quarterly holdings reports covering the IPO quarter, around mid-August 2026.","Fund totals add up every share class from each fund's most recent report. The \u201cValue at IPO price\u201d figures under \u201cInsiders & big owners\u201d are just the share count times the expected starting price \u2014 not a real market value. Every row links to the official filing it came from."],"disclaimer":"This site is for information only. It's not financial advice, and it's not an offer to buy or sell anything. The numbers come from public filings, which can lag real life by weeks or months."},"fund_holders":[{"registrant":"FIDELITY CONTRAFUND","fund":"Fidelity Contrafund","series_id":"S000006037","value_usd":8048242003.23,"pct_of_fund":5.1002,"period":"2026-03-31","form":"NPORT-P","filed":"2026-05-26","filing_index":"https://www.sec.gov/Archives/edgar/data/24238/000003540226003312/0000035402-26-003312-index.htm","tickers":["FCNTX","FCNKX"]},{"registrant":"BARON SELECT FUNDS","fund":"Baron Partners Fund","series_id":"S000000588","value_usd":3657799458.0,"pct_of_fund":35.3048,"period":"2026-03-31","form":"NPORT-P","filed":"2026-05-22","filing_index":"https://www.sec.gov/Archives/edgar/data/1217673/000141036826049926/0001410368-26-049926-index.htm","tickers":["BPTRX","BPTIX","BPTUX"]},{"registrant":"FIDELITY MT VERNON STREET TRUST","fund":"Fidelity Growth Company Fund","series_id":"S000007119","value_usd":2352044777.22,"pct_of_fund":2.8517,"period":"2026-02-28","form":"NPORT-P","filed":"2026-04-24","filing_index":"https://www.sec.gov/Archives/edgar/data/707823/000003540226002586/0000035402-26-002586-index.htm","tickers":["FDGRX","FGCKX"]},{"registrant":"FIDELITY SECURITIES FUND","fund":"Fidelity Blue Chip Growth Fund","series_id":"S000007195","value_usd":2187888164.0,"pct_of_fund":2.4514,"period":"2026-01-31","form":"NPORT-P","filed":"2026-03-25","filing_index":"https://www.sec.gov/Archives/edgar/data/754510/000003540226001932/0000035402-26-001932-index.htm","tickers":["FBGRX","FBGKX","FBCHX","FBCEX","FBCJX","FBCKX","FBCCX"]},{"registrant":"FIDELITY CONTRAFUND","fund":"Fidelity Advisor New Insights Fund","series_id":"S000006036","value_usd":1678774185.9,"pct_of_fund":7.1455,"period":"2026-03-31","form":"NPORT-P","filed":"2026-05-26","filing_index":"https://www.sec.gov/Archives/edgar/data/24238/000003540226003299/0000035402-26-003299-index.htm","tickers":["FNIAX","FNICX","FNITX","FINSX","FZANX"]},{"registrant":"FIDELITY SECURITIES FUND","fund":"Fidelity OTC Portfolio","series_id":"S000007191","value_usd":1469908870.0,"pct_of_fund":4.0359,"period":"2026-01-31","form":"NPORT-P","filed":"2026-03-25","filing_index":"https://www.sec.gov/Archives/edgar/data/754510/000003540226002031/0000035402-26-002031-index.htm","tickers":["FOCPX","FOCKX","FOTJX","FOTGX","FOTDX","FOTEX","FOTHX"]},{"registrant":"FIDELITY CONTRAFUND","fund":"Fidelity Contrafund K6","series_id":"S000057289","value_usd":1151876657.34,"pct_of_fund":3.4318,"period":"2026-03-31","form":"NPORT-P","filed":"2026-05-26","filing_index":"https://www.sec.gov/Archives/edgar/data/24238/000003540226003310/0000035402-26-003310-index.htm","tickers":["FLCNX"]},{"registrant":"FIDELITY MT VERNON STREET TRUST","fund":"Fidelity Growth Company K6 Fund","series_id":"S000065696","value_usd":792254128.41,"pct_of_fund":3.4179,"period":"2026-02-28","form":"NPORT-P","filed":"2026-04-24","filing_index":"https://www.sec.gov/Archives/edgar/data/707823/000003540226002583/0000035402-26-002583-index.htm","tickers":["FGKFX"]},{"registrant":"BARON SELECT FUNDS","fund":"Baron Focused Growth Fund","series_id":"S000022521","value_usd":772363244.34,"pct_of_fund":19.9969,"period":"2026-03-31","form":"NPORT-P","filed":"2026-05-22","filing_index":"https://www.sec.gov/Archives/edgar/data/1217673/000141036826049929/0001410368-26-049929-index.htm","tickers":["BFGFX","BFGIX","BFGUX"]},{"registrant":"VARIABLE INSURANCE PRODUCTS FUND II","fund":"VIP Contrafund Portfolio","series_id":"S000007724","value_usd":711344628.09,"pct_of_fund":2.6822,"period":"2026-03-31","form":"NPORT-P","filed":"2026-05-26","filing_index":"https://www.sec.gov/Archives/edgar/data/831016/000003540226003445/0000035402-26-003445-index.htm","tickers":[]},{"registrant":"FIDELITY MT VERNON STREET TRUST","fund":"Fidelity Series Growth Company Fund","series_id":"S000042626","value_usd":683115191.37,"pct_of_fund":3.2303,"period":"2026-02-28","form":"NPORT-P","filed":"2026-04-24","filing_index":"https://www.sec.gov/Archives/edgar/data/707823/000003540226002630/0000035402-26-002630-index.htm","tickers":["FCGSX"]},{"registrant":"FIDELITY ADVISOR SERIES I","fund":"Fidelity Advisor Growth Opportunities Fund","series_id":"S000005111","value_usd":627485170.59,"pct_of_fund":2.1616,"period":"2026-02-28","form":"NPORT-P","filed":"2026-04-24","filing_index":"https://www.sec.gov/Archives/edgar/data/722574/000003540226002554/0000035402-26-002554-index.htm","tickers":["FAGAX","FACGX","FAGOX","FAGCX","FZAHX"]},{"registrant":"StepStone Private Venture & Growth Fund","fund":"StepStone Private Venture and Growth Fund","series_id":null,"value_usd":586533319.47,"pct_of_fund":9.1554,"period":"2026-03-31","form":"NPORT-P","filed":"2026-05-29","filing_index":"https://www.sec.gov/Archives/edgar/data/1918642/000119312526247111/0001193125-26-247111-index.htm","tickers":[]},{"registrant":"FIDELITY PURITAN TRUST","fund":"Fidelity Puritan Fund","series_id":"S000007153","value_usd":555604582.41,"pct_of_fund":1.711,"period":"2026-02-28","form":"NPORT-P","filed":"2026-04-24","filing_index":"https://www.sec.gov/Archives/edgar/data/81205/000003540226002601/0000035402-26-002601-index.htm","tickers":["FPURX","FPUKX"]},{"registrant":"FIDELITY CONTRAFUND","fund":"Fidelity Series Opportunistic Insights Fund","series_id":"S000039220","value_usd":513881276.94,"pct_of_fund":3.84,"period":"2026-03-31","form":"NPORT-P","filed":"2026-05-26","filing_index":"https://www.sec.gov/Archives/edgar/data/24238/000003540226003406/0000035402-26-003406-index.htm","tickers":["FVWSX"]},{"registrant":"FIDELITY SECURITIES FUND","fund":"Fidelity Series Blue Chip Growth Fund","series_id":"S000042624","value_usd":384621390.0,"pct_of_fund":2.5782,"period":"2026-01-31","form":"NPORT-P","filed":"2026-03-25","filing_index":"https://www.sec.gov/Archives/edgar/data/754510/000003540226002063/0000035402-26-002063-index.htm","tickers":["FSBDX"]},{"registrant":"BARON INVESTMENT FUNDS TRUST (f/k/a BARON ASSET FUND)","fund":"BARON ASSET FUND","series_id":"S000000582","value_usd":337650561.18,"pct_of_fund":10.184,"period":"2026-03-31","form":"NPORT-P","filed":"2026-05-22","filing_index":"https://www.sec.gov/Archives/edgar/data/810902/000141036826049918/0001410368-26-049918-index.htm","tickers":["BARAX","BARIX","BARUX"]},{"registrant":"FIDELITY MT VERNON STREET TRUST","fund":"Fidelity New Millennium Fund","series_id":"S000007120","value_usd":246228744.69,"pct_of_fund":4.5326,"period":"2026-02-28","form":"NPORT-P","filed":"2026-04-24","filing_index":"https://www.sec.gov/Archives/edgar/data/707823/000003540226002602/0000035402-26-002602-index.htm","tickers":["FMILX"]},{"registrant":"FIDELITY SECURITIES FUND","fund":"Fidelity Blue Chip Growth K6 Fund","series_id":"S000057284","value_usd":233707104.0,"pct_of_fund":1.2616,"period":"2025-10-31","form":"NPORT-P","filed":"2025-12-23","filing_index":"https://www.sec.gov/Archives/edgar/data/754510/000003540225002882/0000035402-25-002882-index.htm","tickers":["FBCGX"]},{"registrant":"Private Shares Fund","fund":"The Private Shares Fund","series_id":null,"value_usd":224253091.0,"pct_of_fund":19.3027,"period":"2026-03-31","form":"NPORT-P","filed":"2026-05-27","filing_index":"https://www.sec.gov/Archives/edgar/data/1557265/000119312526241036/0001193125-26-241036-index.htm","tickers":[]},{"registrant":"BARON SELECT FUNDS","fund":"Baron Global Opportunity Fund","series_id":"S000036767","value_usd":172395034.2,"pct_of_fund":20.592,"period":"2026-03-31","form":"NPORT-P","filed":"2026-05-22","filing_index":"https://www.sec.gov/Archives/edgar/data/1217673/000141036826049923/0001410368-26-049923-index.htm","tickers":["BGAFX","BGAIX","BGLUX"]},{"registrant":"BARON INVESTMENT FUNDS TRUST (f/k/a BARON ASSET FUND)","fund":"BARON OPPORTUNITY FUND","series_id":"S000000585","value_usd":150889098.6,"pct_of_fund":9.3286,"period":"2026-03-31","form":"NPORT-P","filed":"2026-05-22","filing_index":"https://www.sec.gov/Archives/edgar/data/810902/000141036826049928/0001410368-26-049928-index.htm","tickers":["BIOPX","BIOIX","BIOUX"]},{"registrant":"Coatue Innovative Strategies Fund","fund":"Coatue Innovative Strategies Fund","series_id":null,"value_usd":136969218.54,"pct_of_fund":2.8386,"period":"2026-03-31","form":"NPORT-P","filed":"2026-05-29","filing_index":"https://www.sec.gov/Archives/edgar/data/2044519/000141036826056381/0001410368-26-056381-index.htm","tickers":[]},{"registrant":"FIDELITY CONCORD STREET TRUST","fund":"Fidelity Mid-Cap Stock Fund","series_id":"S000055365","value_usd":135396126.0,"pct_of_fund":1.7249,"period":"2026-01-31","form":"NPORT-P","filed":"2026-03-25","filing_index":"https://www.sec.gov/Archives/edgar/data/819118/000003540226002022/0000035402-26-002022-index.htm","tickers":["FMCSX","FKMCX","FMCNX","FMCWX","FMCHX","FMCJX","FMCQX"]},{"registrant":"Destiny Tech100 Inc.  (DXYZ)","fund":"Destiny Tech100 Inc.","series_id":null,"value_usd":107309944.83,"pct_of_fund":14.3393,"period":"2026-03-31","form":"NPORT-P","filed":"2026-05-29","filing_index":"https://www.sec.gov/Archives/edgar/data/1843974/000089418926016628/0000894189-26-016628-index.htm","tickers":[]},{"registrant":"VARIABLE INSURANCE PRODUCTS FUND III","fund":"VIP Growth Opportunities Portfolio","series_id":"S000007733","value_usd":98130046.5,"pct_of_fund":2.3393,"period":"2026-03-31","form":"NPORT-P","filed":"2026-05-26","filing_index":"https://www.sec.gov/Archives/edgar/data/927384/000003540226003483/0000035402-26-003483-index.htm","tickers":[]},{"registrant":"FIDELITY PURITAN TRUST","fund":"Fidelity Balanced Fund","series_id":"S000007151","value_usd":79778385.0,"pct_of_fund":0.1283,"period":"2026-02-28","form":"NPORT-P","filed":"2026-04-24","filing_index":"https://www.sec.gov/Archives/edgar/data/81205/000003540226002538/0000035402-26-002538-index.htm","tickers":["FBALX","FBAKX","FBAUX","FBARX","FBAVX","FBAOX","FBAQX"]},{"registrant":"BARON SELECT FUNDS","fund":"Baron Global Advantage Fund","series_id":"S000036767","value_usd":69404560.0,"pct_of_fund":10.4116,"period":"2025-09-30","form":"NPORT-P","filed":"2025-11-26","filing_index":"https://www.sec.gov/Archives/edgar/data/1217673/000141036825032572/0001410368-25-032572-index.htm","tickers":["BGAFX","BGAIX","BGLUX"]},{"registrant":"ARK Venture Fund","fund":"ARK Venture Fund","series_id":null,"value_usd":60579171.92,"pct_of_fund":10.9327,"period":"2026-01-30","form":"NPORT-P","filed":"2026-03-31","filing_index":"https://www.sec.gov/Archives/edgar/data/1905088/000094040026012609/0000940400-26-012609-index.htm","tickers":[]},{"registrant":"FRANKLIN STRATEGIC SERIES","fund":"Franklin Growth Opportunities Fund","series_id":"S000006878","value_usd":60142797.0,"pct_of_fund":1.3685,"period":"2026-01-31","form":"NPORT-P","filed":"2026-03-27","filing_index":"https://www.sec.gov/Archives/edgar/data/872625/000207169126007553/0002071691-26-007553-index.htm","tickers":["FGRAX","FKACX","FRAAX","FKARX","FOPPX"]},{"registrant":"FIDELITY SELECT PORTFOLIOS","fund":"Select Technology Portfolio","series_id":"S000007484","value_usd":58179769.56,"pct_of_fund":0.2129,"period":"2026-02-28","form":"NPORT-P","filed":"2026-04-24","filing_index":"https://www.sec.gov/Archives/edgar/data/320351/000003540226002676/0000035402-26-002676-index.htm","tickers":["FSPTX","FFOJX","FFOQX","FFOTX","FFOMX","FFONX"]},{"registrant":"BARON INVESTMENT FUNDS TRUST (f/k/a BARON ASSET FUND)","fund":"BARON FIFTH AVENUE GROWTH FUND","series_id":"S000000586","value_usd":50408354.34,"pct_of_fund":7.5262,"period":"2026-03-31","form":"NPORT-P","filed":"2026-05-22","filing_index":"https://www.sec.gov/Archives/edgar/data/810902/000141036826049930/0001410368-26-049930-index.htm","tickers":["BFTHX","BFTIX","BFTUX"]},{"registrant":"FIDELITY ADVISOR SERIES I","fund":"Fidelity Advisor Equity Growth Fund","series_id":"S000005121","value_usd":48602150.64,"pct_of_fund":0.4015,"period":"2026-02-28","form":"NPORT-P","filed":"2026-04-24","filing_index":"https://www.sec.gov/Archives/edgar/data/722574/000003540226002549/0000035402-26-002549-index.htm","tickers":["EPGAX","EPGCX","FAEGX","EQPGX","FZAFX"]},{"registrant":"AIM COUNSELOR SERIES TRUST (INVESCO COUNSELOR SERIES TRUST)","fund":"Invesco Oppenheimer Senior Floating Rate Fund","series_id":"S000064615","value_usd":45764162.59,"pct_of_fund":0.5579,"period":"2019-11-30","form":"NPORT-P","filed":"2020-01-29","filing_index":"https://www.sec.gov/Archives/edgar/data/1112996/000175272420017194/0001752724-20-017194-index.htm","tickers":[]},{"registrant":"VARIABLE INSURANCE PRODUCTS FUND","fund":"VIP Growth Portfolio","series_id":"S000007717","value_usd":45429972.48,"pct_of_fund":0.4285,"period":"2026-03-31","form":"NPORT-P","filed":"2026-05-26","filing_index":"https://www.sec.gov/Archives/edgar/data/356494/000003540226003501/0000035402-26-003501-index.htm","tickers":["QVG2Q"]},{"registrant":"FIDELITY ADVISOR SERIES I","fund":"Fidelity Advisor Series Growth Opportunities Fund","series_id":"S000042623","value_usd":36207275.22,"pct_of_fund":3.6102,"period":"2026-02-28","form":"NPORT-P","filed":"2026-04-24","filing_index":"https://www.sec.gov/Archives/edgar/data/722574/000003540226002546/0000035402-26-002546-index.htm","tickers":["FAOFX"]},{"registrant":"Baron ETF Trust","fund":"Baron First Principles ETF","series_id":"S000096481","value_usd":30016156.59,"pct_of_fund":10.7906,"period":"2026-03-31","form":"NPORT-P","filed":"2026-05-22","filing_index":"https://www.sec.gov/Archives/edgar/data/2081199/000141036826049921/0001410368-26-049921-index.htm","tickers":["RONB"]},{"registrant":"FIDELITY HASTINGS STREET TRUST","fund":"Fidelity Growth Discovery Fund","series_id":"S000007019","value_usd":25842930.84,"pct_of_fund":0.4512,"period":"2026-03-31","form":"NPORT-P","filed":"2026-05-26","filing_index":"https://www.sec.gov/Archives/edgar/data/35348/000003540226003385/0000035402-26-003385-index.htm","tickers":["FDSVX","FGDKX"]},{"registrant":"Private Shares Fund","fund":"SharesPost 100 Fund","series_id":null,"value_usd":20587909.8,"pct_of_fund":5.051,"period":"2021-03-31","form":"NPORT-P","filed":"2021-05-25","filing_index":"https://www.sec.gov/Archives/edgar/data/1557265/000114554921029571/0001145549-21-029571-index.htm","tickers":[]},{"registrant":"T. Rowe Price International Funds, Inc.","fund":"T. Rowe Price Global Growth Stock Fund","series_id":"S000023645","value_usd":14169150.0,"pct_of_fund":1.3122,"period":"2025-07-31","form":"NPORT-P","filed":"2025-09-25","filing_index":"https://www.sec.gov/Archives/edgar/data/313212/000109926325000462/0001099263-25-000462-index.htm","tickers":["RPGEX","PAGLX","RGGIX"]},{"registrant":"VARIABLE INSURANCE PRODUCTS FUND III","fund":"VIP Balanced Portfolio","series_id":"S000007730","value_usd":10268505.0,"pct_of_fund":0.1277,"period":"2026-03-31","form":"NPORT-P","filed":"2026-05-26","filing_index":"https://www.sec.gov/Archives/edgar/data/927384/000003540226003441/0000035402-26-003441-index.htm","tickers":["QBA2Q"]},{"registrant":"FIDELITY TREND FUND","fund":"Fidelity Trend Fund","series_id":"S000007496","value_usd":9741915.0,"pct_of_fund":0.2353,"period":"2026-03-31","form":"NPORT-P","filed":"2026-05-26","filing_index":"https://www.sec.gov/Archives/edgar/data/35402/000003540226003439/0000035402-26-003439-index.htm","tickers":["FTRNX"]},{"registrant":"FIDELITY INVESTMENT TRUST","fund":"Fidelity Pacific Basin Fund","series_id":"S000007101","value_usd":9488919.0,"pct_of_fund":0.8861,"period":"2026-01-31","form":"NPORT-P","filed":"2026-03-25","filing_index":"https://www.sec.gov/Archives/edgar/data/744822/000003540226002033/0000035402-26-002033-index.htm","tickers":["FPBFX"]},{"registrant":"FIDELITY INVESTMENT TRUST","fund":"Fidelity Japan Fund","series_id":"S000007096","value_usd":7601155.0,"pct_of_fund":0.8215,"period":"2026-01-31","form":"NPORT-P","filed":"2026-03-25","filing_index":"https://www.sec.gov/Archives/edgar/data/744822/000003540226001997/0000035402-26-001997-index.htm","tickers":["FJPNX","FPJAX","FJPCX","FJPTX","FJPIX","FIQLX"]},{"registrant":"VARIABLE INSURANCE PRODUCTS FUND IV","fund":"VIP Technology Portfolio","series_id":"S000007755","value_usd":6926764.86,"pct_of_fund":0.2133,"period":"2026-03-31","form":"NPORT-P","filed":"2026-05-26","filing_index":"https://www.sec.gov/Archives/edgar/data/720318/000003540226003509/0000035402-26-003509-index.htm","tickers":[]},{"registrant":"FIDELITY SECURITIES FUND","fund":"Fidelity OTC K6 Portfolio","series_id":"S000065698","value_usd":6904400.0,"pct_of_fund":0.2393,"period":"2026-01-31","form":"NPORT-P","filed":"2026-03-25","filing_index":"https://www.sec.gov/Archives/edgar/data/754510/000003540226002016/0000035402-26-002016-index.htm","tickers":["FOKFX"]},{"registrant":"Fidelity Central Investment Portfolios LLC","fund":"Fidelity U.S. Equity Central Fund","series_id":"S000070098","value_usd":6680320.74,"pct_of_fund":0.0328,"period":"2026-03-31","form":"NPORT-P","filed":"2026-05-26","filing_index":"https://www.sec.gov/Archives/edgar/data/1303459/000003540226003443/0000035402-26-003443-index.htm","tickers":[]},{"registrant":"FIDELITY SELECT PORTFOLIOS","fund":"Select Communication Services Portfolio","series_id":"S000007476","value_usd":6560258.22,"pct_of_fund":0.2406,"period":"2026-02-28","form":"NPORT-P","filed":"2026-04-24","filing_index":"https://www.sec.gov/Archives/edgar/data/320351/000003540226002653/0000035402-26-002653-index.htm","tickers":["FBMPX","FGJMX","FGKMX","FGDMX","FGEMX","FGHMX"]},{"registrant":"FIDELITY ADVISOR SERIES I","fund":"Fidelity Advisor Series Equity Growth Fund","series_id":"S000045650","value_usd":5507078.22,"pct_of_fund":0.3785,"period":"2026-02-28","form":"NPORT-P","filed":"2026-04-24","filing_index":"https://www.sec.gov/Archives/edgar/data/722574/000003540226002561/0000035402-26-002561-index.htm","tickers":["FMFMX"]},{"registrant":"Blackstone Alternative Investment Funds","fund":"Blackstone Alternative Multi-Strategy Fund","series_id":"S000045538","value_usd":5215716.88,"pct_of_fund":0.1352,"period":"2025-09-30","form":"NPORT-P","filed":"2025-11-18","filing_index":"https://www.sec.gov/Archives/edgar/data/1557794/000141036825025710/0001410368-25-025710-index.htm","tickers":[]},{"registrant":"FIDELITY DESTINY PORTFOLIOS","fund":"Fidelity Advisor Diversified Stock Fund","series_id":"S000006055","value_usd":4790915.82,"pct_of_fund":0.1307,"period":"2026-03-31","form":"NPORT-P","filed":"2026-05-26","filing_index":"https://www.sec.gov/Archives/edgar/data/35331/000003540226003286/0000035402-26-003286-index.htm","tickers":["FDTOX","FDESX","FDTCX","FDTEX","FDTIX","FZACX"]},{"registrant":"FIDELITY INVESTMENT TRUST","fund":"Fidelity Emerging Asia Fund","series_id":"S000007102","value_usd":4631000.0,"pct_of_fund":0.2726,"period":"2026-01-31","form":"NPORT-P","filed":"2026-03-25","filing_index":"https://www.sec.gov/Archives/edgar/data/744822/000003540226001958/0000035402-26-001958-index.htm","tickers":["FSEAX"]},{"registrant":"FIDELITY INVESTMENT TRUST","fund":"Fidelity China Region Fund","series_id":"S000007108","value_usd":4210000.0,"pct_of_fund":0.2034,"period":"2026-01-31","form":"NPORT-P","filed":"2026-03-25","filing_index":"https://www.sec.gov/Archives/edgar/data/744822/000003540226001929/0000035402-26-001929-index.htm","tickers":["FHKCX","FHKAX","FCHKX","FHKTX","FHKIX","FIQFX"]},{"registrant":"AIM COUNSELOR SERIES TRUST (INVESCO COUNSELOR SERIES TRUST)","fund":"Invesco Oppenheimer Master Loan Fund","series_id":"S000064620","value_usd":3407810.78,"pct_of_fund":0.5294,"period":"2019-11-30","form":"NPORT-P","filed":"2020-01-29","filing_index":"https://www.sec.gov/Archives/edgar/data/1112996/000175272420017020/0001752724-20-017020-index.htm","tickers":[]},{"registrant":"FIDELITY ADVISOR SERIES VIII","fund":"Fidelity Advisor Emerging Asia Fund","series_id":"S000005436","value_usd":2526000.0,"pct_of_fund":0.3985,"period":"2026-01-31","form":"NPORT-P","filed":"2026-03-25","filing_index":"https://www.sec.gov/Archives/edgar/data/729218/000003540226001934/0000035402-26-001934-index.htm","tickers":["FEAAX","FERCX","FEATX","FERIX","FIQPX"]},{"registrant":"FIDELITY ADVISOR SERIES I","fund":"Fidelity Advisor Balanced Fund","series_id":"S000005118","value_usd":1552000.0,"pct_of_fund":0.0185,"period":"2024-05-31","form":"NPORT-P","filed":"2024-07-26","filing_index":"https://www.sec.gov/Archives/edgar/data/722574/000175272424166763/0001752724-24-166763-index.htm","tickers":["FABLX","FABCX","FAIGX","FAIOX","FZAAX"]},{"registrant":"FIDELITY PURITAN TRUST","fund":"Fidelity Balanced K6 Fund","series_id":"S000065701","value_usd":1421793.0,"pct_of_fund":0.0628,"period":"2026-02-28","form":"NPORT-P","filed":"2026-04-24","filing_index":"https://www.sec.gov/Archives/edgar/data/81205/000003540226002560/0000035402-26-002560-index.htm","tickers":["FBKFX"]},{"registrant":"FIDELITY PURITAN TRUST","fund":"Fidelity Puritan K6 Fund","series_id":"S000065702","value_usd":982090.35,"pct_of_fund":0.0442,"period":"2026-02-28","form":"NPORT-P","filed":"2026-04-24","filing_index":"https://www.sec.gov/Archives/edgar/data/81205/000003540226002603/0000035402-26-002603-index.htm","tickers":["FPKFX"]},{"registrant":"FIDELITY MT VERNON STREET TRUST","fund":"Fidelity Equity Growth K6 Fund","series_id":"S000081601","value_usd":873612.81,"pct_of_fund":0.2659,"period":"2026-02-28","form":"NPORT-P","filed":"2026-04-24","filing_index":"https://www.sec.gov/Archives/edgar/data/707823/000003540226002572/0000035402-26-002572-index.htm","tickers":["FEGKX"]},{"registrant":"T. Rowe Price Institutional International Funds, Inc.","fund":"T. Rowe Price Institutional Global Growth Equity Fund","series_id":"S000023644","value_usd":737230.0,"pct_of_fund":0.3711,"period":"2019-10-31","form":"NPORT-P","filed":"2019-12-23","filing_index":"https://www.sec.gov/Archives/edgar/data/852254/000175272419201195/0001752724-19-201195-index.htm","tickers":[]},{"registrant":"VARIABLE INSURANCE PRODUCTS FUND III","fund":"VIP Dynamic Capital Appreciation Portfolio","series_id":"S000007731","value_usd":701417.88,"pct_of_fund":0.2512,"period":"2026-03-31","form":"NPORT-P","filed":"2026-05-26","filing_index":"https://www.sec.gov/Archives/edgar/data/927384/000003540226003467/0000035402-26-003467-index.htm","tickers":[]},{"registrant":"VARIABLE INSURANCE PRODUCTS FUND IV","fund":"VIP Communication Services Portfolio","series_id":"S000016759","value_usd":421272.0,"pct_of_fund":0.1187,"period":"2026-03-31","form":"NPORT-P","filed":"2026-05-26","filing_index":"https://www.sec.gov/Archives/edgar/data/720318/000003540226003440/0000035402-26-003440-index.htm","tickers":["FFNLX"]},{"registrant":"AIM COUNSELOR SERIES TRUST (INVESCO COUNSELOR SERIES TRUST)","fund":"Invesco Oppenheimer Senior Floating Rate Plus Fund","series_id":"S000064616","value_usd":303469.28,"pct_of_fund":0.4248,"period":"2019-11-30","form":"NPORT-P","filed":"2020-01-29","filing_index":"https://www.sec.gov/Archives/edgar/data/1112996/000175272420017183/0001752724-20-017183-index.htm","tickers":[]}],"issuer_filings":[{"form":"FWP","label":"Extra IPO document","filed":"2026-06-05","accession":"0001628280-26-041150","primary_doc":"https://www.sec.gov/Archives/edgar/data/1181412/000162828026041150/spacexagreementfwp.htm","filing_index":"https://www.sec.gov/Archives/edgar/data/1181412/000162828026041150/0001628280-26-041150-index.htm"},{"form":"FWP","label":"Extra IPO document","filed":"2026-06-05","accession":"0001628280-26-041013","primary_doc":"https://www.sec.gov/Archives/edgar/data/1181412/000162828026041013/japanfwp_06042026.htm","filing_index":"https://www.sec.gov/Archives/edgar/data/1181412/000162828026041013/0001628280-26-041013-index.htm"},{"form":"FWP","label":"Extra IPO document","filed":"2026-06-04","accession":"0001628280-26-040874","primary_doc":"https://www.sec.gov/Archives/edgar/data/1181412/000162828026040874/spacexukfwp.htm","filing_index":"https://www.sec.gov/Archives/edgar/data/1181412/000162828026040874/0001628280-26-040874-index.htm"},{"form":"FWP","label":"Extra IPO document","filed":"2026-06-04","accession":"0001628280-26-040610","primary_doc":"https://www.sec.gov/Archives/edgar/data/1181412/000162828026040610/spacexfwp.htm","filing_index":"https://www.sec.gov/Archives/edgar/data/1181412/000162828026040610/0001628280-26-040610-index.htm"},{"form":"S-1/A","label":"Updated IPO filing","filed":"2026-06-03","accession":"0001628280-26-040364","primary_doc":"https://www.sec.gov/Archives/edgar/data/1181412/000162828026040364/spaceexplorationtechnologib.htm","filing_index":"https://www.sec.gov/Archives/edgar/data/1181412/000162828026040364/0001628280-26-040364-index.htm"},{"form":"S-1/A","label":"Updated IPO filing","filed":"2026-06-01","accession":"0001628280-26-039276","primary_doc":"https://www.sec.gov/Archives/edgar/data/1181412/000162828026039276/spaceexplorationtechnologi.htm","filing_index":"https://www.sec.gov/Archives/edgar/data/1181412/000162828026039276/0001628280-26-039276-index.htm"},{"form":"S-1","label":"The main IPO filing","filed":"2026-05-20","accession":"0001628280-26-036936","primary_doc":"https://www.sec.gov/Archives/edgar/data/1181412/000162828026036936/spaceexplorationtechnologi.htm","filing_index":"https://www.sec.gov/Archives/edgar/data/1181412/000162828026036936/0001628280-26-036936-index.htm"},{"form":"DRS/A","label":"Updated private draft of the IPO filing","filed":"2026-05-07","accession":"0001628279-26-000583","primary_doc":"https://www.sec.gov/Archives/edgar/data/1181412/000162827926000583/filename1.htm","filing_index":"https://www.sec.gov/Archives/edgar/data/1181412/000162827926000583/0001628279-26-000583-index.htm"},{"form":"DRS","label":"Private early draft of the IPO filing","filed":"2026-03-30","accession":"0001628280-26-021860","primary_doc":"https://www.sec.gov/Archives/edgar/data/1181412/000162828026021860/filename1.htm","filing_index":"https://www.sec.gov/Archives/edgar/data/1181412/000162828026021860/0001628280-26-021860-index.htm"}],"institutional_13f":[],"principal_holders":{"holders":[{"name":"Elon Musk","footnote":"1","class_a_shares":849494440,"class_a_pct":12.3,"class_b_shares":5569053075,"class_b_pct":93.6,"combined_voting_pct":85.1,"total_shares":6418547515,"implied_value_usd":866503914525},{"name":"Antonio J. Gracias","footnote":"6","class_a_shares":503414530,"class_a_pct":7.3,"class_b_shares":0,"class_b_pct":null,"combined_voting_pct":null,"total_shares":503414530,"implied_value_usd":67960961550},{"name":"Luke Nosek","footnote":"7","class_a_shares":32987360,"class_a_pct":null,"class_b_shares":0,"class_b_pct":null,"combined_voting_pct":null,"total_shares":32987360,"implied_value_usd":4453293600},{"name":"Gwynne Shotwell","footnote":"2","class_a_shares":5759610,"class_a_pct":null,"class_b_shares":7113550,"class_b_pct":null,"combined_voting_pct":null,"total_shares":12873160,"implied_value_usd":1737876600},{"name":"Bret Johnsen","footnote":"3","class_a_shares":9048565,"class_a_pct":null,"class_b_shares":0,"class_b_pct":null,"combined_voting_pct":null,"total_shares":9048565,"implied_value_usd":1221556275},{"name":"Ira Ehrenpreis","footnote":"4","class_a_shares":809050,"class_a_pct":null,"class_b_shares":564650,"class_b_pct":null,"combined_voting_pct":null,"total_shares":1373700,"implied_value_usd":185449500},{"name":"Randy Glein","footnote":"5","class_a_shares":277800,"class_a_pct":null,"class_b_shares":0,"class_b_pct":null,"combined_voting_pct":null,"total_shares":277800,"implied_value_usd":37503000},{"name":"Donald Harrison","footnote":null,"class_a_shares":0,"class_a_pct":null,"class_b_shares":0,"class_b_pct":null,"combined_voting_pct":null,"total_shares":0,"implied_value_usd":0},{"name":"Steve Jurvetson","footnote":null,"class_a_shares":0,"class_a_pct":null,"class_b_shares":0,"class_b_pct":null,"combined_voting_pct":null,"total_shares":0,"implied_value_usd":0}],"group":{"persons":9,"class_a_shares":1401791355,"class_a_pct":20.2,"class_b_shares":5576731275,"class_b_pct":93.7,"combined_voting_pct":86.0,"total_shares":6978522630,"implied_value_usd":942100555050},"as_of":"May 1, 2026","source":{"form":"S-1/A","filed":"2026-06-03","url":"https://www.sec.gov/Archives/edgar/data/1181412/000162828026040364/0001628280-26-040364-index.htm"},"price_basis_usd":135},"commitments":{"scope_note":"Who gets IPO shares is kept private, so this is a list of who has said they're buying \u2014 or who already owns a piece \u2014 based on news reports and the companies' own announcements. Each entry is labeled by how trustworthy the source is and links to it. None of this is a sales pitch, and SpaceX is not selling IPO shares through any outside 'allocation' website.","confidence_levels":{"official":"Straight from the source \u2014 the company's own filing, press release, or website.","reported":"From a named, well-known news outlet.","unconfirmed":"From a single weak source or rumor \u2014 treat with caution."},"status_legend":{"negotiating":"In talks \u2014 not final","allocation_secured":"Has lined up IPO shares to hand out or keep","expected":"Says it plans to buy, or is widely expected to, once it's trading","holds_now":"Already owns SpaceX (before the IPO)","via_transaction":"Got its SpaceX from a merger or deal, not by buying on the market","declined":"Publicly said no to SpaceX","concerns":"Publicly raised worries about how it's run or its price"},"items":[{"entity":"Saudi Public Investment Fund (PIF)","type":"Government investment fund","claim":"Reported to be negotiating a large cornerstone order of about $5B, mainly to keep its existing under-1% stake from being watered down when new shares are created.","amount_usd":5000000000,"status":"negotiating","confidence":"reported","as_of":"2026-04","source":{"outlet":"Reuters (reported via TradingKey)","url":"https://www.tradingkey.com/analysis/stocks/us-stocks/261788158-spacexipo-spacex-ipo-xai-tradingkey","date":"2026-04-16"},"note":"Sources stressed the talks were still going with nothing signed; terms could change. Other Middle Eastern funds were also reported to be talking."},{"entity":"Charles Schwab, Fidelity, Robinhood, SoFi & E*TRADE","type":"Brokerage apps","claim":"SpaceX's IPO filing names these five apps as places where ordinary investors can ask for shares and potentially buy at the IPO price. Fidelity dropped its usual $500,000 minimum to $2,000 for this deal.","amount_usd":null,"status":"allocation_secured","confidence":"official","as_of":"2026-06-03","source":{"outlet":"SEC S-1 / CNBC","url":"https://www.cnbc.com/2026/05/21/retail-investors-get-direct-access-to-spacex-ipo-through-major-brokerage-platforms.html","date":"2026-05-21"},"note":"Whether you get shares depends on each firm's rules and demand; Robinhood picks at random and leaves out IRAs. Moomoo, Webull, TradeStation and Zacks Trade were not named in the filing."},{"entity":"ERShares Private-Public Crossover ETF (XOVR)","type":"Fund that already owns SpaceX","claim":"Reported to hold SpaceX as its biggest single holding, around 23% of the fund, giving its investors a way in before the IPO.","amount_usd":null,"status":"holds_now","confidence":"reported","as_of":"2026-06-04","source":{"outlet":"etf.com","url":"https://www.etf.com/sections/news/spacex-ipo-every-etf-will-hold-spcx-and-when","date":"2026-06-04"},"note":"To double-check: this didn't show up in our scan of SEC filings and should be reconciled against the fund's own holdings report."},{"entity":"Procure Space ETF (UFO)","type":"Space-sector fund","claim":"Reported as planning to hold SpaceX after the IPO; the fund passed $1B in assets in late May 2026 amid the IPO buzz.","amount_usd":null,"status":"expected","confidence":"reported","as_of":"2026-06-04","source":{"outlet":"etf.com","url":"https://www.etf.com/sections/news/spacex-ipo-every-etf-will-hold-spcx-and-when","date":"2026-06-04"},"note":"A 'NASA' space fund was named in the same report as another fund expected to hold SpaceX."},{"entity":"ARK Invest (ARKX / ARK Venture Fund)","type":"Investment firm","claim":"Published its own SpaceX IPO guide. ARK's Venture Fund already owns SpaceX privately, and its ARKX fund is expected to be among the first to buy in after the IPO.","amount_usd":null,"status":"expected","confidence":"official","as_of":"2026-04-01","source":{"outlet":"ARK Invest","url":"https://www.ark-funds.com/articles/venture-fund/arks-guide-to-the-spacex-ipo","date":"2026-04-01"},"note":"ARK's Venture Fund holding also appears in the \u201cFunds that own it\u201d tab."},{"entity":"The Private Shares Fund (PRIVX)","type":"Specialized fund","claim":"Openly advertises SpaceX among its private holdings as a way to own a piece before the IPO.","amount_usd":null,"status":"holds_now","confidence":"official","as_of":"2026","source":{"outlet":"Private Shares Fund","url":"https://privatesharesfund.com/spacex/how-to-invest/","date":"2026"},"note":"Its holding also appears in the \u201cFunds that own it\u201d tab."},{"entity":"EchoStar","type":"Company that owns a stake","claim":"Reported to have received up to $8.5B of SpaceX stock (valued at $212 a share) as part of the payment in a roughly $17B sale of wireless spectrum, and to have set up 'EchoStar Capital' to manage the stake.","amount_usd":8500000000,"status":"via_transaction","confidence":"reported","as_of":"2026","source":{"outlet":"KeepTrack (summarizing EchoStar disclosures)","url":"https://keeptrack.space/deep-dive/who-owns-spacex","date":"2026"},"note":"The details should be confirmed in EchoStar's own reports to the SEC."},{"entity":"Google / Alphabet","type":"Company that owns a stake","claim":"A long-time investor; reported at roughly 5% after its stake was watered down (about 6.11% at the end of 2025), per Alaska state filings.","amount_usd":null,"status":"holds_now","confidence":"reported","as_of":"2025-12","source":{"outlet":"TradingKey","url":"https://www.tradingkey.com/analysis/stocks/us-stocks/261788158-spacexipo-spacex-ipo-xai-tradingkey","date":"2026-04-16"},"note":"SpaceX's June IPO filing names only Musk and Antonio Gracias above the 5% mark, so Google now seems to sit just under it \u2014 an example of newer filings overriding older reports."},{"entity":"Nvidia, Qatar Investment Authority, Abu Dhabi MGX, Cisco","type":"Investors from the xAI merger","claim":"Became SpaceX shareholders through the February 2026 all-stock merger with xAI, not through the IPO.","amount_usd":null,"status":"via_transaction","confidence":"reported","as_of":"2026-02","source":{"outlet":"KeepTrack","url":"https://keeptrack.space/deep-dive/who-owns-spacex","date":"2026"},"note":"An existing stake now folded into the company that's going public."},{"entity":"Broad index funds (VOO, IVV, SPY, QQQ)","type":"Index funds","claim":"Index funds don't own SpaceX today. Once it's trading, funds that track the Nasdaq-100 (like QQQ), the Russell indexes, or FTSE's global indexes will have to start buying SpaceX soon under new rules for adding big companies quickly; but S&P 500 funds (VOO, IVV, SPY) won't add it right away \u2014 on June 5, 2026 S&P kept its rule that a company must be profitable and have traded for about a year first. SpaceX can still go into S&P's broader 'total market' indexes.","amount_usd":null,"status":"expected","confidence":"reported","as_of":"2026-06-05","source":{"outlet":"CNBC / Reuters","url":"https://www.cnbc.com/2026/06/05/spacex-blocked-from-early-us-benchmark-index-entry-as-sp-reaffirms-existing-rules.html","date":"2026-06-05"},"note":"Earlier estimates of this index-driven buying ran into the tens of billions; the timing now depends on which index."},{"entity":"Reported investor demand","type":"General market buzz","claim":"Investor demand for the deal reportedly jumped to around $150B before the early-June investor meetings \u2014 far more than the shares on offer.","amount_usd":null,"status":"expected","confidence":"unconfirmed","as_of":"2026-06-06","source":{"outlet":"Crypto Briefing","url":"https://cryptobriefing.com/spacex-75b-ipo-retail-investors-2/","date":"2026-06-06"},"note":"Demand figures like this come before pricing and can't be independently checked; included as context only."},{"entity":"Big mutual funds & index funds (per Reuters/Goldman)","type":"Investment firms & index funds","claim":"Reuters reported that big mutual funds and index funds are building up cash and getting ready to sell some of their large holdings to make room for SpaceX (and OpenAI); a Goldman note said funds did the same before each of the four largest past IPOs.","amount_usd":null,"status":"expected","confidence":"reported","as_of":"2026-05-27","source":{"outlet":"Reuters (via Investing.com)","url":"https://www.investing.com/news/stock-market-news/us-funds-set-aside-cash-as-spacex-and-openaiprepare-to-go-public-analysts-say-4711619","date":"2026-05-27"},"note":"New S&P 500 and Nasdaq-100 rules are expected to speed SpaceX into those indexes, which would force index funds to buy."},{"entity":"Japan public share sale","type":"Public share sale abroad","claim":"SpaceX registered with Japan's financial regulator (the Kanto Local Finance Bureau) to sell shares to the public in Japan, through the banks running the IPO.","amount_usd":null,"status":"allocation_secured","confidence":"official","as_of":"2026-06-05","source":{"outlet":"SEC FWP (SpaceX)","url":"https://www.sec.gov/Archives/edgar/data/1181412/000162828026041013/0001628280-26-041013-index.htm","date":"2026-06-05"},"note":"The banks named include Goldman Sachs, Morgan Stanley, BofA Securities, Citigroup, J.P. Morgan, Barclays, Deutsche Bank, RBC Capital Markets and UBS, among others."},{"entity":"UK share sale via Marex Financial","type":"Public share sale abroad","claim":"SpaceX opened a UK share sale to people who live in the UK, through an online platform run by Marex Financial and approved by the UK regulator (the FCA).","amount_usd":null,"status":"allocation_secured","confidence":"official","as_of":"2026-06-04","source":{"outlet":"SEC FWP (SpaceX)","url":"https://www.sec.gov/Archives/edgar/data/1181412/000162828026040874/0001628280-26-040874-index.htm","date":"2026-06-04"},"note":"Marex ran a website with a plain summary and factsheet for the UK offer."},{"entity":"Australia & Canada share sales","type":"Public share sale abroad","claim":"SpaceX filed the paperwork to offer shares in Australia (an Australian version of the U.S. prospectus) and in Canada (a Canadian prospectus), extending the sale into those countries.","amount_usd":null,"status":"allocation_secured","confidence":"official","as_of":"2026-06-04","source":{"outlet":"SEC FWP (SpaceX)","url":"https://www.sec.gov/Archives/edgar/data/1181412/000162828026040610/0001628280-26-040610-index.htm","date":"2026-06-04"},"note":"Filed alongside a dedicated IPO website (case studies, a factsheet, and the investor slides) mentioned in the same filing."},{"entity":"Abu Dhabi (ADIA) & other Gulf funds","type":"Government investment funds","claim":"Reported as existing SpaceX investors from 2023 funding rounds (alongside Saudi Arabia's PIF); Abu Dhabi's MGX and Qatar's QIA also came in through the February 2026 xAI merger.","amount_usd":null,"status":"holds_now","confidence":"reported","as_of":"2023","source":{"outlet":"KeepTrack","url":"https://keeptrack.space/deep-dive/who-owns-spacex","date":"2026"},"note":"An existing stake, separate from any new big IPO order such as PIF's reported $5B talks."},{"entity":"BlackRock","type":"Investment firm","claim":"Reportedly discussed putting $5\u201310B into the IPO, from the $536B of funds it actively manages; the final amount could change with the price.","amount_usd":5000000000,"status":"negotiating","confidence":"reported","as_of":"2026-05-16","source":{"outlet":"The Information (via Reuters)","url":"https://www.investing.com/news/stock-market-news/blackrock-weighs-multibilliondollar-investment-in-spacex-ipo-the-information-reports-4694472","date":"2026-05-16"},"note":"Would be one of the largest single IPO orders; BlackRock declined to comment."},{"entity":"Ontario Teachers' Pension Plan (OTPP)","type":"Pension fund","claim":"An early backer: it put in about $300M in a 2019 round and has added since; the stake could be worth up to about $11B on paper at the $1.75T value. The pension says the IPO isn't necessarily the point where it plans to sell.","amount_usd":null,"status":"holds_now","confidence":"reported","as_of":"2026-06","source":{"outlet":"The Globe and Mail","url":"https://www.theglobeandmail.com/business/article-ontario-teachers-pension-plan-spacex-ipo-investment/","date":"2026-06-06"},"note":"Held through its Teachers' Venture Growth arm; the plan manages about $279B for around 346,000 members."},{"entity":"AkademikerPension (Denmark)","type":"Pension fund","claim":"Put SpaceX on its do-not-invest list before the IPO \u2014 it won't buy in the offering, from other shareholders, or through index funds \u2014 calling it 'grossly overvalued' (about 80% too expensive) with a 'catastrophic' setup, since Musk controls about 85% of the votes.","amount_usd":null,"status":"declined","confidence":"reported","as_of":"2026-05-29","source":{"outlet":"Reuters / Bloomberg","url":"https://finance.yahoo.com/markets/stocks/articles/danish-pension-fund-excludes-spacex-132954371.html","date":"2026-05-29"},"note":"A roughly $25B fund; it says it would invest if the price and control concerns were fixed."},{"entity":"CalPERS, NYC & NY State pension funds","type":"US public pension funds","claim":"In May, the heads of CalPERS, the NYC Retirement Systems and the NY State Common Retirement Fund (together over $1T) sent a joint letter to Musk calling SpaceX's setup 'extreme' \u2014 the 'most management-favorable governance structure ever brought to the US public markets at this scale' \u2014 objecting to Musk being able to block his own removal, forcing shareholder disputes into private arbitration instead of court, and the company's choice of where it's legally based.","amount_usd":null,"status":"concerns","confidence":"reported","as_of":"2026-05","source":{"outlet":"Bloomberg / Reuters (via The Next Web)","url":"https://thenextweb.com/news/danish-pension-spacex-blacklist-governance-overvalued","date":"2026-05-29"},"note":"A public objection about how the company is run; not by itself a decision to buy or avoid the stock."},{"entity":"Founders Fund, a16z, Sequoia, Baillie Gifford, Fidelity, T. Rowe","type":"Venture-capital & fund backers","claim":"Named among SpaceX's biggest backers before the IPO. Most venture-capital stakes are private and below the 5% level that must be disclosed, so they don't show up in the filings on this site (Fidelity and T. Rowe do \u2014 see \u201cFunds that own it\u201d).","amount_usd":null,"status":"holds_now","confidence":"reported","as_of":"2026-05","source":{"outlet":"Chief Investment Officer (ai-cio.com)","url":"https://www.ai-cio.com/news/danish-pension-fund-blacklists-spacex/","date":"2026-05-29"},"note":"Shows how much SpaceX ownership sits in private hands, outside public filings."},{"entity":"Interactive Brokers (UK)","type":"Brokerage app (outside the US)","claim":"Interactive Brokers' UK arm (overseen by the UK regulator, the FCA) opened the SpaceX IPO to eligible UK residents, with a sign-up window from June 4 to 6:00 PM on June 10, 2026; getting shares isn't guaranteed and depends on how many the broker receives.","amount_usd":null,"status":"allocation_secured","confidence":"official","as_of":"2026-06-05","source":{"outlet":"Interactive Brokers (via Yahoo Finance)","url":"https://finance.yahoo.com/markets/stocks/articles/interactive-brokers-opens-spacex-ipo-124221873.html","date":"2026-06-05"},"note":"The shares won't be listed on a UK exchange; this adds to the UK options alongside Marex."},{"entity":"Tema Space Innovators ETF (NASA)","type":"Fund (owns SpaceX through a special vehicle)","claim":"Launched March 30, 2026 and grew to about $2.6B, becoming the largest space fund largely because it owns SpaceX directly through a special holding vehicle \u2014 one of the few funds ordinary investors can buy that does. SpaceX was about 6.9\u20137.5% of the fund (down from ~10% at launch, as new money diluted it); the manager says it has no plan to sell after the IPO.","amount_usd":null,"status":"holds_now","confidence":"reported","as_of":"2026-06-03","source":{"outlet":"CNBC","url":"https://www.cnbc.com/2026/05/30/spacex-ipo-invest.html","date":"2026-05-30"},"note":"The fund's SpaceX stake is carried at an estimated value and will move toward the real trading price after the IPO; like XOVR, it may have paid extra to get in and may charge fees."},{"entity":"Private pre-IPO marketplaces","type":"Buying privately before the IPO","claim":"Before the IPO, wealthier 'accredited' investors could buy into SpaceX on private marketplaces (like Forge Global, EquityZen, Hiive, and Nasdaq Private Market) and through funds that hold it in a special vehicle (XOVR, NASA). These usually cost more than the last official price and can carry extra fees.","amount_usd":null,"status":"via_transaction","confidence":"reported","as_of":"2026-06","source":{"outlet":"Bloomberg","url":"https://www.bloomberg.com/professional/insights/markets/spacex-fever-launches-the-biggest-space-etf-you-never-heard-of/","date":"2026-06"},"note":"Caution: websites that promise to 'submit you for an allocation,' and some crypto tokens that claim to represent SpaceX shares, are not official and are often scams. The only ways to buy in the IPO that SpaceX itself named are the five US apps, plus the UK, Japan, Australia and Canada sales listed here."},{"entity":"Norway's sovereign wealth fund","type":"Government investment fund","claim":"The world's largest government investment fund (about $2.2T) said in April it was in talks with SpaceX and weighing whether to invest; its deputy CEO confirmed the talks but gave no details.","amount_usd":null,"status":"negotiating","confidence":"reported","as_of":"2026-04-23","source":{"outlet":"Reuters (via Global Banking & Finance)","url":"https://www.globalbankingandfinance.com/norway-wealth-fund-assessing-whether-invest-spacex/","date":"2026-04-23"},"note":"An early look from April (before the IPO filing), not a confirmed order; the fund keeps about half its money in the US."},{"entity":"Korean asset managers (Mirae Asset, Korea Investment Mgmt)","type":"Funds abroad","claim":"Korean firms are bringing IPO demand home: Mirae Asset Securities, one of the banks on the deal, moved to bring more than $1B (and is seeking up to about $5B) of SpaceX shares to Korea for big and professional investors; Korea Investment Management is joining the IPO and will add shares to its ACE U.S. Space Tech fund and a space/defense fund, aiming for as much as 25% in SpaceX. Ordinary Koreans can't sign up directly because of rules on private share sales.","amount_usd":null,"status":"allocation_secured","confidence":"reported","as_of":"2026-06-04","source":{"outlet":"The Korea Herald","url":"https://www.koreaherald.com/article/10716042","date":"2026-04-13"},"note":"The Korea Exchange put a 'caution' label on the TIGER U.S. Space Tech fund after it traded more than 12% above the value of what it holds; index-tracking Korean funds can't add SpaceX until it joins the index they follow."}]}};
+
+const EXT = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M9 7h8v8"/></svg>';
+const MONTHS = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+
+function fmtUSD(n){ if(n==null) return "—"; const a=Math.abs(n);
+  if(a>=1e12) return "$"+(n/1e12).toFixed(2)+"T";
+  if(a>=1e9)  return "$"+(n/1e9).toFixed(2)+"B";
+  if(a>=1e6)  return "$"+(n/1e6).toFixed(1)+"M";
+  if(a>=1e3)  return "$"+(n/1e3).toFixed(0)+"K";
+  return "$"+Math.round(n); }
+function fmtPct(n){ return n==null?"—":n.toFixed(2)+"%"; }
+function fmtDate(s){ if(!s) return "—"; const m=/^(\d{4})-(\d{2})-(\d{2})/.exec(s);
+  if(!m) return s; return MONTHS[+m[2]-1]+" "+(+m[3])+", "+m[1]; }
+function esc(s){ return (s==null?"":String(s)).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c])); }
+
+async function getJSON(path, fallback){
+  try { const r = await fetch(path, {cache:"no-store"}); if(!r.ok) throw 0; return await r.json(); }
+  catch(e){ return fallback; }
+}
+
+let STATE = { holders: [], sortKey: "value_usd", sortDir: -1, query: "" };
+
+async function init(){
+  const seed = SEED || {};
+  const meta    = await getJSON("./data/meta.json", seed.meta || {});
+  const holders = await getJSON("./data/fund_holders.json", seed.fund_holders || []);
+  const filings = await getJSON("./data/issuer_filings.json", seed.issuer_filings || []);
+  const f13     = await getJSON("./data/institutional_13f.json", seed.institutional_13f || []);
+  const principal = await getJSON("./data/principal_holders.json", seed.principal_holders || {});
+  const commit  = await getJSON("./data/commitments.json", seed.commitments || {});
+
+  renderMeta(meta, holders);
+  renderFacts(meta.ipo || {});
+  STATE.holders = holders;
+  renderHolders();
+  renderInsiders(principal, meta);
+  renderRetirement(holders, principal, meta);
+  renderCommitments(commit);
+  renderFilings(filings);
+  render13F(f13, meta);
+  wireTabs(); wireSort(); wireSearch(); wireTheme();
+}
+
+function renderMeta(meta, holders){
+  document.getElementById("status").textContent = (meta.ipo && meta.ipo.status) || "Pre-IPO";
+  if(meta.last_updated_utc){
+    const d = new Date(meta.last_updated_utc);
+    document.getElementById("updated").textContent =
+      "Updated " + d.toLocaleDateString("en-US",{month:"short",day:"numeric"}) +
+      " · " + d.toLocaleTimeString("en-US",{hour:"2-digit",minute:"2-digit",timeZoneName:"short"});
+  }
+  const c = meta.counts || {};
+  const ipo = meta.ipo || {};
+  const stats = [
+    {k:"SpaceX owned by funds", v:fmtUSD(c.disclosed_fund_exposure_usd), s:"Total across funds that report it"},
+    {k:"Funds that own it", v:(c.fund_positions ?? holders.length), s:"Counted one by one"},
+    {k:"Likely first trading day", v:fmtDate(ipo.expected_first_trade_date), s:(ipo.ticker||"SPCX")+" · "+(ipo.exchange||"Nasdaq")},
+    {k:"Money being raised", v:fmtUSD(ipo.expected_raise_usd), s:"At about "+fmtUSD(ipo.expected_valuation_usd)+" company value"},
+  ];
+  document.getElementById("stats").innerHTML = stats.map(s=>
+    `<div class="stat"><div class="k">${esc(s.k)}</div><div class="v">${esc(s.v)}</div><div class="s">${esc(s.s)}</div></div>`).join("");
+
+  document.getElementById("notes").innerHTML =
+    (meta.notes||[]).map(n=>`<li>${esc(n)}</li>`).join("");
+  document.getElementById("disclaimer").textContent = meta.disclaimer || "";
+  document.getElementById("sources").innerHTML =
+    "Sources: " + (meta.sources||[]).map(s=>`<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.label)}</a>`).join("");
+}
+
+function renderFacts(ipo){
+  const rows = [
+    ["Stage", ipo.status],
+    ["Stock symbol", ipo.ticker],
+    ["Trades on", ipo.exchange],
+    ["Price set on", fmtDate(ipo.expected_pricing_date)],
+    ["First day of trading", fmtDate(ipo.expected_first_trade_date)],
+    ["Price per share", ipo.expected_price_usd?("$"+ipo.expected_price_usd+" per share"):null],
+    ["Shares for sale", ipo.expected_shares_offered?ipo.expected_shares_offered.toLocaleString("en-US"):null],
+    ["Money raised", fmtUSD(ipo.expected_raise_usd)],
+    ["SEC file #", ipo.file_number],
+  ].filter(r=>r[1]!=null && r[1]!=="—");
+  document.getElementById("facts").innerHTML = rows.map(r=>
+    `<div class="fitem"><div class="fk">${esc(r[0])}</div><div class="fv">${esc(r[1])}</div></div>`).join("");
+}
+
+function renderHolders(){
+  const q = STATE.query.toLowerCase();
+  let rows = STATE.holders.filter(h =>
+    !q || (h.fund||"").toLowerCase().includes(q) || (h.registrant||"").toLowerCase().includes(q));
+  const k = STATE.sortKey, dir = STATE.sortDir;
+  rows.sort((a,b)=>{
+    let va=a[k], vb=b[k];
+    if(typeof va==="number" || typeof vb==="number"){ va=va??-Infinity; vb=vb??-Infinity; return (va-vb)*dir; }
+    return String(va||"").localeCompare(String(vb||""))*dir;
+  });
+  const maxPct = Math.max(1, ...STATE.holders.map(h=>h.pct_of_fund||0));
+  document.getElementById("holders-body").innerHTML = rows.map(h=>{
+    const w = Math.max(2, Math.round((h.pct_of_fund||0)/maxPct*100));
+    return `<tr>
+      <td class="fundname" data-label="Fund">${esc(h.fund||"—")}${(h.tickers&&h.tickers.length)?`<span class="tickers-inline">${h.tickers.slice(0,3).map(t=>`<span class="tick">${esc(t)}</span>`).join("")}</span>`:""}</td>
+      <td class="sub" data-label="Fund company">${esc(h.registrant||"—")}</td>
+      <td class="num" data-label="SpaceX held ($)">${fmtUSD(h.value_usd)}</td>
+      <td class="num pctcell" data-label="% of the fund">${fmtPct(h.pct_of_fund)}<span class="bar"><span style="width:${w}%"></span></span></td>
+      <td class="num" data-label="As of">${fmtDate(h.period)}</td>
+      <td data-label="Source"><a class="ext" href="${esc(h.filing_index)}" target="_blank" rel="noopener">View ${EXT}</a></td>
+    </tr>`;
+  }).join("") || `<tr><td colspan="6" class="empty">No funds match “${esc(STATE.query)}”.</td></tr>`;
+  document.getElementById("holders-meta").textContent =
+    rows.length + " of " + STATE.holders.length + " funds";
+  document.getElementById("c-holders").textContent = "("+STATE.holders.length+")";
+}
+
+function renderFilings(filings){
+  document.getElementById("filings-body").innerHTML = filings.map(f=>`
+    <tr>
+      <td data-label="Type"><span class="form-tag">${esc(f.form)}</span></td>
+      <td data-label="What it is">${esc(f.label||"")}</td>
+      <td class="num" data-label="Filed">${fmtDate(f.filed)}</td>
+      <td data-label="View"><a class="ext" href="${esc(f.filing_index)}" target="_blank" rel="noopener">Open document ${EXT}</a></td>
+    </tr>`).join("") || `<tr><td colspan="4" class="empty">No documents.</td></tr>`;
+  document.getElementById("c-filings").textContent = "("+filings.length+")";
+  document.getElementById("filings-meta").textContent = filings.length+" documents SpaceX has filed with the SEC";
+}
+
+function render13F(f13, meta){
+  document.getElementById("c-f13").textContent = "("+f13.length+")";
+  const card = document.getElementById("f13-card");
+  if(f13.length){
+    card.classList.add("tablecard","scroll");
+    card.innerHTML = `<table><thead><tr><th>Big investor</th><th class="num">Filed</th><th>View</th></tr></thead>
+      <tbody>${f13.map(r=>`<tr><td class="fundname" data-label="Big investor">${esc(r.manager)}</td>
+      <td class="num" data-label="Filed">${fmtDate(r.filed)}</td>
+      <td data-label="View"><a class="ext" href="${esc(r.filing_index)}" target="_blank" rel="noopener">View ${EXT}</a></td></tr>`).join("")}</tbody></table>`;
+  } else {
+    card.innerHTML = `<div class="empty">
+      <div class="clock">◷</div>
+      <div class="big">Fills in after the first big-investor reports following the IPO</div>
+      <div>By law, any investment firm managing more than $100 million must publish a list of its U.S. stock holdings every three months — a report called a &ldquo;13F&rdquo; — within 45 days of the quarter ending.
+      SpaceX starts trading in the April–June 2026 quarter, so the first reports that mention SPCX should appear around <strong>mid-August 2026</strong>, and then update every quarter. This page will pull them in automatically.</div>
+    </div>`;
+  }
+}
+
+function renderInsiders(p, meta){
+  const holders = (p && p.holders) || [];
+  const g = p && p.group;
+  document.getElementById("c-insiders").textContent = "("+holders.length+")";
+  const price = (meta.ipo && meta.ipo.expected_price_usd) || (p && p.price_basis_usd);
+  const hl = document.getElementById("insiders-headline");
+  if (g) {
+    hl.innerHTML = `As of ${esc(p.as_of || "the latest filing")}, SpaceX's <strong>${g.persons} top executives and board members</strong> controlled `+
+      `<strong>${fmtPct(g.combined_voting_pct)} of the voting power</strong> — worth roughly <strong>${fmtUSD(g.implied_value_usd)}</strong> at the $${price} starting price. `+
+      `That's far more than the ${fmtUSD((meta.counts||{}).disclosed_fund_exposure_usd)} held by all the funds that report owning SpaceX — which is why looking at funds alone badly undercounts who really owns the company.`;
+  } else { hl.classList.add("hidden"); }
+  document.getElementById("insiders-body").innerHTML = holders.map(h=>`
+    <tr>
+      <td class="fundname" data-label="Owner">${esc(h.name)}${h.footnote?` <span class="sub">filing note ${esc(h.footnote)}</span>`:""}</td>
+      <td class="num" data-label="Shares owned">${h.total_shares?h.total_shares.toLocaleString("en-US"):"—"}</td>
+      <td class="num" data-label="Voting power">${fmtPct(h.combined_voting_pct)}</td>
+      <td class="num" data-label="Value at IPO price">${fmtUSD(h.implied_value_usd)}</td>
+    </tr>`).join("") || `<tr><td colspan="4" class="empty">No ownership list loaded yet.</td></tr>`;
+  const src = p && p.source;
+  document.getElementById("insiders-meta").innerHTML = src
+    ? `From <a href="${esc(src.url)}" target="_blank" rel="noopener">SpaceX's ${esc(src.form)}, filed ${fmtDate(src.filed)}</a> — everyone who owns more than 5% of a class of shares, plus the company's officers and directors`
+    : "";
+  document.getElementById("insiders-note").innerHTML =
+    `SpaceX has two kinds of stock. The &ldquo;Class B&rdquo; shares come with extra votes (how a few people keep control) and turn into regular &ldquo;Class A&rdquo; shares one-for-one if sold; the share counts here combine both. `+
+    `&ldquo;Value at IPO price&rdquo; is simply the number of shares times the $${price} starting price — a rough sense of size, not a real market value. `+
+    `Venture-capital firms that each own less than 5% don't have to be listed individually, so some are hidden here; a few show up through a director (for example, Valor Equity's stake appears under Antonio Gracias). The linked filing has the full notes.`;
+}
+
+function renderRetirement(holders, p, meta){
+  const tickered = (holders||[]).filter(h => (h.tickers||[]).length).slice(0, 40);
+  const price = (meta.ipo && meta.ipo.expected_price_usd);
+  const el = document.getElementById("retire-body");
+  el.innerHTML = `
+  <div class="card rcard">
+    <p class="rlead">Most people who own a slice of SpaceX have no idea they do — it's tucked inside a mutual fund in their 401(k), IRA, 403(b), 529 college account, or pension. Here's how to check if that's you.</p>
+  </div>
+
+  <div class="rblock">
+    <h4>1 · The direct way — your plan includes one of these funds</h4>
+    <p class="rtext">If your retirement plan lets you pick any of these funds, and you did, then you already own a little SpaceX. Look on your statement for the fund's name or its short letter code (its &ldquo;ticker&rdquo;):</p>
+    <div class="tickwrap">
+      ${tickered.map(h=>`<div class="tickrow"><span class="tfund">${esc(h.fund)}</span><span class="tpct">${fmtPct(h.pct_of_fund)} SpaceX</span><span class="ttix">${(h.tickers||[]).slice(0,6).map(t=>`<span class="tick">${esc(t)}</span>`).join("")}</span></div>`).join("")}
+    </div>
+    <p class="fine">This shows funds that have a public ticker code. The &ldquo;Funds that own it&rdquo; tab has the complete list, including specialized funds that don't have one.</p>
+  </div>
+
+  <div class="rblock">
+    <h4>2 · The indirect way — your target-date fund owns them</h4>
+    <p class="rtext">A &ldquo;target-date&rdquo; fund — the kind with a year in its name like 2050, and the automatic choice in most 401(k)s — is really a fund made up of other funds. <strong>Fidelity Freedom</strong> target-date funds hold <strong>Fidelity Series</strong> funds (Series Growth Company, Series Blue Chip Growth, Series Opportunistic Insights), and those Series funds hold SpaceX. So a Freedom 2045, 2050, or 2055 fund owns SpaceX without ever saying its name.</p>
+    <p class="fine">You can confirm this in the holdings reports of <a href="https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&amp;CIK=0000880195&amp;type=NPORT-P&amp;dateb=&amp;owner=include&amp;count=40" target="_blank" rel="noopener">Fidelity Aberdeen Street Trust (the Freedom funds)</a>, which list the Series funds — and those Series funds' own reports list Space Exploration Technologies (SpaceX's legal name).</p>
+  </div>
+
+  <div class="rblock">
+    <h4>3 · Index funds — it depends which index</h4>
+    <p class="rtext">Index funds don't own SpaceX yet. Once it's trading, it <strong>depends on the index</strong>: funds that track the <strong>Nasdaq-100 (like QQQ)</strong>, the Russell indexes, or FTSE's global indexes will have to start buying SpaceX soon, because those index-makers changed their rules to add big new companies quickly. But <strong>S&amp;P 500 funds (VOO, IVV, SPY) won't add it right away</strong> — on June 5, 2026 S&amp;P kept its existing rules, which require a company to be profitable and to have traded for about a year first. SpaceX can still go into S&amp;P's broader &ldquo;total market&rdquo; indexes.</p>
+    <p class="fine">So a Nasdaq-100 or total-market index fund may soon own SpaceX automatically; a plain S&amp;P 500 fund won't until SpaceX has been profitable and trading long enough. The sources are in the &ldquo;Who's reportedly buying&rdquo; tab.</p>
+  </div>
+
+  <div class="rblock">
+    <h4>4 · Your own employer or government plan</h4>
+    <p class="rtext">Every employer and government retirement plan files a yearly report with the U.S. Labor Department (a <strong>&ldquo;Form 5500&rdquo;</strong>) that lists the exact funds it offers. The catch: it's filed about seven months after the year ends, and mostly as loose attachments that are hard for a computer to read — so we can't yet automatically look up a specific employer or city/state plan. Matching those reports against the fund list above is what we're building next.</p>
+    <p class="fine">Source: <a href="https://www.dol.gov/agencies/ebsa/about-ebsa/our-activities/public-disclosure/foia/form-5500-datasets" target="_blank" rel="noopener">U.S. Labor Department — Form 5500 data</a>. Heads-up: many 401(k)s use a special pooled version of a fund (sometimes called a &ldquo;Commingled Pool&rdquo; or &ldquo;collective trust&rdquo;) that doesn't file the usual holdings report, so some of that ownership can't be seen here yet.</p>
+  </div>`;
+}
+
+function renderCommitments(c){
+  const items = (c && c.items) || [];
+  document.getElementById("c-commit").textContent = "("+items.length+")";
+  const cl = (c && c.confidence_levels) || {};
+  document.getElementById("commit-disclaimer").innerHTML =
+    `<strong>These are reported claims, not confirmed holdings.</strong> ${esc(c.scope_note || "")}`;
+  document.getElementById("commit-legend").innerHTML =
+    `<span class="badge b-official">official</span> ${esc(cl.official||"")} &nbsp; `+
+    `<span class="badge b-reported">reported</span> ${esc(cl.reported||"")} &nbsp; `+
+    `<span class="badge b-unconfirmed">unconfirmed</span> ${esc(cl.unconfirmed||"")}`;
+  const order = { official:0, reported:1, unconfirmed:2 };
+  const sorted = items.slice().sort((a,b)=>{
+    const d = (order[a.confidence] ?? 3) - (order[b.confidence] ?? 3);
+    return d || ((b.amount_usd||0) - (a.amount_usd||0));
+  });
+  document.getElementById("commit-body").innerHTML = sorted.map(it=>{
+    const conf = it.confidence || "reported";
+    const amt = it.amount_usd ? `<span class="camt">${fmtUSD(it.amount_usd)}</span>` : "";
+    const src = it.source || {};
+    const link = src.url
+      ? `<a href="${esc(src.url)}" target="_blank" rel="noopener">${esc(src.outlet||"source")}${src.date?` · ${esc(src.date)}`:""}</a>`
+      : esc(src.outlet||"");
+    const statusText = (c.status_legend && c.status_legend[it.status]) || it.status || "";
+    return `<div class="ccard">
+      <div class="chead"><span class="centity">${esc(it.entity)}</span><span class="badge b-${esc(conf)}">${esc(conf)}</span></div>
+      <div class="ctype">${esc(it.type||"")}${it.status?` · <span class="status-chip">${esc(statusText)}</span>`:""}</div>
+      <p class="cclaim">${esc(it.claim||"")}</p>
+      <div class="cfoot">${amt}${amt&&link?"·":""}${link}</div>
+      ${it.note?`<p class="cnote">${esc(it.note)}</p>`:""}
+    </div>`;
+  }).join("") || `<div class="card"><p class="empty">No reported items yet.</p></div>`;
+}
+
+function wireTabs(){
+  document.querySelectorAll(".tab").forEach(t=>{
+    t.addEventListener("click", ()=>{
+      document.querySelectorAll(".tab").forEach(x=>x.setAttribute("aria-selected","false"));
+      t.setAttribute("aria-selected","true");
+      const name = t.dataset.tab;
+      document.querySelectorAll("[data-panel]").forEach(p=>
+        p.classList.toggle("hidden", p.dataset.panel!==name));
+    });
+  });
+}
+function wireSort(){
+  document.querySelectorAll("#holders-table th.sortable").forEach(th=>{
+    th.addEventListener("click", ()=>{
+      const key = th.dataset.key;
+      if(STATE.sortKey===key){ STATE.sortDir*=-1; }
+      else { STATE.sortKey=key; STATE.sortDir = (key==="fund"||key==="registrant")?1:-1; }
+      document.querySelectorAll("#holders-table th").forEach(x=>x.removeAttribute("aria-sort"));
+      th.setAttribute("aria-sort", STATE.sortDir===1?"ascending":"descending");
+      th.querySelector(".arrow").textContent = STATE.sortDir===1?"▲":"▼";
+      document.querySelectorAll("#holders-table th .arrow").forEach(a=>{ if(a!==th.querySelector(".arrow")) a.textContent=""; });
+      renderHolders();
+    });
+  });
+}
+function wireSearch(){
+  document.getElementById("search").addEventListener("input", e=>{
+    STATE.query = e.target.value; renderHolders();
+  });
+}
+function wireTheme(){
+  document.getElementById("themeBtn").addEventListener("click", ()=>{
+    const cur = document.documentElement.getAttribute("data-theme");
+    const dark = cur ? cur==="dark"
+      : window.matchMedia("(prefers-color-scheme: dark)").matches;
+    document.documentElement.setAttribute("data-theme", dark?"light":"dark");
+  });
+}
+
+init();
+</script>
+</body>
+</html>

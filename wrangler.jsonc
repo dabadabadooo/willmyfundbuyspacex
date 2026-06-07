@@ -1,0 +1,10 @@
+{
+  // Cloudflare Workers — static-site deploy for willmyfundbuyspacex.com.
+  // Everything in ./site is served as static files. There is no server code,
+  // so static-asset requests are free and unlimited on the Workers Free plan.
+  "name": "willmyfundbuyspacex",
+  "compatibility_date": "2026-06-06",
+  "assets": {
+    "directory": "./site"
+  }
+}
