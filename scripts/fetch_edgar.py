@@ -471,6 +471,14 @@ def main():
     f13 = fetch_13f()
     principal = fetch_principal_holders(issuer)
 
+    # Safety guard: if SEC blocked all requests, abort rather than
+    # overwrite good existing data files with empty ones.
+    if not issuer and not holders:
+        print("\nERROR: All SEC requests failed (likely IP block or missing "
+              "SEC_USER_AGENT). Keeping existing data files unchanged.",
+              file=sys.stderr)
+        sys.exit(1)
+
     total_exposure = round(sum(h["value_usd"] for h in holders), 2)
     top_voting = (principal["group"]["combined_voting_pct"]
                   if principal.get("group") else None)
