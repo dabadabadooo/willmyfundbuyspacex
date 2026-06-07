@@ -1,7 +1,7 @@
 [
   {
     "form": "FWP",
-    "label": "Extra IPO document",
+    "label": "Free writing prospectus",
     "filed": "2026-06-05",
     "accession": "0001628280-26-041150",
     "primary_doc": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026041150/spacexagreementfwp.htm",
@@ -9,7 +9,7 @@
   },
   {
     "form": "FWP",
-    "label": "Extra IPO document",
+    "label": "Free writing prospectus",
     "filed": "2026-06-05",
     "accession": "0001628280-26-041013",
     "primary_doc": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026041013/japanfwp_06042026.htm",
@@ -17,7 +17,7 @@
   },
   {
     "form": "FWP",
-    "label": "Extra IPO document",
+    "label": "Free writing prospectus",
     "filed": "2026-06-04",
     "accession": "0001628280-26-040874",
     "primary_doc": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026040874/spacexukfwp.htm",
@@ -25,7 +25,7 @@
   },
   {
     "form": "FWP",
-    "label": "Extra IPO document",
+    "label": "Free writing prospectus",
     "filed": "2026-06-04",
     "accession": "0001628280-26-040610",
     "primary_doc": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026040610/spacexfwp.htm",
@@ -33,7 +33,7 @@
   },
   {
     "form": "S-1/A",
-    "label": "Updated IPO filing",
+    "label": "Amended registration statement",
     "filed": "2026-06-03",
     "accession": "0001628280-26-040364",
     "primary_doc": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026040364/spaceexplorationtechnologib.htm",
@@ -41,7 +41,7 @@
   },
   {
     "form": "S-1/A",
-    "label": "Updated IPO filing",
+    "label": "Amended registration statement",
     "filed": "2026-06-01",
     "accession": "0001628280-26-039276",
     "primary_doc": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026039276/spaceexplorationtechnologi.htm",
@@ -49,7 +49,7 @@
   },
   {
     "form": "S-1",
-    "label": "The main IPO filing",
+    "label": "Registration statement (IPO prospectus)",
     "filed": "2026-05-20",
     "accession": "0001628280-26-036936",
     "primary_doc": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026036936/spaceexplorationtechnologi.htm",
@@ -57,7 +57,7 @@
   },
   {
     "form": "DRS/A",
-    "label": "Updated private draft of the IPO filing",
+    "label": "Amended draft registration statement",
     "filed": "2026-05-07",
     "accession": "0001628279-26-000583",
     "primary_doc": "https://www.sec.gov/Archives/edgar/data/1181412/000162827926000583/filename1.htm",
@@ -65,7 +65,7 @@
   },
   {
     "form": "DRS",
-    "label": "Private early draft of the IPO filing",
+    "label": "Draft registration statement (confidential)",
     "filed": "2026-03-30",
     "accession": "0001628280-26-021860",
     "primary_doc": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026021860/filename1.htm",

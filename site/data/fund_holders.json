@@ -233,20 +233,6 @@
     ]
   },
   {
-    "registrant": "FIDELITY SECURITIES FUND",
-    "fund": "Fidelity Series Blue Chip Growth Fund",
-    "series_id": "S000042624",
-    "value_usd": 384621390.0,
-    "pct_of_fund": 2.5782,
-    "period": "2026-01-31",
-    "form": "NPORT-P",
-    "filed": "2026-03-25",
-    "filing_index": "https://www.sec.gov/Archives/edgar/data/754510/000003540226002063/0000035402-26-002063-index.htm",
-    "tickers": [
-      "FSBDX"
-    ]
-  },
-  {
     "registrant": "BARON INVESTMENT FUNDS TRUST (f/k/a BARON ASSET FUND)",
     "fund": "BARON ASSET FUND",
     "series_id": "S000000582",
@@ -285,7 +271,7 @@
     "period": "2025-10-31",
     "form": "NPORT-P",
     "filed": "2025-12-23",
-    "filing_index": "https://www.sec.gov/Archives/edgar/data/754510/000003540226002016/0000035402-26-002016-index.htm",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/754510/000003540225002882/0000035402-25-002882-index.htm",
     "tickers": [
       "FBCGX"
     ]
@@ -301,6 +287,20 @@
     "filed": "2026-05-27",
     "filing_index": "https://www.sec.gov/Archives/edgar/data/1557265/000119312526241036/0001193125-26-241036-index.htm",
     "tickers": []
+  },
+  {
+    "registrant": "FIDELITY SECURITIES FUND",
+    "fund": "Fidelity Series Blue Chip Growth Fund",
+    "series_id": "S000042624",
+    "value_usd": 193681080.0,
+    "pct_of_fund": 1.2862,
+    "period": "2025-10-31",
+    "form": "NPORT-P",
+    "filed": "2025-12-23",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/754510/000003540225003008/0000035402-25-003008-index.htm",
+    "tickers": [
+      "FSBDX"
+    ]
   },
   {
     "registrant": "BARON SELECT FUNDS",
@@ -457,25 +457,6 @@
     ]
   },
   {
-    "registrant": "FIDELITY SELECT PORTFOLIOS",
-    "fund": "Select Technology Portfolio",
-    "series_id": "S000007484",
-    "value_usd": 58179769.56,
-    "pct_of_fund": 0.2129,
-    "period": "2026-02-28",
-    "form": "NPORT-P",
-    "filed": "2026-04-24",
-    "filing_index": "https://www.sec.gov/Archives/edgar/data/320351/000003540226002676/0000035402-26-002676-index.htm",
-    "tickers": [
-      "FSPTX",
-      "FFOJX",
-      "FFOQX",
-      "FFOTX",
-      "FFOMX",
-      "FFONX"
-    ]
-  },
-  {
     "registrant": "BARON INVESTMENT FUNDS TRUST (f/k/a BARON ASSET FUND)",
     "fund": "BARON FIFTH AVENUE GROWTH FUND",
     "series_id": "S000000586",
@@ -508,18 +489,6 @@
       "EQPGX",
       "FZAFX"
     ]
-  },
-  {
-    "registrant": "AIM COUNSELOR SERIES TRUST (INVESCO COUNSELOR SERIES TRUST)",
-    "fund": "Invesco Oppenheimer Senior Floating Rate Fund",
-    "series_id": "S000064615",
-    "value_usd": 45764162.59,
-    "pct_of_fund": 0.5579,
-    "period": "2019-11-30",
-    "form": "NPORT-P",
-    "filed": "2020-01-29",
-    "filing_index": "https://www.sec.gov/Archives/edgar/data/1112996/000175272420017194/0001752724-20-017194-index.htm",
-    "tickers": []
   },
   {
     "registrant": "VARIABLE INSURANCE PRODUCTS FUND",
@@ -751,25 +720,6 @@
     "tickers": []
   },
   {
-    "registrant": "FIDELITY DESTINY PORTFOLIOS",
-    "fund": "Fidelity Advisor Diversified Stock Fund",
-    "series_id": "S000006055",
-    "value_usd": 4790915.82,
-    "pct_of_fund": 0.1307,
-    "period": "2026-03-31",
-    "form": "NPORT-P",
-    "filed": "2026-05-26",
-    "filing_index": "https://www.sec.gov/Archives/edgar/data/35331/000003540226003286/0000035402-26-003286-index.htm",
-    "tickers": [
-      "FDTOX",
-      "FDESX",
-      "FDTCX",
-      "FDTEX",
-      "FDTIX",
-      "FZACX"
-    ]
-  },
-  {
     "registrant": "FIDELITY INVESTMENT TRUST",
     "fund": "Fidelity Emerging Asia Fund",
     "series_id": "S000007102",
@@ -801,18 +751,6 @@
       "FHKIX",
       "FIQFX"
     ]
-  },
-  {
-    "registrant": "AIM COUNSELOR SERIES TRUST (INVESCO COUNSELOR SERIES TRUST)",
-    "fund": "Invesco Oppenheimer Master Loan Fund",
-    "series_id": "S000064620",
-    "value_usd": 3407810.78,
-    "pct_of_fund": 0.5294,
-    "period": "2019-11-30",
-    "form": "NPORT-P",
-    "filed": "2020-01-29",
-    "filing_index": "https://www.sec.gov/Archives/edgar/data/1112996/000175272420017020/0001752724-20-017020-index.htm",
-    "tickers": []
   },
   {
     "registrant": "FIDELITY ADVISOR SERIES VIII",
@@ -862,20 +800,6 @@
     "filing_index": "https://www.sec.gov/Archives/edgar/data/81205/000003540226002560/0000035402-26-002560-index.htm",
     "tickers": [
       "FBKFX"
-    ]
-  },
-  {
-    "registrant": "FIDELITY PURITAN TRUST",
-    "fund": "Fidelity Puritan K6 Fund",
-    "series_id": "S000065702",
-    "value_usd": 982090.35,
-    "pct_of_fund": 0.0442,
-    "period": "2026-02-28",
-    "form": "NPORT-P",
-    "filed": "2026-04-24",
-    "filing_index": "https://www.sec.gov/Archives/edgar/data/81205/000003540226002603/0000035402-26-002603-index.htm",
-    "tickers": [
-      "FPKFX"
     ]
   },
   {
@@ -929,17 +853,5 @@
     "tickers": [
       "FFNLX"
     ]
-  },
-  {
-    "registrant": "AIM COUNSELOR SERIES TRUST (INVESCO COUNSELOR SERIES TRUST)",
-    "fund": "Invesco Oppenheimer Senior Floating Rate Plus Fund",
-    "series_id": "S000064616",
-    "value_usd": 303469.28,
-    "pct_of_fund": 0.4248,
-    "period": "2019-11-30",
-    "form": "NPORT-P",
-    "filed": "2020-01-29",
-    "filing_index": "https://www.sec.gov/Archives/edgar/data/1112996/000175272420017183/0001752724-20-017183-index.htm",
-    "tickers": []
   }
 ]
