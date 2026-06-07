@@ -44,6 +44,7 @@ jobs:
           if [ -n "$(git status --porcelain site/data)" ]; then
             git add site/data
             git commit -m "data: refresh SpaceX fund exposure ($(date -u +%Y-%m-%dT%H:%MZ))"
+            git pull --rebase origin main
             git push
           else
             echo "No data changes."
