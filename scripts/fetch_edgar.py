@@ -26,6 +26,7 @@ import time
 import datetime as dt
 from urllib.request import Request, urlopen
 from urllib.error import HTTPError, URLError
+from urllib.parse import quote as _urlquote
 
 # --------------------------------------------------------------------------- #
 # Config
@@ -76,6 +77,11 @@ USER_AGENT = os.environ.get(
     "SEC_USER_AGENT",
     "spacex-ipo-tracker (set SEC_USER_AGENT env var to name + email)"
 )
+# Optional Cloudflare Worker proxy URL. When set, all SEC EDGAR requests are
+# routed through the Worker (which runs on Cloudflare IPs that SEC doesn't
+# block) instead of going directly from GitHub Actions (Azure IPs are blocked).
+# Set repo variable EDGAR_PROXY = https://<your-worker>.workers.dev
+EDGAR_PROXY = os.environ.get("EDGAR_PROXY", "").rstrip("/")
 RATE_DELAY = 0.15  # seconds between SEC requests (~7/sec, under the 10/sec cap)
 
 
@@ -84,10 +90,13 @@ RATE_DELAY = 0.15  # seconds between SEC requests (~7/sec, under the 10/sec cap)
 # --------------------------------------------------------------------------- #
 def _get(url, expect_json=False, retries=3):
     """GET with the required UA header, basic retry/backoff, polite delay."""
+    # Route through the Cloudflare Worker proxy when configured, so requests
+    # arrive at SEC EDGAR from Cloudflare IPs instead of GitHub Actions (Azure).
+    fetch_url = f"{EDGAR_PROXY}?url={_urlquote(url, safe='')}" if EDGAR_PROXY else url
     last = None
     for attempt in range(retries):
         try:
-            req = Request(url, headers={
+            req = Request(fetch_url, headers={
                 "User-Agent": USER_AGENT,
                 "Accept-Encoding": "gzip, deflate",
                 "Accept": "application/json, text/html, */*",

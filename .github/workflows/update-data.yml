@@ -33,6 +33,10 @@ jobs:
           # → Variables → New variable: SEC_USER_AGENT = "Your Project you@yourdomain.com"
           # SEC requires a descriptive User-Agent with real contact info.
           SEC_USER_AGENT: ${{ vars.SEC_USER_AGENT }}
+          # Cloudflare Worker proxy URL — routes SEC requests through Cloudflare
+          # IPs so GitHub Actions (Azure IPs) can reach data.sec.gov / efts.sec.gov.
+          # Set repo variable EDGAR_PROXY = https://<your-worker>.workers.dev
+          EDGAR_PROXY: ${{ vars.EDGAR_PROXY }}
           MAX_HITS: "1200"
           MAX_FETCH: "480"
         run: python3 scripts/fetch_edgar.py
