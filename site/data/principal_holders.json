@@ -1,6 +1,120 @@
 {
-  "holders": [],
-  "group": null,
-  "as_of": null,
-  "source": null
+  "holders": [
+    {
+      "name": "Elon Musk",
+      "footnote": "1",
+      "class_a_shares": 849494440,
+      "class_a_pct": 12.3,
+      "class_b_shares": 5569053075,
+      "class_b_pct": 93.6,
+      "combined_voting_pct": 85.1,
+      "total_shares": 6418547515,
+      "implied_value_usd": 866503914525
+    },
+    {
+      "name": "Antonio J. Gracias",
+      "footnote": "6",
+      "class_a_shares": 503414530,
+      "class_a_pct": 7.3,
+      "class_b_shares": 0,
+      "class_b_pct": null,
+      "combined_voting_pct": null,
+      "total_shares": 503414530,
+      "implied_value_usd": 67960961550
+    },
+    {
+      "name": "Luke Nosek",
+      "footnote": "7",
+      "class_a_shares": 32987360,
+      "class_a_pct": null,
+      "class_b_shares": 0,
+      "class_b_pct": null,
+      "combined_voting_pct": null,
+      "total_shares": 32987360,
+      "implied_value_usd": 4453293600
+    },
+    {
+      "name": "Gwynne Shotwell",
+      "footnote": "2",
+      "class_a_shares": 5759610,
+      "class_a_pct": null,
+      "class_b_shares": 7113550,
+      "class_b_pct": null,
+      "combined_voting_pct": null,
+      "total_shares": 12873160,
+      "implied_value_usd": 1737876600
+    },
+    {
+      "name": "Bret Johnsen",
+      "footnote": "3",
+      "class_a_shares": 9048565,
+      "class_a_pct": null,
+      "class_b_shares": 0,
+      "class_b_pct": null,
+      "combined_voting_pct": null,
+      "total_shares": 9048565,
+      "implied_value_usd": 1221556275
+    },
+    {
+      "name": "Ira Ehrenpreis",
+      "footnote": "4",
+      "class_a_shares": 809050,
+      "class_a_pct": null,
+      "class_b_shares": 564650,
+      "class_b_pct": null,
+      "combined_voting_pct": null,
+      "total_shares": 1373700,
+      "implied_value_usd": 185449500
+    },
+    {
+      "name": "Randy Glein",
+      "footnote": "5",
+      "class_a_shares": 277800,
+      "class_a_pct": null,
+      "class_b_shares": 0,
+      "class_b_pct": null,
+      "combined_voting_pct": null,
+      "total_shares": 277800,
+      "implied_value_usd": 37503000
+    },
+    {
+      "name": "Donald Harrison",
+      "footnote": null,
+      "class_a_shares": 0,
+      "class_a_pct": null,
+      "class_b_shares": 0,
+      "class_b_pct": null,
+      "combined_voting_pct": null,
+      "total_shares": 0,
+      "implied_value_usd": 0
+    },
+    {
+      "name": "Steve Jurvetson",
+      "footnote": null,
+      "class_a_shares": 0,
+      "class_a_pct": null,
+      "class_b_shares": 0,
+      "class_b_pct": null,
+      "combined_voting_pct": null,
+      "total_shares": 0,
+      "implied_value_usd": 0
+    }
+  ],
+  "group": {
+    "persons": 9,
+    "class_a_shares": 1401791355,
+    "class_a_pct": 20.2,
+    "class_b_shares": 5576731275,
+    "class_b_pct": 93.7,
+    "combined_voting_pct": 86.0,
+    "total_shares": 6978522630,
+    "implied_value_usd": 942100555050
+  },
+  "as_of": "May 1, 2026",
+  "source": {
+    "form": "S-1/A",
+    "filed": "2026-06-03",
+    "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026040364/0001628280-26-040364-index.htm"
+  },
+  "price_basis_usd": 135
 }

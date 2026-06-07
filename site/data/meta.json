@@ -1,8 +1,8 @@
 {
-  "project": "SpaceX IPO \u2014 Fund Exposure Tracker",
-  "last_updated_utc": "2026-06-07T03:46:30+00:00",
+  "project": "Who Owns SpaceX — a plain-English tracker",
+  "last_updated_utc": "2026-06-07T01:20:17+00:00",
   "ipo": {
-    "status": "Pre-IPO (roadshow underway)",
+    "status": "Not trading yet",
     "expected_pricing_date": "2026-06-11",
     "expected_first_trade_date": "2026-06-12",
     "expected_price_usd": 135,
@@ -15,37 +15,41 @@
     "cik": 1181412
   },
   "counts": {
-    "issuer_filings": 0,
-    "fund_positions": 0,
+    "issuer_filings": 9,
+    "fund_positions": 63,
     "institutional_13f": 0,
-    "principal_holders": 0,
-    "disclosed_fund_exposure_usd": 0,
-    "insider_voting_pct": null
+    "principal_holders": 9,
+    "disclosed_fund_exposure_usd": 28763232407.67,
+    "insider_voting_pct": 86.0
   },
   "sources": [
     {
-      "label": "SEC EDGAR \u2014 SpaceX filings (CIK 1181412)",
+      "label": "SpaceX's filings on the SEC's EDGAR database",
       "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=1181412&type=&dateb=&owner=include&count=40"
     },
     {
-      "label": "SEC EDGAR full-text search \u2014 NPORT-P fund holdings",
+      "label": "SEC search for funds that list SpaceX in their holdings reports",
       "url": "https://efts.sec.gov/LATEST/search-index?q=%22Space+Exploration+Technologies%22&forms=NPORT-P"
     },
     {
-      "label": "Expected IPO terms as reported (Reuters / Bloomberg / CNBC, Jun 2026)",
+      "label": "Expected IPO details, as reported by Reuters, Bloomberg and CNBC (June 2026)",
       "url": "https://www.reuters.com/"
     },
     {
-      "label": "U.S. DOL EBSA \u2014 Form 5500 datasets (employer & government plans)",
+      "label": "SpaceX's IPO filing — the ownership section",
+      "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026040364/0001628280-26-040364-index.htm"
+    },
+    {
+      "label": "U.S. Labor Department — retirement-plan (Form 5500) data",
       "url": "https://www.dol.gov/agencies/ebsa/about-ebsa/our-activities/public-disclosure/foia/form-5500-datasets"
     }
   ],
   "notes": [
-    "Pre-IPO, IPO share allocations are private and not publicly disclosed in real time. 'Fund holders' are registered funds that already report a SpaceX position in their NPORT-P filings.",
-    "Most SpaceX equity is held privately \u2014 by insiders, employees, and venture investors \u2014 and never appears in fund filings. The S-1 'Security Ownership' table ('Insiders & 5% owners') discloses every holder of more than 5% of a share class, plus officers and directors.",
-    "Retirement exposure: many funds here are common 401(k)/IRA options (tickers shown), and target-date funds can hold SpaceX indirectly (see 'Retirement & 401(k)').",
-    "'Institutional buyers (13F)' populates after the first 13F-HR filings covering the IPO quarter post, ~mid-August 2026.",
-    "Fund figures are aggregated across share classes from the most recent NPORT-P period available; implied dollar values under 'Insiders & 5% owners' are share counts times the expected IPO price, not market values. Every row links to its source filing."
+    "Right now, before the IPO, who gets shares is private — it isn't announced as it happens. The “Funds that own it” tab lists mutual funds that already report owning a piece of SpaceX in their official holdings reports.",
+    "Most of SpaceX is owned privately — by insiders, employees, and venture-capital firms — and never shows up in fund reports. The “Insiders & big owners” tab comes from SpaceX's IPO filing, which lists everyone who owns more than 5% of a class of shares, plus the company's officers and directors.",
+    "Many funds listed here are common 401(k) and IRA choices (their ticker codes are shown), and target-date funds can own SpaceX indirectly — see the “Retirement & 401(k)” tab.",
+    "The “Big investors” tab fills in after those investors file their first quarterly holdings reports covering the IPO quarter, around mid-August 2026.",
+    "Fund totals add up every share class from each fund's most recent report. The “Value at IPO price” figures under “Insiders & big owners” are just the share count times the expected starting price — not a real market value. Every row links to the official filing it came from."
   ],
-  "disclaimer": "Built from public SEC filings, which post on a delay. For information and transparency only \u2014 not investment advice, an offer, or a solicitation."
+  "disclaimer": "This site is for information only. It's not financial advice, and it's not an offer to buy or sell anything. The numbers come from public filings, which can lag real life by weeks or months."
 }
