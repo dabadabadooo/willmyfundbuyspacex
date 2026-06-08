@@ -233,6 +233,20 @@
     ]
   },
   {
+    "registrant": "FIDELITY SECURITIES FUND",
+    "fund": "Fidelity Blue Chip Growth K6 Fund",
+    "series_id": "S000057284",
+    "value_usd": 464107032.0,
+    "pct_of_fund": 2.5726,
+    "period": "2026-01-31",
+    "form": "NPORT-P",
+    "filed": "2026-03-25",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/754510/000003540226001924/0000035402-26-001924-index.htm",
+    "tickers": [
+      "FBCGX"
+    ]
+  },
+  {
     "registrant": "BARON INVESTMENT FUNDS TRUST (f/k/a BARON ASSET FUND)",
     "fund": "BARON ASSET FUND",
     "series_id": "S000000582",
@@ -260,20 +274,6 @@
     "filing_index": "https://www.sec.gov/Archives/edgar/data/707823/000003540226002602/0000035402-26-002602-index.htm",
     "tickers": [
       "FMILX"
-    ]
-  },
-  {
-    "registrant": "FIDELITY SECURITIES FUND",
-    "fund": "Fidelity Blue Chip Growth K6 Fund",
-    "series_id": "S000057284",
-    "value_usd": 233707104.0,
-    "pct_of_fund": 1.2616,
-    "period": "2025-10-31",
-    "form": "NPORT-P",
-    "filed": "2025-12-23",
-    "filing_index": "https://www.sec.gov/Archives/edgar/data/754510/000003540225002882/0000035402-25-002882-index.htm",
-    "tickers": [
-      "FBCGX"
     ]
   },
   {
@@ -590,6 +590,20 @@
     ]
   },
   {
+    "registrant": "FIDELITY TREND FUND",
+    "fund": "Fidelity Trend Fund",
+    "series_id": "S000007496",
+    "value_usd": 9741915.0,
+    "pct_of_fund": 0.2353,
+    "period": "2026-03-31",
+    "form": "NPORT-P",
+    "filed": "2026-05-26",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/35402/000003540226003439/0000035402-26-003439-index.htm",
+    "tickers": [
+      "FTRNX"
+    ]
+  },
+  {
     "registrant": "FIDELITY INVESTMENT TRUST",
     "fund": "Fidelity Pacific Basin Fund",
     "series_id": "S000007101",
@@ -633,6 +647,20 @@
     "filed": "2026-05-26",
     "filing_index": "https://www.sec.gov/Archives/edgar/data/720318/000003540226003509/0000035402-26-003509-index.htm",
     "tickers": []
+  },
+  {
+    "registrant": "FIDELITY SECURITIES FUND",
+    "fund": "Fidelity OTC K6 Portfolio",
+    "series_id": "S000065698",
+    "value_usd": 6904400.0,
+    "pct_of_fund": 0.2393,
+    "period": "2026-01-31",
+    "form": "NPORT-P",
+    "filed": "2026-03-25",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/754510/000003540226002016/0000035402-26-002016-index.htm",
+    "tickers": [
+      "FOKFX"
+    ]
   },
   {
     "registrant": "Fidelity Central Investment Portfolios LLC",
@@ -740,20 +768,6 @@
       "FEATX",
       "FERIX",
       "FIQPX"
-    ]
-  },
-  {
-    "registrant": "FIDELITY SECURITIES FUND",
-    "fund": "Fidelity OTC K6 Portfolio",
-    "series_id": "S000065698",
-    "value_usd": 1971600.0,
-    "pct_of_fund": 0.0678,
-    "period": "2025-10-31",
-    "form": "NPORT-P",
-    "filed": "2025-12-23",
-    "filing_index": "https://www.sec.gov/Archives/edgar/data/754510/000003540225002967/0000035402-25-002967-index.htm",
-    "tickers": [
-      "FOKFX"
     ]
   },
   {
