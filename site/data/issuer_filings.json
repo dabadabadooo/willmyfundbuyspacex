@@ -1,5 +1,13 @@
 [
   {
+    "form": "FWP",
+    "label": "Free writing prospectus",
+    "filed": "2026-06-11",
+    "accession": "0001628280-26-042466",
+    "primary_doc": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026042466/spaceexplorationtechnologi.htm",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026042466/0001628280-26-042466-index.htm"
+  },
+  {
     "form": "8-A12B",
     "label": "Securities registration (exchange listing)",
     "filed": "2026-06-10",
