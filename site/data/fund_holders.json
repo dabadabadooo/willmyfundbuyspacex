@@ -3,12 +3,12 @@
     "registrant": "FIDELITY CONTRAFUND",
     "fund": "Fidelity Contrafund",
     "series_id": "S000006037",
-    "value_usd": 5816409420.24,
-    "pct_of_fund": 3.2988,
-    "period": "2025-12-31",
+    "value_usd": 8048242003.23,
+    "pct_of_fund": 5.1002,
+    "period": "2026-03-31",
     "form": "NPORT-P",
-    "filed": "2026-02-24",
-    "filing_index": "https://www.sec.gov/Archives/edgar/data/24238/000003540226001161/0000035402-26-001161-index.htm",
+    "filed": "2026-05-26",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/24238/000003540226003312/0000035402-26-003312-index.htm",
     "tickers": [
       "FCNTX",
       "FCNKX"
@@ -470,6 +470,24 @@
       "BFTHX",
       "BFTIX",
       "BFTUX"
+    ]
+  },
+  {
+    "registrant": "FIDELITY ADVISOR SERIES I",
+    "fund": "Fidelity Advisor Equity Growth Fund",
+    "series_id": "S000005121",
+    "value_usd": 48602150.64,
+    "pct_of_fund": 0.4015,
+    "period": "2026-02-28",
+    "form": "NPORT-P",
+    "filed": "2026-04-24",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/722574/000003540226002549/0000035402-26-002549-index.htm",
+    "tickers": [
+      "EPGAX",
+      "EPGCX",
+      "FAEGX",
+      "EQPGX",
+      "FZAFX"
     ]
   },
   {
