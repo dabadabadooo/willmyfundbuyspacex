@@ -1,6 +1,6 @@
 {
   "project": "SpaceX IPO \u2014 Fund Exposure Tracker",
-  "last_updated_utc": "2026-06-15T20:47:23+00:00",
+  "last_updated_utc": "2026-06-16T02:54:02+00:00",
   "ipo": {
     "status": "Pre-IPO (roadshow underway)",
     "expected_pricing_date": "2026-06-11",
@@ -15,7 +15,7 @@
     "cik": 1181412
   },
   "counts": {
-    "issuer_filings": 15,
+    "issuer_filings": 16,
     "fund_positions": 57,
     "institutional_13f": 0,
     "principal_holders": 9,
