@@ -233,20 +233,6 @@
     ]
   },
   {
-    "registrant": "FIDELITY SECURITIES FUND",
-    "fund": "Fidelity Blue Chip Growth K6 Fund",
-    "series_id": "S000057284",
-    "value_usd": 464107032.0,
-    "pct_of_fund": 2.5726,
-    "period": "2026-01-31",
-    "form": "NPORT-P",
-    "filed": "2026-03-25",
-    "filing_index": "https://www.sec.gov/Archives/edgar/data/754510/000003540226001924/0000035402-26-001924-index.htm",
-    "tickers": [
-      "FBCGX"
-    ]
-  },
-  {
     "registrant": "BARON INVESTMENT FUNDS TRUST (f/k/a BARON ASSET FUND)",
     "fund": "BARON ASSET FUND",
     "series_id": "S000000582",
@@ -274,6 +260,20 @@
     "filing_index": "https://www.sec.gov/Archives/edgar/data/707823/000003540226002602/0000035402-26-002602-index.htm",
     "tickers": [
       "FMILX"
+    ]
+  },
+  {
+    "registrant": "FIDELITY SECURITIES FUND",
+    "fund": "Fidelity Blue Chip Growth K6 Fund",
+    "series_id": "S000057284",
+    "value_usd": 233707104.0,
+    "pct_of_fund": 1.2616,
+    "period": "2025-10-31",
+    "form": "NPORT-P",
+    "filed": "2025-12-23",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/754510/000003540225002882/0000035402-25-002882-index.htm",
+    "tickers": [
+      "FBCGX"
     ]
   },
   {
@@ -342,8 +342,8 @@
     "pct_of_fund": 2.8386,
     "period": "2026-03-31",
     "form": "NPORT-P",
-    "filed": "2026-05-29",
-    "filing_index": "https://www.sec.gov/Archives/edgar/data/2044519/000141036826056381/0001410368-26-056381-index.htm",
+    "filed": "2026-06-16",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/2044519/000141036826061868/0001410368-26-061868-index.htm",
     "tickers": []
   },
   {
