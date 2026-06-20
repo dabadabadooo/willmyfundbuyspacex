@@ -46,6 +46,26 @@
     ]
   },
   {
+    "registrant": "FIDELITY SECURITIES FUND",
+    "fund": "Fidelity Blue Chip Growth Fund",
+    "series_id": "S000007195",
+    "value_usd": 2187888164.0,
+    "pct_of_fund": 2.4514,
+    "period": "2026-01-31",
+    "form": "NPORT-P",
+    "filed": "2026-03-25",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/754510/000003540226001932/0000035402-26-001932-index.htm",
+    "tickers": [
+      "FBGRX",
+      "FBGKX",
+      "FBCHX",
+      "FBCEX",
+      "FBCJX",
+      "FBCKX",
+      "FBCCX"
+    ]
+  },
+  {
     "registrant": "FIDELITY CONTRAFUND",
     "fund": "Fidelity Advisor New Insights Fund",
     "series_id": "S000006036",
@@ -95,26 +115,6 @@
     "filing_index": "https://www.sec.gov/Archives/edgar/data/24238/000003540226003310/0000035402-26-003310-index.htm",
     "tickers": [
       "FLCNX"
-    ]
-  },
-  {
-    "registrant": "FIDELITY SECURITIES FUND",
-    "fund": "Fidelity Blue Chip Growth Fund",
-    "series_id": "S000007195",
-    "value_usd": 1101739408.0,
-    "pct_of_fund": 1.2594,
-    "period": "2025-10-31",
-    "form": "NPORT-P",
-    "filed": "2025-12-23",
-    "filing_index": "https://www.sec.gov/Archives/edgar/data/754510/000003540225002869/0000035402-25-002869-index.htm",
-    "tickers": [
-      "FBGRX",
-      "FBGKX",
-      "FBCHX",
-      "FBCEX",
-      "FBCJX",
-      "FBCKX",
-      "FBCCX"
     ]
   },
   {
@@ -192,6 +192,18 @@
     ]
   },
   {
+    "registrant": "StepStone Private Venture & Growth Fund",
+    "fund": "StepStone Private Venture and Growth Fund",
+    "series_id": null,
+    "value_usd": 586533319.47,
+    "pct_of_fund": 9.1554,
+    "period": "2026-03-31",
+    "form": "NPORT-P",
+    "filed": "2026-05-29",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/1918642/000119312526247111/0001193125-26-247111-index.htm",
+    "tickers": []
+  },
+  {
     "registrant": "FIDELITY PURITAN TRUST",
     "fund": "Fidelity Puritan Fund",
     "series_id": "S000007153",
@@ -219,18 +231,6 @@
     "tickers": [
       "FVWSX"
     ]
-  },
-  {
-    "registrant": "StepStone Private Venture & Growth Fund",
-    "fund": "StepStone Private Venture and Growth Fund",
-    "series_id": null,
-    "value_usd": 339096134.0,
-    "pct_of_fund": 7.2505,
-    "period": "2025-12-31",
-    "form": "NPORT-P",
-    "filed": "2026-03-23",
-    "filing_index": "https://www.sec.gov/Archives/edgar/data/1918642/000119312526119313/0001193125-26-119313-index.htm",
-    "tickers": []
   },
   {
     "registrant": "BARON INVESTMENT FUNDS TRUST (f/k/a BARON ASSET FUND)",
@@ -391,6 +391,26 @@
     "tickers": []
   },
   {
+    "registrant": "FIDELITY PURITAN TRUST",
+    "fund": "Fidelity Balanced Fund",
+    "series_id": "S000007151",
+    "value_usd": 79778385.0,
+    "pct_of_fund": 0.1283,
+    "period": "2026-02-28",
+    "form": "NPORT-P",
+    "filed": "2026-04-24",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/81205/000003540226002538/0000035402-26-002538-index.htm",
+    "tickers": [
+      "FBALX",
+      "FBAKX",
+      "FBAUX",
+      "FBARX",
+      "FBAVX",
+      "FBAOX",
+      "FBAQX"
+    ]
+  },
+  {
     "registrant": "BARON SELECT FUNDS",
     "fund": "Baron Global Advantage Fund",
     "series_id": "S000036767",
@@ -405,6 +425,18 @@
       "BGAIX",
       "BGLUX"
     ]
+  },
+  {
+    "registrant": "ARK Venture Fund",
+    "fund": "ARK Venture Fund",
+    "series_id": null,
+    "value_usd": 60579171.92,
+    "pct_of_fund": 10.9327,
+    "period": "2026-01-30",
+    "form": "NPORT-P",
+    "filed": "2026-03-31",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/1905088/000094040026012609/0000940400-26-012609-index.htm",
+    "tickers": []
   },
   {
     "registrant": "FRANKLIN STRATEGIC SERIES",
@@ -487,26 +519,6 @@
     ]
   },
   {
-    "registrant": "FIDELITY PURITAN TRUST",
-    "fund": "Fidelity Balanced Fund",
-    "series_id": "S000007151",
-    "value_usd": 31672800.0,
-    "pct_of_fund": 0.0515,
-    "period": "2025-11-30",
-    "form": "NPORT-P",
-    "filed": "2026-01-23",
-    "filing_index": "https://www.sec.gov/Archives/edgar/data/81205/000003540226000407/0000035402-26-000407-index.htm",
-    "tickers": [
-      "FBALX",
-      "FBAKX",
-      "FBAUX",
-      "FBARX",
-      "FBAVX",
-      "FBAOX",
-      "FBAQX"
-    ]
-  },
-  {
     "registrant": "Baron ETF Trust",
     "fund": "Baron First Principles ETF",
     "series_id": "S000096481",
@@ -519,18 +531,6 @@
     "tickers": [
       "RONB"
     ]
-  },
-  {
-    "registrant": "ARK Venture Fund",
-    "fund": "ARK Venture Fund",
-    "series_id": null,
-    "value_usd": 28995138.24,
-    "pct_of_fund": 7.668,
-    "period": "2025-10-31",
-    "form": "NPORT-P",
-    "filed": "2025-12-29",
-    "filing_index": "https://www.sec.gov/Archives/edgar/data/1905088/000094040025014993/0000940400-25-014993-index.htm",
-    "tickers": []
   },
   {
     "registrant": "FIDELITY HASTINGS STREET TRUST",
