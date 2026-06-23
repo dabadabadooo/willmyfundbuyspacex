@@ -233,20 +233,6 @@
     ]
   },
   {
-    "registrant": "FIDELITY SECURITIES FUND",
-    "fund": "Fidelity Blue Chip Growth K6 Fund",
-    "series_id": "S000057284",
-    "value_usd": 464107032.0,
-    "pct_of_fund": 2.5726,
-    "period": "2026-01-31",
-    "form": "NPORT-P",
-    "filed": "2026-03-25",
-    "filing_index": "https://www.sec.gov/Archives/edgar/data/754510/000003540226001924/0000035402-26-001924-index.htm",
-    "tickers": [
-      "FBCGX"
-    ]
-  },
-  {
     "registrant": "BARON INVESTMENT FUNDS TRUST (f/k/a BARON ASSET FUND)",
     "fund": "BARON ASSET FUND",
     "series_id": "S000000582",
@@ -274,6 +260,20 @@
     "filing_index": "https://www.sec.gov/Archives/edgar/data/707823/000003540226002602/0000035402-26-002602-index.htm",
     "tickers": [
       "FMILX"
+    ]
+  },
+  {
+    "registrant": "FIDELITY SECURITIES FUND",
+    "fund": "Fidelity Blue Chip Growth K6 Fund",
+    "series_id": "S000057284",
+    "value_usd": 233707104.0,
+    "pct_of_fund": 1.2616,
+    "period": "2025-10-31",
+    "form": "NPORT-P",
+    "filed": "2025-12-23",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/754510/000003540225002882/0000035402-25-002882-index.htm",
+    "tickers": [
+      "FBCGX"
     ]
   },
   {
@@ -367,6 +367,18 @@
     ]
   },
   {
+    "registrant": "ARK Venture Fund",
+    "fund": "ARK Venture Fund",
+    "series_id": null,
+    "value_usd": 107358335.2,
+    "pct_of_fund": 12.4481,
+    "period": "2026-04-30",
+    "form": "NPORT-P",
+    "filed": "2026-06-23",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/1905088/000094040026025087/0000940400-26-025087-index.htm",
+    "tickers": []
+  },
+  {
     "registrant": "Destiny Tech100 Inc.  (DXYZ)",
     "fund": "Destiny Tech100 Inc.",
     "series_id": null,
@@ -425,18 +437,6 @@
       "BGAIX",
       "BGLUX"
     ]
-  },
-  {
-    "registrant": "ARK Venture Fund",
-    "fund": "ARK Venture Fund",
-    "series_id": null,
-    "value_usd": 60579171.92,
-    "pct_of_fund": 10.9327,
-    "period": "2026-01-30",
-    "form": "NPORT-P",
-    "filed": "2026-03-31",
-    "filing_index": "https://www.sec.gov/Archives/edgar/data/1905088/000094040026012609/0000940400-26-012609-index.htm",
-    "tickers": []
   },
   {
     "registrant": "FRANKLIN STRATEGIC SERIES",
@@ -587,6 +587,20 @@
     "filing_index": "https://www.sec.gov/Archives/edgar/data/927384/000003540226003441/0000035402-26-003441-index.htm",
     "tickers": [
       "QBA2Q"
+    ]
+  },
+  {
+    "registrant": "FIDELITY TREND FUND",
+    "fund": "Fidelity Trend Fund",
+    "series_id": "S000007496",
+    "value_usd": 9741915.0,
+    "pct_of_fund": 0.2353,
+    "period": "2026-03-31",
+    "form": "NPORT-P",
+    "filed": "2026-05-26",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/35402/000003540226003439/0000035402-26-003439-index.htm",
+    "tickers": [
+      "FTRNX"
     ]
   },
   {
