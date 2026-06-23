@@ -590,20 +590,6 @@
     ]
   },
   {
-    "registrant": "FIDELITY TREND FUND",
-    "fund": "Fidelity Trend Fund",
-    "series_id": "S000007496",
-    "value_usd": 9741915.0,
-    "pct_of_fund": 0.2353,
-    "period": "2026-03-31",
-    "form": "NPORT-P",
-    "filed": "2026-05-26",
-    "filing_index": "https://www.sec.gov/Archives/edgar/data/35402/000003540226003439/0000035402-26-003439-index.htm",
-    "tickers": [
-      "FTRNX"
-    ]
-  },
-  {
     "registrant": "FIDELITY INVESTMENT TRUST",
     "fund": "Fidelity Pacific Basin Fund",
     "series_id": "S000007101",
