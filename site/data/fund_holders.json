@@ -423,6 +423,24 @@
     ]
   },
   {
+    "registrant": "FRANKLIN STRATEGIC SERIES",
+    "fund": "Franklin Growth Opportunities Fund",
+    "series_id": "S000006878",
+    "value_usd": 75227067.63,
+    "pct_of_fund": 1.6782,
+    "period": "2026-04-30",
+    "form": "NPORT-P",
+    "filed": "2026-06-24",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/872625/000207169126014424/0002071691-26-014424-index.htm",
+    "tickers": [
+      "FGRAX",
+      "FKACX",
+      "FRAAX",
+      "FKARX",
+      "FOPPX"
+    ]
+  },
+  {
     "registrant": "BARON SELECT FUNDS",
     "fund": "Baron Global Advantage Fund",
     "series_id": "S000036767",
@@ -436,24 +454,6 @@
       "BGAFX",
       "BGAIX",
       "BGLUX"
-    ]
-  },
-  {
-    "registrant": "FRANKLIN STRATEGIC SERIES",
-    "fund": "Franklin Growth Opportunities Fund",
-    "series_id": "S000006878",
-    "value_usd": 60142797.0,
-    "pct_of_fund": 1.3685,
-    "period": "2026-01-31",
-    "form": "NPORT-P",
-    "filed": "2026-03-27",
-    "filing_index": "https://www.sec.gov/Archives/edgar/data/872625/000207169126007553/0002071691-26-007553-index.htm",
-    "tickers": [
-      "FGRAX",
-      "FKACX",
-      "FRAAX",
-      "FKARX",
-      "FOPPX"
     ]
   },
   {
