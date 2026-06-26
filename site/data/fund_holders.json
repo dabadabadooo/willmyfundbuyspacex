@@ -637,6 +637,22 @@
     ]
   },
   {
+    "registrant": "T. Rowe Price International Funds, Inc.",
+    "fund": "T. Rowe Price Global Stock Fund",
+    "series_id": "S000001497",
+    "value_usd": 7298449.3,
+    "pct_of_fund": 0.0893,
+    "period": "2026-04-30",
+    "form": "NPORT-P",
+    "filed": "2026-06-25",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/313212/000109926326008016/0001099263-26-008016-index.htm",
+    "tickers": [
+      "PRGSX",
+      "PAGSX",
+      "TRGLX"
+    ]
+  },
+  {
     "registrant": "VARIABLE INSURANCE PRODUCTS FUND IV",
     "fund": "VIP Technology Portfolio",
     "series_id": "S000007755",
