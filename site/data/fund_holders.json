@@ -31,6 +31,26 @@
     ]
   },
   {
+    "registrant": "FIDELITY SECURITIES FUND",
+    "fund": "Fidelity Blue Chip Growth Fund",
+    "series_id": "S000007195",
+    "value_usd": 3127809266.37,
+    "pct_of_fund": 3.2815,
+    "period": "2026-04-30",
+    "form": "NPORT-P",
+    "filed": "2026-06-26",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/754510/000003540226004040/0000035402-26-004040-index.htm",
+    "tickers": [
+      "FBGRX",
+      "FBGKX",
+      "FBCHX",
+      "FBCEX",
+      "FBCJX",
+      "FBCKX",
+      "FBCCX"
+    ]
+  },
+  {
     "registrant": "FIDELITY MT VERNON STREET TRUST",
     "fund": "Fidelity Growth Company Fund",
     "series_id": "S000007119",
@@ -47,22 +67,22 @@
   },
   {
     "registrant": "FIDELITY SECURITIES FUND",
-    "fund": "Fidelity Blue Chip Growth Fund",
-    "series_id": "S000007195",
-    "value_usd": 2187888164.0,
-    "pct_of_fund": 2.4514,
-    "period": "2026-01-31",
+    "fund": "Fidelity OTC Portfolio",
+    "series_id": "S000007191",
+    "value_usd": 1987137917.64,
+    "pct_of_fund": 4.9219,
+    "period": "2026-04-30",
     "form": "NPORT-P",
-    "filed": "2026-03-25",
-    "filing_index": "https://www.sec.gov/Archives/edgar/data/754510/000003540226001932/0000035402-26-001932-index.htm",
+    "filed": "2026-06-26",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/754510/000003540226004133/0000035402-26-004133-index.htm",
     "tickers": [
-      "FBGRX",
-      "FBGKX",
-      "FBCHX",
-      "FBCEX",
-      "FBCJX",
-      "FBCKX",
-      "FBCCX"
+      "FOCPX",
+      "FOCKX",
+      "FOTJX",
+      "FOTGX",
+      "FOTDX",
+      "FOTEX",
+      "FOTHX"
     ]
   },
   {
@@ -81,26 +101,6 @@
       "FNITX",
       "FINSX",
       "FZANX"
-    ]
-  },
-  {
-    "registrant": "FIDELITY SECURITIES FUND",
-    "fund": "Fidelity OTC Portfolio",
-    "series_id": "S000007191",
-    "value_usd": 1469908870.0,
-    "pct_of_fund": 4.0359,
-    "period": "2026-01-31",
-    "form": "NPORT-P",
-    "filed": "2026-03-25",
-    "filing_index": "https://www.sec.gov/Archives/edgar/data/754510/000003540226002031/0000035402-26-002031-index.htm",
-    "tickers": [
-      "FOCPX",
-      "FOCKX",
-      "FOTJX",
-      "FOTGX",
-      "FOTDX",
-      "FOTEX",
-      "FOTHX"
     ]
   },
   {
@@ -171,6 +171,20 @@
     "filing_index": "https://www.sec.gov/Archives/edgar/data/707823/000003540226002630/0000035402-26-002630-index.htm",
     "tickers": [
       "FCGSX"
+    ]
+  },
+  {
+    "registrant": "FIDELITY SECURITIES FUND",
+    "fund": "Fidelity Blue Chip Growth K6 Fund",
+    "series_id": "S000057284",
+    "value_usd": 668059456.68,
+    "pct_of_fund": 3.4115,
+    "period": "2026-04-30",
+    "form": "NPORT-P",
+    "filed": "2026-06-26",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/754510/000003540226004034/0000035402-26-004034-index.htm",
+    "tickers": [
+      "FBCGX"
     ]
   },
   {
@@ -263,20 +277,6 @@
     ]
   },
   {
-    "registrant": "FIDELITY SECURITIES FUND",
-    "fund": "Fidelity Blue Chip Growth K6 Fund",
-    "series_id": "S000057284",
-    "value_usd": 233707104.0,
-    "pct_of_fund": 1.2616,
-    "period": "2025-10-31",
-    "form": "NPORT-P",
-    "filed": "2025-12-23",
-    "filing_index": "https://www.sec.gov/Archives/edgar/data/754510/000003540225002882/0000035402-25-002882-index.htm",
-    "tickers": [
-      "FBCGX"
-    ]
-  },
-  {
     "registrant": "Private Shares Fund",
     "fund": "The Private Shares Fund",
     "series_id": null,
@@ -342,8 +342,8 @@
     "pct_of_fund": 2.8386,
     "period": "2026-03-31",
     "form": "NPORT-P",
-    "filed": "2026-06-16",
-    "filing_index": "https://www.sec.gov/Archives/edgar/data/2044519/000141036826061868/0001410368-26-061868-index.htm",
+    "filed": "2026-05-29",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/2044519/000141036826056381/0001410368-26-056381-index.htm",
     "tickers": []
   },
   {
@@ -548,6 +548,20 @@
     ]
   },
   {
+    "registrant": "FIDELITY SECURITIES FUND",
+    "fund": "Fidelity OTC K6 Portfolio",
+    "series_id": "S000065698",
+    "value_usd": 20750805.54,
+    "pct_of_fund": 0.6238,
+    "period": "2026-04-30",
+    "form": "NPORT-P",
+    "filed": "2026-06-26",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/754510/000003540226004135/0000035402-26-004135-index.htm",
+    "tickers": [
+      "FOKFX"
+    ]
+  },
+  {
     "registrant": "Private Shares Fund",
     "fund": "SharesPost 100 Fund",
     "series_id": null,
@@ -605,20 +619,6 @@
   },
   {
     "registrant": "FIDELITY INVESTMENT TRUST",
-    "fund": "Fidelity Pacific Basin Fund",
-    "series_id": "S000007101",
-    "value_usd": 9488919.0,
-    "pct_of_fund": 0.8861,
-    "period": "2026-01-31",
-    "form": "NPORT-P",
-    "filed": "2026-03-25",
-    "filing_index": "https://www.sec.gov/Archives/edgar/data/744822/000003540226002033/0000035402-26-002033-index.htm",
-    "tickers": [
-      "FPBFX"
-    ]
-  },
-  {
-    "registrant": "FIDELITY INVESTMENT TRUST",
     "fund": "Fidelity Japan Fund",
     "series_id": "S000007096",
     "value_usd": 7601155.0,
@@ -663,20 +663,6 @@
     "filed": "2026-05-26",
     "filing_index": "https://www.sec.gov/Archives/edgar/data/720318/000003540226003509/0000035402-26-003509-index.htm",
     "tickers": []
-  },
-  {
-    "registrant": "FIDELITY SECURITIES FUND",
-    "fund": "Fidelity OTC K6 Portfolio",
-    "series_id": "S000065698",
-    "value_usd": 6904400.0,
-    "pct_of_fund": 0.2393,
-    "period": "2026-01-31",
-    "form": "NPORT-P",
-    "filed": "2026-03-25",
-    "filing_index": "https://www.sec.gov/Archives/edgar/data/754510/000003540226002016/0000035402-26-002016-index.htm",
-    "tickers": [
-      "FOKFX"
-    ]
   },
   {
     "registrant": "Fidelity Central Investment Portfolios LLC",
@@ -734,6 +720,20 @@
     "filed": "2025-11-18",
     "filing_index": "https://www.sec.gov/Archives/edgar/data/1557794/000141036825025710/0001410368-25-025710-index.htm",
     "tickers": []
+  },
+  {
+    "registrant": "FIDELITY INVESTMENT TRUST",
+    "fund": "Fidelity Pacific Basin Fund",
+    "series_id": "S000007101",
+    "value_usd": 4778268.0,
+    "pct_of_fund": 0.5657,
+    "period": "2025-07-31",
+    "form": "NPORT-P",
+    "filed": "2025-09-26",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/744822/000003540225000821/0000035402-25-000821-index.htm",
+    "tickers": [
+      "FPBFX"
+    ]
   },
   {
     "registrant": "FIDELITY INVESTMENT TRUST",
@@ -842,18 +842,6 @@
     "form": "NPORT-P",
     "filed": "2019-12-23",
     "filing_index": "https://www.sec.gov/Archives/edgar/data/852254/000175272419201195/0001752724-19-201195-index.htm",
-    "tickers": []
-  },
-  {
-    "registrant": "VARIABLE INSURANCE PRODUCTS FUND III",
-    "fund": "VIP Dynamic Capital Appreciation Portfolio",
-    "series_id": "S000007731",
-    "value_usd": 701417.88,
-    "pct_of_fund": 0.2512,
-    "period": "2026-03-31",
-    "form": "NPORT-P",
-    "filed": "2026-05-26",
-    "filing_index": "https://www.sec.gov/Archives/edgar/data/927384/000003540226003467/0000035402-26-003467-index.htm",
     "tickers": []
   },
   {
