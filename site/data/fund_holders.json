@@ -174,6 +174,20 @@
     ]
   },
   {
+    "registrant": "FIDELITY SECURITIES FUND",
+    "fund": "Fidelity Blue Chip Growth K6 Fund",
+    "series_id": "S000057284",
+    "value_usd": 668059456.68,
+    "pct_of_fund": 3.4115,
+    "period": "2026-04-30",
+    "form": "NPORT-P",
+    "filed": "2026-06-26",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/754510/000003540226004034/0000035402-26-004034-index.htm",
+    "tickers": [
+      "FBCGX"
+    ]
+  },
+  {
     "registrant": "FIDELITY ADVISOR SERIES I",
     "fund": "Fidelity Advisor Growth Opportunities Fund",
     "series_id": "S000005111",
@@ -274,20 +288,6 @@
     "filing_index": "https://www.sec.gov/Archives/edgar/data/707823/000003540226002602/0000035402-26-002602-index.htm",
     "tickers": [
       "FMILX"
-    ]
-  },
-  {
-    "registrant": "FIDELITY SECURITIES FUND",
-    "fund": "Fidelity Blue Chip Growth K6 Fund",
-    "series_id": "S000057284",
-    "value_usd": 233707104.0,
-    "pct_of_fund": 1.2616,
-    "period": "2025-10-31",
-    "form": "NPORT-P",
-    "filed": "2025-12-23",
-    "filing_index": "https://www.sec.gov/Archives/edgar/data/754510/000003540225002882/0000035402-25-002882-index.htm",
-    "tickers": [
-      "FBCGX"
     ]
   },
   {
@@ -423,6 +423,24 @@
     ]
   },
   {
+    "registrant": "FRANKLIN STRATEGIC SERIES",
+    "fund": "Franklin Growth Opportunities Fund",
+    "series_id": "S000006878",
+    "value_usd": 75227067.63,
+    "pct_of_fund": 1.6782,
+    "period": "2026-04-30",
+    "form": "NPORT-P",
+    "filed": "2026-06-24",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/872625/000207169126014424/0002071691-26-014424-index.htm",
+    "tickers": [
+      "FGRAX",
+      "FKACX",
+      "FRAAX",
+      "FKARX",
+      "FOPPX"
+    ]
+  },
+  {
     "registrant": "BARON SELECT FUNDS",
     "fund": "Baron Global Advantage Fund",
     "series_id": "S000036767",
@@ -436,24 +454,6 @@
       "BGAFX",
       "BGAIX",
       "BGLUX"
-    ]
-  },
-  {
-    "registrant": "FRANKLIN STRATEGIC SERIES",
-    "fund": "Franklin Growth Opportunities Fund",
-    "series_id": "S000006878",
-    "value_usd": 60142797.0,
-    "pct_of_fund": 1.3685,
-    "period": "2026-01-31",
-    "form": "NPORT-P",
-    "filed": "2026-03-27",
-    "filing_index": "https://www.sec.gov/Archives/edgar/data/872625/000207169126007553/0002071691-26-007553-index.htm",
-    "tickers": [
-      "FGRAX",
-      "FKACX",
-      "FRAAX",
-      "FKARX",
-      "FOPPX"
     ]
   },
   {
@@ -737,6 +737,20 @@
   },
   {
     "registrant": "FIDELITY INVESTMENT TRUST",
+    "fund": "Fidelity Emerging Asia Fund",
+    "series_id": "S000007102",
+    "value_usd": 4631000.0,
+    "pct_of_fund": 0.2726,
+    "period": "2026-01-31",
+    "form": "NPORT-P",
+    "filed": "2026-03-25",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/744822/000003540226001958/0000035402-26-001958-index.htm",
+    "tickers": [
+      "FSEAX"
+    ]
+  },
+  {
+    "registrant": "FIDELITY INVESTMENT TRUST",
     "fund": "Fidelity China Region Fund",
     "series_id": "S000007108",
     "value_usd": 4210000.0,
@@ -770,20 +784,6 @@
       "FEATX",
       "FERIX",
       "FIQPX"
-    ]
-  },
-  {
-    "registrant": "FIDELITY INVESTMENT TRUST",
-    "fund": "Fidelity Emerging Asia Fund",
-    "series_id": "S000007102",
-    "value_usd": 2332000.0,
-    "pct_of_fund": 0.1933,
-    "period": "2025-07-31",
-    "form": "NPORT-P",
-    "filed": "2025-09-26",
-    "filing_index": "https://www.sec.gov/Archives/edgar/data/744822/000003540225000724/0000035402-25-000724-index.htm",
-    "tickers": [
-      "FSEAX"
     ]
   },
   {
