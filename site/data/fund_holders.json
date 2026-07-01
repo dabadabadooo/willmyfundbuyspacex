@@ -31,6 +31,26 @@
     ]
   },
   {
+    "registrant": "FIDELITY SECURITIES FUND",
+    "fund": "Fidelity Blue Chip Growth Fund",
+    "series_id": "S000007195",
+    "value_usd": 3127809266.37,
+    "pct_of_fund": 3.2815,
+    "period": "2026-04-30",
+    "form": "NPORT-P",
+    "filed": "2026-06-26",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/754510/000003540226004040/0000035402-26-004040-index.htm",
+    "tickers": [
+      "FBGRX",
+      "FBGKX",
+      "FBCHX",
+      "FBCEX",
+      "FBCJX",
+      "FBCKX",
+      "FBCCX"
+    ]
+  },
+  {
     "registrant": "FIDELITY MT VERNON STREET TRUST",
     "fund": "Fidelity Growth Company Fund",
     "series_id": "S000007119",
@@ -43,26 +63,6 @@
     "tickers": [
       "FDGRX",
       "FGCKX"
-    ]
-  },
-  {
-    "registrant": "FIDELITY SECURITIES FUND",
-    "fund": "Fidelity Blue Chip Growth Fund",
-    "series_id": "S000007195",
-    "value_usd": 2187888164.0,
-    "pct_of_fund": 2.4514,
-    "period": "2026-01-31",
-    "form": "NPORT-P",
-    "filed": "2026-03-25",
-    "filing_index": "https://www.sec.gov/Archives/edgar/data/754510/000003540226001932/0000035402-26-001932-index.htm",
-    "tickers": [
-      "FBGRX",
-      "FBGKX",
-      "FBCHX",
-      "FBCEX",
-      "FBCJX",
-      "FBCKX",
-      "FBCCX"
     ]
   },
   {
@@ -132,6 +132,34 @@
     ]
   },
   {
+    "registrant": "BARON SELECT FUNDS",
+    "fund": "Baron Focused Growth Fund",
+    "series_id": "S000022521",
+    "value_usd": 772363244.34,
+    "pct_of_fund": 19.9969,
+    "period": "2026-03-31",
+    "form": "NPORT-P",
+    "filed": "2026-05-22",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/1217673/000141036826049929/0001410368-26-049929-index.htm",
+    "tickers": [
+      "BFGFX",
+      "BFGIX",
+      "BFGUX"
+    ]
+  },
+  {
+    "registrant": "VARIABLE INSURANCE PRODUCTS FUND II",
+    "fund": "VIP Contrafund Portfolio",
+    "series_id": "S000007724",
+    "value_usd": 711344628.09,
+    "pct_of_fund": 2.6822,
+    "period": "2026-03-31",
+    "form": "NPORT-P",
+    "filed": "2026-05-26",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/831016/000003540226003445/0000035402-26-003445-index.htm",
+    "tickers": []
+  },
+  {
     "registrant": "FIDELITY MT VERNON STREET TRUST",
     "fund": "Fidelity Series Growth Company Fund",
     "series_id": "S000042626",
@@ -178,20 +206,16 @@
     ]
   },
   {
-    "registrant": "BARON SELECT FUNDS",
-    "fund": "Baron Focused Growth Fund",
-    "series_id": "S000022521",
-    "value_usd": 617491646.0,
-    "pct_of_fund": 18.1117,
-    "period": "2025-12-31",
+    "registrant": "StepStone Private Venture & Growth Fund",
+    "fund": "StepStone Private Venture and Growth Fund",
+    "series_id": null,
+    "value_usd": 586533319.47,
+    "pct_of_fund": 9.1554,
+    "period": "2026-03-31",
     "form": "NPORT-P",
-    "filed": "2026-03-02",
-    "filing_index": "https://www.sec.gov/Archives/edgar/data/1217673/000141036826021331/0001410368-26-021331-index.htm",
-    "tickers": [
-      "BFGFX",
-      "BFGIX",
-      "BFGUX"
-    ]
+    "filed": "2026-05-29",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/1918642/000119312526247111/0001193125-26-247111-index.htm",
+    "tickers": []
   },
   {
     "registrant": "FIDELITY PURITAN TRUST",
@@ -235,30 +259,6 @@
     "tickers": [
       "FVWSX"
     ]
-  },
-  {
-    "registrant": "VARIABLE INSURANCE PRODUCTS FUND II",
-    "fund": "VIP Contrafund Portfolio",
-    "series_id": "S000007724",
-    "value_usd": 509506241.04,
-    "pct_of_fund": 1.7876,
-    "period": "2025-12-31",
-    "form": "NPORT-P",
-    "filed": "2026-02-24",
-    "filing_index": "https://www.sec.gov/Archives/edgar/data/831016/000003540226001299/0000035402-26-001299-index.htm",
-    "tickers": []
-  },
-  {
-    "registrant": "StepStone Private Venture & Growth Fund",
-    "fund": "StepStone Private Venture and Growth Fund",
-    "series_id": null,
-    "value_usd": 339096134.0,
-    "pct_of_fund": 7.2505,
-    "period": "2025-12-31",
-    "form": "NPORT-P",
-    "filed": "2026-03-23",
-    "filing_index": "https://www.sec.gov/Archives/edgar/data/1918642/000119312526119313/0001193125-26-119313-index.htm",
-    "tickers": []
   },
   {
     "registrant": "BARON INVESTMENT FUNDS TRUST (f/k/a BARON ASSET FUND)",
@@ -367,6 +367,18 @@
     ]
   },
   {
+    "registrant": "ARK Venture Fund",
+    "fund": "ARK Venture Fund",
+    "series_id": null,
+    "value_usd": 107358335.2,
+    "pct_of_fund": 12.4481,
+    "period": "2026-04-30",
+    "form": "NPORT-P",
+    "filed": "2026-06-23",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/1905088/000094040026025087/0000940400-26-025087-index.htm",
+    "tickers": []
+  },
+  {
     "registrant": "Destiny Tech100 Inc.  (DXYZ)",
     "fund": "Destiny Tech100 Inc.",
     "series_id": null,
@@ -389,6 +401,26 @@
     "filed": "2026-05-26",
     "filing_index": "https://www.sec.gov/Archives/edgar/data/927384/000003540226003483/0000035402-26-003483-index.htm",
     "tickers": []
+  },
+  {
+    "registrant": "FIDELITY PURITAN TRUST",
+    "fund": "Fidelity Balanced Fund",
+    "series_id": "S000007151",
+    "value_usd": 79778385.0,
+    "pct_of_fund": 0.1283,
+    "period": "2026-02-28",
+    "form": "NPORT-P",
+    "filed": "2026-04-24",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/81205/000003540226002538/0000035402-26-002538-index.htm",
+    "tickers": [
+      "FBALX",
+      "FBAKX",
+      "FBAUX",
+      "FBARX",
+      "FBAVX",
+      "FBAOX",
+      "FBAQX"
+    ]
   },
   {
     "registrant": "FRANKLIN STRATEGIC SERIES",
@@ -473,23 +505,17 @@
     ]
   },
   {
-    "registrant": "FIDELITY PURITAN TRUST",
-    "fund": "Fidelity Balanced Fund",
-    "series_id": "S000007151",
-    "value_usd": 31672800.0,
-    "pct_of_fund": 0.0515,
-    "period": "2025-11-30",
+    "registrant": "FIDELITY ADVISOR SERIES I",
+    "fund": "Fidelity Advisor Series Growth Opportunities Fund",
+    "series_id": "S000042623",
+    "value_usd": 36207275.22,
+    "pct_of_fund": 3.6102,
+    "period": "2026-02-28",
     "form": "NPORT-P",
-    "filed": "2026-01-23",
-    "filing_index": "https://www.sec.gov/Archives/edgar/data/81205/000003540226000407/0000035402-26-000407-index.htm",
+    "filed": "2026-04-24",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/722574/000003540226002546/0000035402-26-002546-index.htm",
     "tickers": [
-      "FBALX",
-      "FBAKX",
-      "FBAUX",
-      "FBARX",
-      "FBAVX",
-      "FBAOX",
-      "FBAQX"
+      "FAOFX"
     ]
   },
   {
@@ -507,16 +533,19 @@
     ]
   },
   {
-    "registrant": "ARK Venture Fund",
-    "fund": "ARK Venture Fund",
-    "series_id": null,
-    "value_usd": 28995138.24,
-    "pct_of_fund": 7.668,
-    "period": "2025-10-31",
+    "registrant": "FIDELITY HASTINGS STREET TRUST",
+    "fund": "Fidelity Growth Discovery Fund",
+    "series_id": "S000007019",
+    "value_usd": 25842930.84,
+    "pct_of_fund": 0.4512,
+    "period": "2026-03-31",
     "form": "NPORT-P",
-    "filed": "2025-12-29",
-    "filing_index": "https://www.sec.gov/Archives/edgar/data/1905088/000094040025014993/0000940400-25-014993-index.htm",
-    "tickers": []
+    "filed": "2026-05-26",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/35348/000003540226003385/0000035402-26-003385-index.htm",
+    "tickers": [
+      "FDSVX",
+      "FGDKX"
+    ]
   },
   {
     "registrant": "FIDELITY SECURITIES FUND",
@@ -549,29 +578,15 @@
     "fund": "T. Rowe Price Global Growth Stock Fund",
     "series_id": "S000023645",
     "value_usd": 14169150.0,
-    "pct_of_fund": 1.4048,
-    "period": "2025-04-30",
+    "pct_of_fund": 1.3122,
+    "period": "2025-07-31",
     "form": "NPORT-P",
-    "filed": "2025-06-25",
-    "filing_index": "https://www.sec.gov/Archives/edgar/data/313212/000031321225000517/0000313212-25-000517-index.htm",
+    "filed": "2025-09-25",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/313212/000109926325000462/0001099263-25-000462-index.htm",
     "tickers": [
       "RPGEX",
       "PAGLX",
       "RGGIX"
-    ]
-  },
-  {
-    "registrant": "FIDELITY ADVISOR SERIES I",
-    "fund": "Fidelity Advisor Series Growth Opportunities Fund",
-    "series_id": "S000042623",
-    "value_usd": 13754348.0,
-    "pct_of_fund": 1.375,
-    "period": "2025-11-30",
-    "form": "NPORT-P",
-    "filed": "2026-01-23",
-    "filing_index": "https://www.sec.gov/Archives/edgar/data/722574/000003540226000402/0000035402-26-000402-index.htm",
-    "tickers": [
-      "FAOFX"
     ]
   },
   {
@@ -845,12 +860,12 @@
     "registrant": "VARIABLE INSURANCE PRODUCTS FUND IV",
     "fund": "VIP Communication Services Portfolio",
     "series_id": "S000016759",
-    "value_usd": 240264.0,
-    "pct_of_fund": 0.058,
-    "period": "2025-12-31",
+    "value_usd": 421272.0,
+    "pct_of_fund": 0.1187,
+    "period": "2026-03-31",
     "form": "NPORT-P",
-    "filed": "2026-02-24",
-    "filing_index": "https://www.sec.gov/Archives/edgar/data/720318/000003540226001275/0000035402-26-001275-index.htm",
+    "filed": "2026-05-26",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/720318/000003540226003440/0000035402-26-003440-index.htm",
     "tickers": [
       "FFNLX"
     ]
