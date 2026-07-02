@@ -233,6 +233,20 @@
     ]
   },
   {
+    "registrant": "FIDELITY SECURITIES FUND",
+    "fund": "Fidelity Series Blue Chip Growth Fund",
+    "series_id": "S000042624",
+    "value_usd": 541576224.81,
+    "pct_of_fund": 3.067,
+    "period": "2026-04-30",
+    "form": "NPORT-P",
+    "filed": "2026-06-26",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/754510/000003540226004168/0000035402-26-004168-index.htm",
+    "tickers": [
+      "FSBDX"
+    ]
+  },
+  {
     "registrant": "FIDELITY CONTRAFUND",
     "fund": "Fidelity Series Opportunistic Insights Fund",
     "series_id": "S000039220",
@@ -287,20 +301,6 @@
     "filed": "2026-05-27",
     "filing_index": "https://www.sec.gov/Archives/edgar/data/1557265/000119312526241036/0001193125-26-241036-index.htm",
     "tickers": []
-  },
-  {
-    "registrant": "FIDELITY SECURITIES FUND",
-    "fund": "Fidelity Series Blue Chip Growth Fund",
-    "series_id": "S000042624",
-    "value_usd": 193681080.0,
-    "pct_of_fund": 1.2862,
-    "period": "2025-10-31",
-    "form": "NPORT-P",
-    "filed": "2025-12-23",
-    "filing_index": "https://www.sec.gov/Archives/edgar/data/754510/000003540225003008/0000035402-25-003008-index.htm",
-    "tickers": [
-      "FSBDX"
-    ]
   },
   {
     "registrant": "BARON SELECT FUNDS",
