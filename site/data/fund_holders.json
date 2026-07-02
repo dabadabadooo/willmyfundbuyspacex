@@ -233,20 +233,6 @@
     ]
   },
   {
-    "registrant": "FIDELITY SECURITIES FUND",
-    "fund": "Fidelity Series Blue Chip Growth Fund",
-    "series_id": "S000042624",
-    "value_usd": 541576224.81,
-    "pct_of_fund": 3.067,
-    "period": "2026-04-30",
-    "form": "NPORT-P",
-    "filed": "2026-06-26",
-    "filing_index": "https://www.sec.gov/Archives/edgar/data/754510/000003540226004168/0000035402-26-004168-index.htm",
-    "tickers": [
-      "FSBDX"
-    ]
-  },
-  {
     "registrant": "FIDELITY CONTRAFUND",
     "fund": "Fidelity Series Opportunistic Insights Fund",
     "series_id": "S000039220",
@@ -301,6 +287,20 @@
     "filed": "2026-05-27",
     "filing_index": "https://www.sec.gov/Archives/edgar/data/1557265/000119312526241036/0001193125-26-241036-index.htm",
     "tickers": []
+  },
+  {
+    "registrant": "FIDELITY SECURITIES FUND",
+    "fund": "Fidelity Series Blue Chip Growth Fund",
+    "series_id": "S000042624",
+    "value_usd": 193681080.0,
+    "pct_of_fund": 1.2862,
+    "period": "2025-10-31",
+    "form": "NPORT-P",
+    "filed": "2025-12-23",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/754510/000003540225003008/0000035402-25-003008-index.htm",
+    "tickers": [
+      "FSBDX"
+    ]
   },
   {
     "registrant": "BARON SELECT FUNDS",
@@ -619,6 +619,20 @@
   },
   {
     "registrant": "FIDELITY INVESTMENT TRUST",
+    "fund": "Fidelity Pacific Basin Fund",
+    "series_id": "S000007101",
+    "value_usd": 9488919.0,
+    "pct_of_fund": 0.8861,
+    "period": "2026-01-31",
+    "form": "NPORT-P",
+    "filed": "2026-03-25",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/744822/000003540226002033/0000035402-26-002033-index.htm",
+    "tickers": [
+      "FPBFX"
+    ]
+  },
+  {
+    "registrant": "FIDELITY INVESTMENT TRUST",
     "fund": "Fidelity Japan Fund",
     "series_id": "S000007096",
     "value_usd": 7601155.0,
@@ -720,20 +734,6 @@
     "filed": "2025-11-18",
     "filing_index": "https://www.sec.gov/Archives/edgar/data/1557794/000141036825025710/0001410368-25-025710-index.htm",
     "tickers": []
-  },
-  {
-    "registrant": "FIDELITY INVESTMENT TRUST",
-    "fund": "Fidelity Pacific Basin Fund",
-    "series_id": "S000007101",
-    "value_usd": 4778268.0,
-    "pct_of_fund": 0.5657,
-    "period": "2025-07-31",
-    "form": "NPORT-P",
-    "filed": "2025-09-26",
-    "filing_index": "https://www.sec.gov/Archives/edgar/data/744822/000003540225000821/0000035402-25-000821-index.htm",
-    "tickers": [
-      "FPBFX"
-    ]
   },
   {
     "registrant": "FIDELITY INVESTMENT TRUST",
@@ -842,6 +842,18 @@
     "form": "NPORT-P",
     "filed": "2019-12-23",
     "filing_index": "https://www.sec.gov/Archives/edgar/data/852254/000175272419201195/0001752724-19-201195-index.htm",
+    "tickers": []
+  },
+  {
+    "registrant": "VARIABLE INSURANCE PRODUCTS FUND III",
+    "fund": "VIP Dynamic Capital Appreciation Portfolio",
+    "series_id": "S000007731",
+    "value_usd": 701417.88,
+    "pct_of_fund": 0.2512,
+    "period": "2026-03-31",
+    "form": "NPORT-P",
+    "filed": "2026-05-26",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/927384/000003540226003467/0000035402-26-003467-index.htm",
     "tickers": []
   },
   {
