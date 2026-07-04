@@ -737,20 +737,6 @@
   },
   {
     "registrant": "FIDELITY INVESTMENT TRUST",
-    "fund": "Fidelity Emerging Asia Fund",
-    "series_id": "S000007102",
-    "value_usd": 4631000.0,
-    "pct_of_fund": 0.2726,
-    "period": "2026-01-31",
-    "form": "NPORT-P",
-    "filed": "2026-03-25",
-    "filing_index": "https://www.sec.gov/Archives/edgar/data/744822/000003540226001958/0000035402-26-001958-index.htm",
-    "tickers": [
-      "FSEAX"
-    ]
-  },
-  {
-    "registrant": "FIDELITY INVESTMENT TRUST",
     "fund": "Fidelity China Region Fund",
     "series_id": "S000007108",
     "value_usd": 4210000.0,
@@ -784,6 +770,20 @@
       "FEATX",
       "FERIX",
       "FIQPX"
+    ]
+  },
+  {
+    "registrant": "FIDELITY INVESTMENT TRUST",
+    "fund": "Fidelity Emerging Asia Fund",
+    "series_id": "S000007102",
+    "value_usd": 2332000.0,
+    "pct_of_fund": 0.1933,
+    "period": "2025-07-31",
+    "form": "NPORT-P",
+    "filed": "2025-09-26",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/744822/000003540225000724/0000035402-25-000724-index.htm",
+    "tickers": [
+      "FSEAX"
     ]
   },
   {
