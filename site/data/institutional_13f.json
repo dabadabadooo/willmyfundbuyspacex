@@ -1,5 +1,23 @@
 [
   {
+    "manager": "DAGCO, INC.",
+    "form": "13F-HR",
+    "filed": "2026-07-10",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/1767343/000176734326000003/0001767343-26-000003-index.htm"
+  },
+  {
+    "manager": "RVW Wealth, LLC",
+    "form": "13F-HR",
+    "filed": "2026-07-08",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/1756543/000175654326000003/0001756543-26-000003-index.htm"
+  },
+  {
+    "manager": "Arlington Trust Co LLC",
+    "form": "13F-HR",
+    "filed": "2026-07-07",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/1997685/000199768526000010/0001997685-26-000010-index.htm"
+  },
+  {
     "manager": "MassMutual Private Wealth & Trust, FSB",
     "form": "13F-HR",
     "filed": "2026-07-02",
