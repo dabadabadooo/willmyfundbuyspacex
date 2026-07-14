@@ -12,10 +12,22 @@
     "filing_index": "https://www.sec.gov/Archives/edgar/data/1756543/000175654326000003/0001756543-26-000003-index.htm"
   },
   {
+    "manager": "Bank of New Hampshire",
+    "form": "13F-HR",
+    "filed": "2026-07-14",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/1870761/000187076126000003/0001870761-26-000003-index.htm"
+  },
+  {
     "manager": "Arlington Trust Co LLC",
     "form": "13F-HR",
     "filed": "2026-07-07",
     "filing_index": "https://www.sec.gov/Archives/edgar/data/1997685/000199768526000010/0001997685-26-000010-index.htm"
+  },
+  {
+    "manager": "City State Bank",
+    "form": "13F-HR",
+    "filed": "2026-07-14",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/1910666/000191066626000003/0001910666-26-000003-index.htm"
   },
   {
     "manager": "MassMutual Private Wealth & Trust, FSB",
