@@ -60,6 +60,12 @@
     "filing_index": "https://www.sec.gov/Archives/edgar/data/1960144/000106299326003560/0001062993-26-003560-index.htm"
   },
   {
+    "manager": "Robinswood Financial LLC",
+    "form": "13F-HR",
+    "filed": "2026-07-15",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/2139748/000213974826000014/0002139748-26-000014-index.htm"
+  },
+  {
     "manager": "KERR FINANCIAL PLANNING Corp",
     "form": "13F-HR",
     "filed": "2026-07-02",
