@@ -36,10 +36,22 @@
     "filing_index": "https://www.sec.gov/Archives/edgar/data/1910666/000191066626000003/0001910666-26-000003-index.htm"
   },
   {
+    "manager": "TRUST CO OF TOLEDO NA /OH/",
+    "form": "13F-HR",
+    "filed": "2026-07-16",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/1008937/000100893726000003/0001008937-26-000003-index.htm"
+  },
+  {
     "manager": "MassMutual Private Wealth & Trust, FSB",
     "form": "13F-HR",
     "filed": "2026-07-02",
     "filing_index": "https://www.sec.gov/Archives/edgar/data/1103653/000119312526293910/0001193125-26-293910-index.htm"
+  },
+  {
+    "manager": "Keystone Global Partners, LLC",
+    "form": "13F-HR",
+    "filed": "2026-07-16",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/1764057/000176405726000004/0001764057-26-000004-index.htm"
   },
   {
     "manager": "Main Street Group, LTD",
