@@ -1,15 +1,33 @@
 [
   {
+    "manager": "ZEVENBERGEN CAPITAL INVESTMENTS LLC",
+    "form": "13F-HR",
+    "filed": "2026-07-16",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/1276918/000127691826000007/0001276918-26-000007-index.htm"
+  },
+  {
     "manager": "DAGCO, INC.",
     "form": "13F-HR",
     "filed": "2026-07-10",
     "filing_index": "https://www.sec.gov/Archives/edgar/data/1767343/000176734326000003/0001767343-26-000003-index.htm"
   },
   {
+    "manager": "Coastwise Capital Group, LLC",
+    "form": "13F-HR",
+    "filed": "2026-07-16",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/1934500/000193450026000007/0001934500-26-000007-index.htm"
+  },
+  {
     "manager": "RVW Wealth, LLC",
     "form": "13F-HR",
     "filed": "2026-07-08",
     "filing_index": "https://www.sec.gov/Archives/edgar/data/1756543/000175654326000003/0001756543-26-000003-index.htm"
+  },
+  {
+    "manager": "Richardson Capital Management LLC",
+    "form": "13F-HR",
+    "filed": "2026-07-17",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/1621646/000162164626000003/0001621646-26-000003-index.htm"
   },
   {
     "manager": "Bank of New Hampshire",
@@ -30,10 +48,22 @@
     "filing_index": "https://www.sec.gov/Archives/edgar/data/1910666/000191066626000003/0001910666-26-000003-index.htm"
   },
   {
+    "manager": "TRUST CO OF TOLEDO NA /OH/",
+    "form": "13F-HR",
+    "filed": "2026-07-16",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/1008937/000100893726000003/0001008937-26-000003-index.htm"
+  },
+  {
     "manager": "MassMutual Private Wealth & Trust, FSB",
     "form": "13F-HR",
     "filed": "2026-07-02",
     "filing_index": "https://www.sec.gov/Archives/edgar/data/1103653/000119312526293910/0001193125-26-293910-index.htm"
+  },
+  {
+    "manager": "Keystone Global Partners, LLC",
+    "form": "13F-HR",
+    "filed": "2026-07-16",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/1764057/000176405726000004/0001764057-26-000004-index.htm"
   },
   {
     "manager": "Main Street Group, LTD",
@@ -58,6 +88,12 @@
     "form": "13F-HR",
     "filed": "2026-07-08",
     "filing_index": "https://www.sec.gov/Archives/edgar/data/1960144/000106299326003560/0001062993-26-003560-index.htm"
+  },
+  {
+    "manager": "BEACON FINANCIAL GROUP",
+    "form": "13F-HR",
+    "filed": "2026-07-16",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/1591379/000159137926000003/0001591379-26-000003-index.htm"
   },
   {
     "manager": "Robinswood Financial LLC",
