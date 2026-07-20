@@ -18,6 +18,12 @@
     "filing_index": "https://www.sec.gov/Archives/edgar/data/1934500/000193450026000007/0001934500-26-000007-index.htm"
   },
   {
+    "manager": "FORBES J M & CO LLP",
+    "form": "13F-HR",
+    "filed": "2026-07-20",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/1067532/000114036126028924/0001140361-26-028924-index.htm"
+  },
+  {
     "manager": "RVW Wealth, LLC",
     "form": "13F-HR",
     "filed": "2026-07-08",
@@ -36,6 +42,12 @@
     "filing_index": "https://www.sec.gov/Archives/edgar/data/1870761/000187076126000003/0001870761-26-000003-index.htm"
   },
   {
+    "manager": "FIRST UNITED BANK & TRUST",
+    "form": "13F-HR",
+    "filed": "2026-07-20",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/1214183/000110465926085022/0001104659-26-085022-index.htm"
+  },
+  {
     "manager": "Arlington Trust Co LLC",
     "form": "13F-HR",
     "filed": "2026-07-07",
@@ -52,6 +64,12 @@
     "form": "13F-HR",
     "filed": "2026-07-16",
     "filing_index": "https://www.sec.gov/Archives/edgar/data/1008937/000100893726000003/0001008937-26-000003-index.htm"
+  },
+  {
+    "manager": "FIRST HORIZON CORP  (FHN, FHN-PE, FHN-PF, FHN-PH)",
+    "form": "13F-HR",
+    "filed": "2026-07-20",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/36966/000003696626000144/0000036966-26-000144-index.htm"
   },
   {
     "manager": "MassMutual Private Wealth & Trust, FSB",
@@ -124,5 +142,11 @@
     "form": "13F-HR",
     "filed": "2026-07-09",
     "filing_index": "https://www.sec.gov/Archives/edgar/data/1568132/000156813226000005/0001568132-26-000005-index.htm"
+  },
+  {
+    "manager": "Physician Wealth Advisors, Inc.",
+    "form": "13F-HR",
+    "filed": "2026-07-20",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/1795173/000179517326000004/0001795173-26-000004-index.htm"
   }
 ]
