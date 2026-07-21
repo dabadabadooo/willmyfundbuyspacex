@@ -36,6 +36,12 @@
     "filing_index": "https://www.sec.gov/Archives/edgar/data/1621646/000162164626000003/0001621646-26-000003-index.htm"
   },
   {
+    "manager": "LEE DANNER & BASS INC",
+    "form": "13F-HR",
+    "filed": "2026-07-21",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/939219/000093921926000007/0000939219-26-000007-index.htm"
+  },
+  {
     "manager": "Bank of New Hampshire",
     "form": "13F-HR",
     "filed": "2026-07-14",
@@ -108,16 +114,16 @@
     "filing_index": "https://www.sec.gov/Archives/edgar/data/2054100/000205410026000003/0002054100-26-000003-index.htm"
   },
   {
-    "manager": "Strategic Investment Solutions, Inc. /IL",
-    "form": "13F-HR",
-    "filed": "2026-07-08",
-    "filing_index": "https://www.sec.gov/Archives/edgar/data/1960144/000106299326003560/0001062993-26-003560-index.htm"
-  },
-  {
     "manager": "FIRST COMMUNITY TRUST NA",
     "form": "13F-HR",
     "filed": "2026-07-10",
     "filing_index": "https://www.sec.gov/Archives/edgar/data/1130344/000113034426000004/0001130344-26-000004-index.htm"
+  },
+  {
+    "manager": "Strategic Investment Solutions, Inc. /IL",
+    "form": "13F-HR",
+    "filed": "2026-07-08",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/1960144/000106299326003560/0001062993-26-003560-index.htm"
   },
   {
     "manager": "BEACON FINANCIAL GROUP",
@@ -142,6 +148,12 @@
     "form": "13F-HR",
     "filed": "2026-07-07",
     "filing_index": "https://www.sec.gov/Archives/edgar/data/1911322/000191132226000003/0001911322-26-000003-index.htm"
+  },
+  {
+    "manager": "LEAVELL INVESTMENT MANAGEMENT, INC.",
+    "form": "13F-HR",
+    "filed": "2026-07-21",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/924181/000092418126000005/0000924181-26-000005-index.htm"
   },
   {
     "manager": "Financial Management Professionals, Inc.",
