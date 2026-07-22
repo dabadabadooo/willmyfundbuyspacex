@@ -42,6 +42,12 @@
     "filing_index": "https://www.sec.gov/Archives/edgar/data/939219/000093921926000007/0000939219-26-000007-index.htm"
   },
   {
+    "manager": "SOUTHERN MICHIGAN BANK & TRUST",
+    "form": "13F-HR",
+    "filed": "2026-07-21",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/1173227/000114036126029087/0001140361-26-029087-index.htm"
+  },
+  {
     "manager": "Bank of New Hampshire",
     "form": "13F-HR",
     "filed": "2026-07-14",
@@ -96,6 +102,18 @@
     "filing_index": "https://www.sec.gov/Archives/edgar/data/1764057/000176405726000004/0001764057-26-000004-index.htm"
   },
   {
+    "manager": "PROATHLETE WEALTH MANAGEMENT LLC",
+    "form": "13F-HR",
+    "filed": "2026-07-21",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/2012065/000201206526000003/0002012065-26-000003-index.htm"
+  },
+  {
+    "manager": "AMI ASSET MANAGEMENT CORP",
+    "form": "13F-HR",
+    "filed": "2026-07-21",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/1369702/000136970226000010/0001369702-26-000010-index.htm"
+  },
+  {
     "manager": "Main Street Group, LTD",
     "form": "13F-HR",
     "filed": "2026-07-13",
@@ -114,16 +132,16 @@
     "filing_index": "https://www.sec.gov/Archives/edgar/data/2054100/000205410026000003/0002054100-26-000003-index.htm"
   },
   {
-    "manager": "FIRST COMMUNITY TRUST NA",
-    "form": "13F-HR",
-    "filed": "2026-07-10",
-    "filing_index": "https://www.sec.gov/Archives/edgar/data/1130344/000113034426000004/0001130344-26-000004-index.htm"
-  },
-  {
     "manager": "Strategic Investment Solutions, Inc. /IL",
     "form": "13F-HR",
     "filed": "2026-07-08",
     "filing_index": "https://www.sec.gov/Archives/edgar/data/1960144/000106299326003560/0001062993-26-003560-index.htm"
+  },
+  {
+    "manager": "FIRST COMMUNITY TRUST NA",
+    "form": "13F-HR",
+    "filed": "2026-07-10",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/1130344/000113034426000004/0001130344-26-000004-index.htm"
   },
   {
     "manager": "BEACON FINANCIAL GROUP",
