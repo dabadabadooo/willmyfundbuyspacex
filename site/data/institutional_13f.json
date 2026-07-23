@@ -108,6 +108,12 @@
     "filing_index": "https://www.sec.gov/Archives/edgar/data/1103653/000119312526293910/0001193125-26-293910-index.htm"
   },
   {
+    "manager": "SBI Securities Co., Ltd.",
+    "form": "13F-HR",
+    "filed": "2026-07-23",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/1851815/000185181526000003/0001851815-26-000003-index.htm"
+  },
+  {
     "manager": "Keystone Global Partners, LLC",
     "form": "13F-HR",
     "filed": "2026-07-16",
@@ -124,6 +130,12 @@
     "form": "13F-HR",
     "filed": "2026-07-21",
     "filing_index": "https://www.sec.gov/Archives/edgar/data/1369702/000136970226000010/0001369702-26-000010-index.htm"
+  },
+  {
+    "manager": "LOUISBOURG INVESTMENTS INC.",
+    "form": "13F-HR",
+    "filed": "2026-07-23",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/2053050/000205305026000003/0002053050-26-000003-index.htm"
   },
   {
     "manager": "Main Street Group, LTD",
@@ -144,16 +156,16 @@
     "filing_index": "https://www.sec.gov/Archives/edgar/data/2054100/000205410026000003/0002054100-26-000003-index.htm"
   },
   {
-    "manager": "Strategic Investment Solutions, Inc. /IL",
-    "form": "13F-HR",
-    "filed": "2026-07-08",
-    "filing_index": "https://www.sec.gov/Archives/edgar/data/1960144/000106299326003560/0001062993-26-003560-index.htm"
-  },
-  {
     "manager": "FIRST COMMUNITY TRUST NA",
     "form": "13F-HR",
     "filed": "2026-07-10",
     "filing_index": "https://www.sec.gov/Archives/edgar/data/1130344/000113034426000004/0001130344-26-000004-index.htm"
+  },
+  {
+    "manager": "Strategic Investment Solutions, Inc. /IL",
+    "form": "13F-HR",
+    "filed": "2026-07-08",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/1960144/000106299326003560/0001062993-26-003560-index.htm"
   },
   {
     "manager": "BEACON FINANCIAL GROUP",
@@ -166,6 +178,12 @@
     "form": "13F-HR",
     "filed": "2026-07-15",
     "filing_index": "https://www.sec.gov/Archives/edgar/data/2139748/000213974826000014/0002139748-26-000014-index.htm"
+  },
+  {
+    "manager": "VSM Wealth Advisory, LLC",
+    "form": "13F-HR",
+    "filed": "2026-07-23",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/2050660/000205066026000003/0002050660-26-000003-index.htm"
   },
   {
     "manager": "KERR FINANCIAL PLANNING Corp",
