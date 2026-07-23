@@ -156,6 +156,12 @@
     "filing_index": "https://www.sec.gov/Archives/edgar/data/2054100/000205410026000003/0002054100-26-000003-index.htm"
   },
   {
+    "manager": "Investment Research & Advisory Group, Inc.",
+    "form": "13F-HR",
+    "filed": "2026-07-23",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/1802136/000180213626000004/0001802136-26-000004-index.htm"
+  },
+  {
     "manager": "FIRST COMMUNITY TRUST NA",
     "form": "13F-HR",
     "filed": "2026-07-10",
