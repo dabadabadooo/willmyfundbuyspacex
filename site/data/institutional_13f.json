@@ -144,16 +144,16 @@
     "filing_index": "https://www.sec.gov/Archives/edgar/data/2054100/000205410026000003/0002054100-26-000003-index.htm"
   },
   {
-    "manager": "FIRST COMMUNITY TRUST NA",
-    "form": "13F-HR",
-    "filed": "2026-07-10",
-    "filing_index": "https://www.sec.gov/Archives/edgar/data/1130344/000113034426000004/0001130344-26-000004-index.htm"
-  },
-  {
     "manager": "Strategic Investment Solutions, Inc. /IL",
     "form": "13F-HR",
     "filed": "2026-07-08",
     "filing_index": "https://www.sec.gov/Archives/edgar/data/1960144/000106299326003560/0001062993-26-003560-index.htm"
+  },
+  {
+    "manager": "FIRST COMMUNITY TRUST NA",
+    "form": "13F-HR",
+    "filed": "2026-07-10",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/1130344/000113034426000004/0001130344-26-000004-index.htm"
   },
   {
     "manager": "BEACON FINANCIAL GROUP",
