@@ -191,12 +191,12 @@
     "registrant": "FIDELITY ADVISOR SERIES I",
     "fund": "Fidelity Advisor Growth Opportunities Fund",
     "series_id": "S000005111",
-    "value_usd": 627485170.59,
-    "pct_of_fund": 2.1616,
-    "period": "2026-02-28",
+    "value_usd": 627490302.8,
+    "pct_of_fund": 1.7784,
+    "period": "2026-05-31",
     "form": "NPORT-P",
-    "filed": "2026-04-24",
-    "filing_index": "https://www.sec.gov/Archives/edgar/data/722574/000003540226002554/0000035402-26-002554-index.htm",
+    "filed": "2026-07-24",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/722574/000003540226004618/0000035402-26-004618-index.htm",
     "tickers": [
       "FAGAX",
       "FACGX",
@@ -221,12 +221,12 @@
     "registrant": "FIDELITY PURITAN TRUST",
     "fund": "Fidelity Puritan Fund",
     "series_id": "S000007153",
-    "value_usd": 555604582.41,
-    "pct_of_fund": 1.711,
-    "period": "2026-02-28",
+    "value_usd": 555615133.4,
+    "pct_of_fund": 1.642,
+    "period": "2026-05-31",
     "form": "NPORT-P",
-    "filed": "2026-04-24",
-    "filing_index": "https://www.sec.gov/Archives/edgar/data/81205/000003540226002601/0000035402-26-002601-index.htm",
+    "filed": "2026-07-24",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/81205/000003540226004673/0000035402-26-004673-index.htm",
     "tickers": [
       "FPURX",
       "FPUKX"
@@ -454,6 +454,25 @@
       "BGAFX",
       "BGAIX",
       "BGLUX"
+    ]
+  },
+  {
+    "registrant": "FIDELITY SELECT PORTFOLIOS",
+    "fund": "Select Technology Portfolio",
+    "series_id": "S000007484",
+    "value_usd": 58180874.4,
+    "pct_of_fund": 0.1529,
+    "period": "2026-05-31",
+    "form": "NPORT-P",
+    "filed": "2026-07-24",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/320351/000003540226004764/0000035402-26-004764-index.htm",
+    "tickers": [
+      "FSPTX",
+      "FFOJX",
+      "FFOQX",
+      "FFOTX",
+      "FFOMX",
+      "FFONX"
     ]
   },
   {
@@ -694,12 +713,12 @@
     "registrant": "FIDELITY SELECT PORTFOLIOS",
     "fund": "Select Communication Services Portfolio",
     "series_id": "S000007476",
-    "value_usd": 6560258.22,
-    "pct_of_fund": 0.2406,
-    "period": "2026-02-28",
+    "value_usd": 6560382.8,
+    "pct_of_fund": 0.2304,
+    "period": "2026-05-31",
     "form": "NPORT-P",
-    "filed": "2026-04-24",
-    "filing_index": "https://www.sec.gov/Archives/edgar/data/320351/000003540226002653/0000035402-26-002653-index.htm",
+    "filed": "2026-07-24",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/320351/000003540226004745/0000035402-26-004745-index.htm",
     "tickers": [
       "FBMPX",
       "FGJMX",
@@ -808,14 +827,28 @@
     "registrant": "FIDELITY PURITAN TRUST",
     "fund": "Fidelity Balanced K6 Fund",
     "series_id": "S000065701",
-    "value_usd": 1421793.0,
-    "pct_of_fund": 0.0628,
-    "period": "2026-02-28",
+    "value_usd": 1421820.0,
+    "pct_of_fund": 0.0587,
+    "period": "2026-05-31",
     "form": "NPORT-P",
-    "filed": "2026-04-24",
-    "filing_index": "https://www.sec.gov/Archives/edgar/data/81205/000003540226002560/0000035402-26-002560-index.htm",
+    "filed": "2026-07-24",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/81205/000003540226004641/0000035402-26-004641-index.htm",
     "tickers": [
       "FBKFX"
+    ]
+  },
+  {
+    "registrant": "FIDELITY PURITAN TRUST",
+    "fund": "Fidelity Puritan K6 Fund",
+    "series_id": "S000065702",
+    "value_usd": 982109.0,
+    "pct_of_fund": 0.0417,
+    "period": "2026-05-31",
+    "form": "NPORT-P",
+    "filed": "2026-07-24",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/81205/000003540226004680/0000035402-26-004680-index.htm",
+    "tickers": [
+      "FPKFX"
     ]
   },
   {
