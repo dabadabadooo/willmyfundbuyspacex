@@ -6,6 +6,12 @@
     "filing_index": "https://www.sec.gov/Archives/edgar/data/1276918/000127691826000007/0001276918-26-000007-index.htm"
   },
   {
+    "manager": "Berbice Capital Management LLC",
+    "form": "13F-HR",
+    "filed": "2026-07-23",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/2051605/000205160526000003/0002051605-26-000003-index.htm"
+  },
+  {
     "manager": "DAGCO, INC.",
     "form": "13F-HR",
     "filed": "2026-07-10",
@@ -132,6 +138,12 @@
     "filing_index": "https://www.sec.gov/Archives/edgar/data/1369702/000136970226000010/0001369702-26-000010-index.htm"
   },
   {
+    "manager": "MILLER WEALTH ADVISORS, LLC",
+    "form": "13F-HR",
+    "filed": "2026-07-23",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/1908158/000190815826000005/0001908158-26-000005-index.htm"
+  },
+  {
     "manager": "LOUISBOURG INVESTMENTS INC.",
     "form": "13F-HR",
     "filed": "2026-07-23",
@@ -148,6 +160,12 @@
     "form": "13F-HR",
     "filed": "2026-07-20",
     "filing_index": "https://www.sec.gov/Archives/edgar/data/2059321/000205932126000004/0002059321-26-000004-index.htm"
+  },
+  {
+    "manager": "Wealth Architects, LLC",
+    "form": "13F-HR",
+    "filed": "2026-07-23",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/1611518/000161151826000008/0001611518-26-000008-index.htm"
   },
   {
     "manager": "Kentucky Trust Co",
