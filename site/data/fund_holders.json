@@ -698,18 +698,6 @@
     "tickers": []
   },
   {
-    "registrant": "Fidelity Central Investment Portfolios LLC",
-    "fund": "Fidelity U.S. Equity Central Fund",
-    "series_id": "S000070098",
-    "value_usd": 6680320.74,
-    "pct_of_fund": 0.0328,
-    "period": "2026-03-31",
-    "form": "NPORT-P",
-    "filed": "2026-05-26",
-    "filing_index": "https://www.sec.gov/Archives/edgar/data/1303459/000003540226003443/0000035402-26-003443-index.htm",
-    "tickers": []
-  },
-  {
     "registrant": "FIDELITY SELECT PORTFOLIOS",
     "fund": "Select Communication Services Portfolio",
     "series_id": "S000007476",
@@ -827,12 +815,12 @@
     "registrant": "FIDELITY PURITAN TRUST",
     "fund": "Fidelity Balanced K6 Fund",
     "series_id": "S000065701",
-    "value_usd": 1421820.0,
-    "pct_of_fund": 0.0587,
-    "period": "2026-05-31",
+    "value_usd": 1421793.0,
+    "pct_of_fund": 0.0628,
+    "period": "2026-02-28",
     "form": "NPORT-P",
-    "filed": "2026-07-24",
-    "filing_index": "https://www.sec.gov/Archives/edgar/data/81205/000003540226004641/0000035402-26-004641-index.htm",
+    "filed": "2026-04-24",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/81205/000003540226002560/0000035402-26-002560-index.htm",
     "tickers": [
       "FBKFX"
     ]
