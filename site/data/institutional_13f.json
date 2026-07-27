@@ -6,6 +6,24 @@
     "filing_index": "https://www.sec.gov/Archives/edgar/data/1276918/000127691826000007/0001276918-26-000007-index.htm"
   },
   {
+    "manager": "Shengqi Capital (Hong Kong) Ltd",
+    "form": "13F-HR",
+    "filed": "2026-07-27",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/2040405/000204040526000011/0002040405-26-000011-index.htm"
+  },
+  {
+    "manager": "Spear Holdings RSC Ltd",
+    "form": "13F-HR",
+    "filed": "2026-07-27",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/2023475/000094787126000717/0000947871-26-000717-index.htm"
+  },
+  {
+    "manager": "PBCay One RSC Ltd",
+    "form": "13F-HR",
+    "filed": "2026-07-27",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/2013737/000094787126000716/0000947871-26-000716-index.htm"
+  },
+  {
     "manager": "Berbice Capital Management LLC",
     "form": "13F-HR",
     "filed": "2026-07-23",
@@ -156,16 +174,16 @@
     "filing_index": "https://www.sec.gov/Archives/edgar/data/1908158/000190815826000005/0001908158-26-000005-index.htm"
   },
   {
-    "manager": "Main Street Group, LTD",
-    "form": "13F-HR",
-    "filed": "2026-07-13",
-    "filing_index": "https://www.sec.gov/Archives/edgar/data/1965796/000196579626000004/0001965796-26-000004-index.htm"
-  },
-  {
     "manager": "LOUISBOURG INVESTMENTS INC.",
     "form": "13F-HR",
     "filed": "2026-07-23",
     "filing_index": "https://www.sec.gov/Archives/edgar/data/2053050/000205305026000003/0002053050-26-000003-index.htm"
+  },
+  {
+    "manager": "Main Street Group, LTD",
+    "form": "13F-HR",
+    "filed": "2026-07-13",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/1965796/000196579626000004/0001965796-26-000004-index.htm"
   },
   {
     "manager": "PKO Investment Management Joint-Stock Co",
@@ -180,6 +198,12 @@
     "filing_index": "https://www.sec.gov/Archives/edgar/data/1611518/000161151826000008/0001611518-26-000008-index.htm"
   },
   {
+    "manager": "Asset Planning,Inc",
+    "form": "13F-HR",
+    "filed": "2026-07-27",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/2048547/000204854726000003/0002048547-26-000003-index.htm"
+  },
+  {
     "manager": "Kentucky Trust Co",
     "form": "13F-HR",
     "filed": "2026-07-10",
@@ -192,16 +216,16 @@
     "filing_index": "https://www.sec.gov/Archives/edgar/data/1802136/000180213626000004/0001802136-26-000004-index.htm"
   },
   {
-    "manager": "Strategic Investment Solutions, Inc. /IL",
-    "form": "13F-HR",
-    "filed": "2026-07-08",
-    "filing_index": "https://www.sec.gov/Archives/edgar/data/1960144/000106299326003560/0001062993-26-003560-index.htm"
-  },
-  {
     "manager": "FIRST COMMUNITY TRUST NA",
     "form": "13F-HR",
     "filed": "2026-07-10",
     "filing_index": "https://www.sec.gov/Archives/edgar/data/1130344/000113034426000004/0001130344-26-000004-index.htm"
+  },
+  {
+    "manager": "Strategic Investment Solutions, Inc. /IL",
+    "form": "13F-HR",
+    "filed": "2026-07-08",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/1960144/000106299326003560/0001062993-26-003560-index.htm"
   },
   {
     "manager": "BEACON FINANCIAL GROUP",
