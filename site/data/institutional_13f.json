@@ -114,6 +114,18 @@
     "filing_index": "https://www.sec.gov/Archives/edgar/data/1008937/000100893726000003/0001008937-26-000003-index.htm"
   },
   {
+    "manager": "WHITTIER TRUST CO",
+    "form": "13F-HR",
+    "filed": "2026-07-28",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/1137881/000199937126016070/0001999371-26-016070-index.htm"
+  },
+  {
+    "manager": "WHITTIER TRUST CO OF NEVADA INC",
+    "form": "13F-HR",
+    "filed": "2026-07-28",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/1263548/000199937126016069/0001999371-26-016069-index.htm"
+  },
+  {
     "manager": "Oakworth Capital, Inc.  (OAKC)",
     "form": "13F-HR",
     "filed": "2026-07-22",
@@ -286,11 +298,5 @@
     "form": "13F-HR",
     "filed": "2026-07-20",
     "filing_index": "https://www.sec.gov/Archives/edgar/data/1795173/000179517326000004/0001795173-26-000004-index.htm"
-  },
-  {
-    "manager": "Ascentis Wealth Management, LLC",
-    "form": "13F-HR",
-    "filed": "2026-07-27",
-    "filing_index": "https://www.sec.gov/Archives/edgar/data/2032602/000203260226000004/0002032602-26-000004-index.htm"
   }
 ]
