@@ -54,6 +54,12 @@
     "filing_index": "https://www.sec.gov/Archives/edgar/data/1756543/000175654326000003/0001756543-26-000003-index.htm"
   },
   {
+    "manager": "Baldwin Investment Management, LLC",
+    "form": "13F-HR",
+    "filed": "2026-07-28",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/1346378/000134637826000003/0001346378-26-000003-index.htm"
+  },
+  {
     "manager": "Richardson Capital Management LLC",
     "form": "13F-HR",
     "filed": "2026-07-17",
@@ -76,6 +82,12 @@
     "form": "13F-HR",
     "filed": "2026-07-21",
     "filing_index": "https://www.sec.gov/Archives/edgar/data/1173227/000114036126029087/0001140361-26-029087-index.htm"
+  },
+  {
+    "manager": "BankPlus Trust Department",
+    "form": "13F-HR",
+    "filed": "2026-07-28",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/2047270/000204727026000003/0002047270-26-000003-index.htm"
   },
   {
     "manager": "Indiana Trust & Investment Management Co",
@@ -150,6 +162,12 @@
     "filing_index": "https://www.sec.gov/Archives/edgar/data/1103653/000119312526293910/0001193125-26-293910-index.htm"
   },
   {
+    "manager": "PRIVATE TRUST CO NA",
+    "form": "13F-HR",
+    "filed": "2026-07-28",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/1277557/000127755726000003/0001277557-26-000003-index.htm"
+  },
+  {
     "manager": "SBI Securities Co., Ltd.",
     "form": "13F-HR",
     "filed": "2026-07-23",
@@ -192,16 +210,16 @@
     "filing_index": "https://www.sec.gov/Archives/edgar/data/1908158/000190815826000005/0001908158-26-000005-index.htm"
   },
   {
-    "manager": "Main Street Group, LTD",
-    "form": "13F-HR",
-    "filed": "2026-07-13",
-    "filing_index": "https://www.sec.gov/Archives/edgar/data/1965796/000196579626000004/0001965796-26-000004-index.htm"
-  },
-  {
     "manager": "LOUISBOURG INVESTMENTS INC.",
     "form": "13F-HR",
     "filed": "2026-07-23",
     "filing_index": "https://www.sec.gov/Archives/edgar/data/2053050/000205305026000003/0002053050-26-000003-index.htm"
+  },
+  {
+    "manager": "Main Street Group, LTD",
+    "form": "13F-HR",
+    "filed": "2026-07-13",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/1965796/000196579626000004/0001965796-26-000004-index.htm"
   },
   {
     "manager": "PKO Investment Management Joint-Stock Co",
@@ -214,6 +232,12 @@
     "form": "13F-HR",
     "filed": "2026-07-23",
     "filing_index": "https://www.sec.gov/Archives/edgar/data/1611518/000161151826000008/0001611518-26-000008-index.htm"
+  },
+  {
+    "manager": "VESTOR CAPITAL, LLC",
+    "form": "13F-HR",
+    "filed": "2026-07-28",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/1132699/000113269926000004/0001132699-26-000004-index.htm"
   },
   {
     "manager": "Asset Planning,Inc",
@@ -234,16 +258,16 @@
     "filing_index": "https://www.sec.gov/Archives/edgar/data/1802136/000180213626000004/0001802136-26-000004-index.htm"
   },
   {
-    "manager": "Strategic Investment Solutions, Inc. /IL",
-    "form": "13F-HR",
-    "filed": "2026-07-08",
-    "filing_index": "https://www.sec.gov/Archives/edgar/data/1960144/000106299326003560/0001062993-26-003560-index.htm"
-  },
-  {
     "manager": "FIRST COMMUNITY TRUST NA",
     "form": "13F-HR",
     "filed": "2026-07-10",
     "filing_index": "https://www.sec.gov/Archives/edgar/data/1130344/000113034426000004/0001130344-26-000004-index.htm"
+  },
+  {
+    "manager": "Strategic Investment Solutions, Inc. /IL",
+    "form": "13F-HR",
+    "filed": "2026-07-08",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/1960144/000106299326003560/0001062993-26-003560-index.htm"
   },
   {
     "manager": "BEACON FINANCIAL GROUP",
@@ -274,29 +298,5 @@
     "form": "13F-HR",
     "filed": "2026-07-07",
     "filing_index": "https://www.sec.gov/Archives/edgar/data/1911322/000191132226000003/0001911322-26-000003-index.htm"
-  },
-  {
-    "manager": "LEAVELL INVESTMENT MANAGEMENT, INC.",
-    "form": "13F-HR",
-    "filed": "2026-07-21",
-    "filing_index": "https://www.sec.gov/Archives/edgar/data/924181/000092418126000005/0000924181-26-000005-index.htm"
-  },
-  {
-    "manager": "Financial Management Professionals, Inc.",
-    "form": "13F-HR",
-    "filed": "2026-07-09",
-    "filing_index": "https://www.sec.gov/Archives/edgar/data/1568132/000156813226000005/0001568132-26-000005-index.htm"
-  },
-  {
-    "manager": "BARTLETT & CO. WEALTH MANAGEMENT LLC",
-    "form": "13F-HR",
-    "filed": "2026-07-24",
-    "filing_index": "https://www.sec.gov/Archives/edgar/data/2010186/000201018626000003/0002010186-26-000003-index.htm"
-  },
-  {
-    "manager": "Physician Wealth Advisors, Inc.",
-    "form": "13F-HR",
-    "filed": "2026-07-20",
-    "filing_index": "https://www.sec.gov/Archives/edgar/data/1795173/000179517326000004/0001795173-26-000004-index.htm"
   }
 ]
