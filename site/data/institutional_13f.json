@@ -162,6 +162,12 @@
     "filing_index": "https://www.sec.gov/Archives/edgar/data/2012065/000201206526000003/0002012065-26-000003-index.htm"
   },
   {
+    "manager": "Trivant Custom Portfolio Group, LLC",
+    "form": "13F-HR",
+    "filed": "2026-07-27",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/1977992/000197799226000003/0001977992-26-000003-index.htm"
+  },
+  {
     "manager": "AMI ASSET MANAGEMENT CORP",
     "form": "13F-HR",
     "filed": "2026-07-21",
@@ -174,16 +180,16 @@
     "filing_index": "https://www.sec.gov/Archives/edgar/data/1908158/000190815826000005/0001908158-26-000005-index.htm"
   },
   {
-    "manager": "LOUISBOURG INVESTMENTS INC.",
-    "form": "13F-HR",
-    "filed": "2026-07-23",
-    "filing_index": "https://www.sec.gov/Archives/edgar/data/2053050/000205305026000003/0002053050-26-000003-index.htm"
-  },
-  {
     "manager": "Main Street Group, LTD",
     "form": "13F-HR",
     "filed": "2026-07-13",
     "filing_index": "https://www.sec.gov/Archives/edgar/data/1965796/000196579626000004/0001965796-26-000004-index.htm"
+  },
+  {
+    "manager": "LOUISBOURG INVESTMENTS INC.",
+    "form": "13F-HR",
+    "filed": "2026-07-23",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/2053050/000205305026000003/0002053050-26-000003-index.htm"
   },
   {
     "manager": "PKO Investment Management Joint-Stock Co",
@@ -216,16 +222,16 @@
     "filing_index": "https://www.sec.gov/Archives/edgar/data/1802136/000180213626000004/0001802136-26-000004-index.htm"
   },
   {
-    "manager": "FIRST COMMUNITY TRUST NA",
-    "form": "13F-HR",
-    "filed": "2026-07-10",
-    "filing_index": "https://www.sec.gov/Archives/edgar/data/1130344/000113034426000004/0001130344-26-000004-index.htm"
-  },
-  {
     "manager": "Strategic Investment Solutions, Inc. /IL",
     "form": "13F-HR",
     "filed": "2026-07-08",
     "filing_index": "https://www.sec.gov/Archives/edgar/data/1960144/000106299326003560/0001062993-26-003560-index.htm"
+  },
+  {
+    "manager": "FIRST COMMUNITY TRUST NA",
+    "form": "13F-HR",
+    "filed": "2026-07-10",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/1130344/000113034426000004/0001130344-26-000004-index.htm"
   },
   {
     "manager": "BEACON FINANCIAL GROUP",
@@ -280,5 +286,11 @@
     "form": "13F-HR",
     "filed": "2026-07-20",
     "filing_index": "https://www.sec.gov/Archives/edgar/data/1795173/000179517326000004/0001795173-26-000004-index.htm"
+  },
+  {
+    "manager": "Ascentis Wealth Management, LLC",
+    "form": "13F-HR",
+    "filed": "2026-07-27",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/2032602/000203260226000004/0002032602-26-000004-index.htm"
   }
 ]

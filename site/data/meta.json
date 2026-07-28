@@ -1,6 +1,6 @@
 {
   "project": "SpaceX IPO \u2014 Fund Exposure Tracker",
-  "last_updated_utc": "2026-07-27T19:14:28+00:00",
+  "last_updated_utc": "2026-07-28T01:46:53+00:00",
   "ipo": {
     "status": "Pre-IPO (roadshow underway)",
     "expected_pricing_date": "2026-06-11",
@@ -17,7 +17,7 @@
   "counts": {
     "issuer_filings": 22,
     "fund_positions": 59,
-    "institutional_13f": 47,
+    "institutional_13f": 49,
     "principal_holders": 9,
     "disclosed_fund_exposure_usd": 30833768285.98,
     "insider_voting_pct": 86.0
