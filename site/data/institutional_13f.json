@@ -174,6 +174,12 @@
     "filing_index": "https://www.sec.gov/Archives/edgar/data/1851815/000185181526000003/0001851815-26-000003-index.htm"
   },
   {
+    "manager": "ASSET PLANNING SERVICES INC /LA/ /ADV",
+    "form": "13F-HR",
+    "filed": "2026-07-28",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/811407/000081140726000003/0000811407-26-000003-index.htm"
+  },
+  {
     "manager": "Private Capital Advisors, Inc.",
     "form": "13F-HR",
     "filed": "2026-07-24",
@@ -292,11 +298,5 @@
     "form": "13F-HR",
     "filed": "2026-07-02",
     "filing_index": "https://www.sec.gov/Archives/edgar/data/2095947/000209594726000006/0002095947-26-000006-index.htm"
-  },
-  {
-    "manager": "Byrne Asset Management LLC",
-    "form": "13F-HR",
-    "filed": "2026-07-07",
-    "filing_index": "https://www.sec.gov/Archives/edgar/data/1911322/000191132226000003/0001911322-26-000003-index.htm"
   }
 ]
