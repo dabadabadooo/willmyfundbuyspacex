@@ -319,6 +319,20 @@
     ]
   },
   {
+    "registrant": "Tema ETF Trust",
+    "fund": "Tema Space Innovators ETF",
+    "series_id": "S000102192",
+    "value_usd": 171469241.29,
+    "pct_of_fund": 6.5832,
+    "period": "2026-05-31",
+    "form": "NPORT-P",
+    "filed": "2026-07-29",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/1944285/000119312526323019/0001193125-26-323019-index.htm",
+    "tickers": [
+      "NASA"
+    ]
+  },
+  {
     "registrant": "BARON INVESTMENT FUNDS TRUST (f/k/a BARON ASSET FUND)",
     "fund": "BARON OPPORTUNITY FUND",
     "series_id": "S000000585",
