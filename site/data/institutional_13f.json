@@ -54,6 +54,12 @@
     "filing_index": "https://www.sec.gov/Archives/edgar/data/1080374/000108037426000005/0001080374-26-000005-index.htm"
   },
   {
+    "manager": "Nadler Financial Group, Inc.",
+    "form": "13F-HR",
+    "filed": "2026-07-30",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/1541787/000154178726000008/0001541787-26-000008-index.htm"
+  },
+  {
     "manager": "RVW Wealth, LLC",
     "form": "13F-HR",
     "filed": "2026-07-08",
@@ -100,6 +106,12 @@
     "form": "13F-HR",
     "filed": "2026-07-29",
     "filing_index": "https://www.sec.gov/Archives/edgar/data/1969566/000149315226035132/0001493152-26-035132-index.htm"
+  },
+  {
+    "manager": "Saudi Central Bank",
+    "form": "13F-HR",
+    "filed": "2026-07-30",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/1918181/000094787126000735/0000947871-26-000735-index.htm"
   },
   {
     "manager": "BankPlus Trust Department",
@@ -216,6 +228,12 @@
     "filing_index": "https://www.sec.gov/Archives/edgar/data/2012065/000201206526000003/0002012065-26-000003-index.htm"
   },
   {
+    "manager": "Providence Wealth Advisors, LLC",
+    "form": "13F-HR",
+    "filed": "2026-07-30",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/1744955/000110465926088277/0001104659-26-088277-index.htm"
+  },
+  {
     "manager": "Trivant Custom Portfolio Group, LLC",
     "form": "13F-HR",
     "filed": "2026-07-27",
@@ -280,23 +298,5 @@
     "form": "13F-HR",
     "filed": "2026-07-10",
     "filing_index": "https://www.sec.gov/Archives/edgar/data/2054100/000205410026000003/0002054100-26-000003-index.htm"
-  },
-  {
-    "manager": "Investment Research & Advisory Group, Inc.",
-    "form": "13F-HR",
-    "filed": "2026-07-23",
-    "filing_index": "https://www.sec.gov/Archives/edgar/data/1802136/000180213626000004/0001802136-26-000004-index.htm"
-  },
-  {
-    "manager": "FIRST COMMUNITY TRUST NA",
-    "form": "13F-HR",
-    "filed": "2026-07-10",
-    "filing_index": "https://www.sec.gov/Archives/edgar/data/1130344/000113034426000004/0001130344-26-000004-index.htm"
-  },
-  {
-    "manager": "Strategic Investment Solutions, Inc. /IL",
-    "form": "13F-HR",
-    "filed": "2026-07-08",
-    "filing_index": "https://www.sec.gov/Archives/edgar/data/1960144/000106299326003560/0001062993-26-003560-index.htm"
   }
 ]
