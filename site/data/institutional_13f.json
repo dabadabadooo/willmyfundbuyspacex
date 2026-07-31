@@ -90,6 +90,12 @@
     "filing_index": "https://www.sec.gov/Archives/edgar/data/939219/000093921926000007/0000939219-26-000007-index.htm"
   },
   {
+    "manager": "S.A. Mason LLC",
+    "form": "13F-HR",
+    "filed": "2026-07-31",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/1800911/000180091126000003/0001800911-26-000003-index.htm"
+  },
+  {
     "manager": "Washington Trust Advisors, Inc.",
     "form": "13F-HR",
     "filed": "2026-07-29",
@@ -292,11 +298,5 @@
     "form": "13F-HR",
     "filed": "2026-07-28",
     "filing_index": "https://www.sec.gov/Archives/edgar/data/1132699/000113269926000004/0001132699-26-000004-index.htm"
-  },
-  {
-    "manager": "Asset Planning,Inc",
-    "form": "13F-HR",
-    "filed": "2026-07-27",
-    "filing_index": "https://www.sec.gov/Archives/edgar/data/2048547/000204854726000003/0002048547-26-000003-index.htm"
   }
 ]
