@@ -270,16 +270,22 @@
     "filing_index": "https://www.sec.gov/Archives/edgar/data/1908158/000190815826000006/0001908158-26-000006-index.htm"
   },
   {
-    "manager": "LOUISBOURG INVESTMENTS INC.",
+    "manager": "Peck Wealth Management, LLC",
     "form": "13F-HR",
-    "filed": "2026-07-23",
-    "filing_index": "https://www.sec.gov/Archives/edgar/data/2053050/000205305026000003/0002053050-26-000003-index.htm"
+    "filed": "2026-07-31",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/2135125/000213512526000004/0002135125-26-000004-index.htm"
   },
   {
     "manager": "Main Street Group, LTD",
     "form": "13F-HR",
     "filed": "2026-07-13",
     "filing_index": "https://www.sec.gov/Archives/edgar/data/1965796/000196579626000004/0001965796-26-000004-index.htm"
+  },
+  {
+    "manager": "LOUISBOURG INVESTMENTS INC.",
+    "form": "13F-HR",
+    "filed": "2026-07-23",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/2053050/000205305026000003/0002053050-26-000003-index.htm"
   },
   {
     "manager": "PKO Investment Management Joint-Stock Co",
@@ -292,11 +298,5 @@
     "form": "13F-HR",
     "filed": "2026-07-23",
     "filing_index": "https://www.sec.gov/Archives/edgar/data/1611518/000161151826000008/0001611518-26-000008-index.htm"
-  },
-  {
-    "manager": "VESTOR CAPITAL, LLC",
-    "form": "13F-HR",
-    "filed": "2026-07-28",
-    "filing_index": "https://www.sec.gov/Archives/edgar/data/1132699/000113269926000004/0001132699-26-000004-index.htm"
   }
 ]
