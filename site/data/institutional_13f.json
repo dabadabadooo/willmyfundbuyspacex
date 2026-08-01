@@ -54,6 +54,12 @@
     "filing_index": "https://www.sec.gov/Archives/edgar/data/1080374/000108037426000005/0001080374-26-000005-index.htm"
   },
   {
+    "manager": "Nadler Financial Group, Inc.",
+    "form": "13F-HR",
+    "filed": "2026-07-30",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/1541787/000154178726000008/0001541787-26-000008-index.htm"
+  },
+  {
     "manager": "RVW Wealth, LLC",
     "form": "13F-HR",
     "filed": "2026-07-08",
@@ -84,6 +90,12 @@
     "filing_index": "https://www.sec.gov/Archives/edgar/data/939219/000093921926000007/0000939219-26-000007-index.htm"
   },
   {
+    "manager": "S.A. Mason LLC",
+    "form": "13F-HR",
+    "filed": "2026-07-31",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/1800911/000180091126000003/0001800911-26-000003-index.htm"
+  },
+  {
     "manager": "Washington Trust Advisors, Inc.",
     "form": "13F-HR",
     "filed": "2026-07-29",
@@ -100,6 +112,12 @@
     "form": "13F-HR",
     "filed": "2026-07-29",
     "filing_index": "https://www.sec.gov/Archives/edgar/data/1969566/000149315226035132/0001493152-26-035132-index.htm"
+  },
+  {
+    "manager": "Saudi Central Bank",
+    "form": "13F-HR",
+    "filed": "2026-07-30",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/1918181/000094787126000735/0000947871-26-000735-index.htm"
   },
   {
     "manager": "BankPlus Trust Department",
@@ -258,16 +276,16 @@
     "filing_index": "https://www.sec.gov/Archives/edgar/data/2135125/000213512526000004/0002135125-26-000004-index.htm"
   },
   {
-    "manager": "Main Street Group, LTD",
-    "form": "13F-HR",
-    "filed": "2026-07-13",
-    "filing_index": "https://www.sec.gov/Archives/edgar/data/1965796/000196579626000004/0001965796-26-000004-index.htm"
-  },
-  {
     "manager": "LOUISBOURG INVESTMENTS INC.",
     "form": "13F-HR",
     "filed": "2026-07-23",
     "filing_index": "https://www.sec.gov/Archives/edgar/data/2053050/000205305026000003/0002053050-26-000003-index.htm"
+  },
+  {
+    "manager": "Main Street Group, LTD",
+    "form": "13F-HR",
+    "filed": "2026-07-13",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/1965796/000196579626000004/0001965796-26-000004-index.htm"
   },
   {
     "manager": "PKO Investment Management Joint-Stock Co",
@@ -280,23 +298,5 @@
     "form": "13F-HR",
     "filed": "2026-07-23",
     "filing_index": "https://www.sec.gov/Archives/edgar/data/1611518/000161151826000008/0001611518-26-000008-index.htm"
-  },
-  {
-    "manager": "VESTOR CAPITAL, LLC",
-    "form": "13F-HR",
-    "filed": "2026-07-28",
-    "filing_index": "https://www.sec.gov/Archives/edgar/data/1132699/000113269926000004/0001132699-26-000004-index.htm"
-  },
-  {
-    "manager": "Asset Planning,Inc",
-    "form": "13F-HR",
-    "filed": "2026-07-27",
-    "filing_index": "https://www.sec.gov/Archives/edgar/data/2048547/000204854726000003/0002048547-26-000003-index.htm"
-  },
-  {
-    "manager": "Kentucky Trust Co",
-    "form": "13F-HR",
-    "filed": "2026-07-10",
-    "filing_index": "https://www.sec.gov/Archives/edgar/data/2054100/000205410026000003/0002054100-26-000003-index.htm"
   }
 ]
