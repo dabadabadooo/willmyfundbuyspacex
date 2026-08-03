@@ -120,6 +120,12 @@
     "filing_index": "https://www.sec.gov/Archives/edgar/data/1918181/000094787126000735/0000947871-26-000735-index.htm"
   },
   {
+    "manager": "Oakmont Advisory Group, LLC",
+    "form": "13F-HR",
+    "filed": "2026-08-03",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/2115370/000211537026000008/0002115370-26-000008-index.htm"
+  },
+  {
     "manager": "BankPlus Trust Department",
     "form": "13F-HR",
     "filed": "2026-07-28",
@@ -160,6 +166,12 @@
     "form": "13F-HR",
     "filed": "2026-07-16",
     "filing_index": "https://www.sec.gov/Archives/edgar/data/1008937/000100893726000003/0001008937-26-000003-index.htm"
+  },
+  {
+    "manager": "Archer Investment Corp",
+    "form": "13F-HR",
+    "filed": "2026-08-03",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/1803804/000116204426000667/0001162044-26-000667-index.htm"
   },
   {
     "manager": "WHITTIER TRUST CO",
@@ -222,16 +234,16 @@
     "filing_index": "https://www.sec.gov/Archives/edgar/data/1350780/000135078026000003/0001350780-26-000003-index.htm"
   },
   {
-    "manager": "Keystone Global Partners, LLC",
-    "form": "13F-HR",
-    "filed": "2026-07-16",
-    "filing_index": "https://www.sec.gov/Archives/edgar/data/1764057/000176405726000004/0001764057-26-000004-index.htm"
-  },
-  {
     "manager": "Ascentis Independent Advisors",
     "form": "13F-HR",
     "filed": "2026-07-30",
     "filing_index": "https://www.sec.gov/Archives/edgar/data/1845003/000184500326000005/0001845003-26-000005-index.htm"
+  },
+  {
+    "manager": "Keystone Global Partners, LLC",
+    "form": "13F-HR",
+    "filed": "2026-07-16",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/1764057/000176405726000004/0001764057-26-000004-index.htm"
   },
   {
     "manager": "PROATHLETE WEALTH MANAGEMENT LLC",
@@ -286,17 +298,5 @@
     "form": "13F-HR",
     "filed": "2026-07-23",
     "filing_index": "https://www.sec.gov/Archives/edgar/data/2053050/000205305026000003/0002053050-26-000003-index.htm"
-  },
-  {
-    "manager": "PKO Investment Management Joint-Stock Co",
-    "form": "13F-HR",
-    "filed": "2026-07-20",
-    "filing_index": "https://www.sec.gov/Archives/edgar/data/2059321/000205932126000004/0002059321-26-000004-index.htm"
-  },
-  {
-    "manager": "Wealth Architects, LLC",
-    "form": "13F-HR",
-    "filed": "2026-07-23",
-    "filing_index": "https://www.sec.gov/Archives/edgar/data/1611518/000161151826000008/0001611518-26-000008-index.htm"
   }
 ]
