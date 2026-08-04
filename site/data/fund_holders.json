@@ -808,6 +808,20 @@
     ]
   },
   {
+    "registrant": "HOMESTEAD FUNDS INC",
+    "fund": "Growth Fund",
+    "series_id": "S000010531",
+    "value_usd": 2049636.56,
+    "pct_of_fund": 0.4723,
+    "period": "2026-06-30",
+    "form": "NPORT-P",
+    "filed": "2026-08-04",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/865733/000141036826077913/0001410368-26-077913-index.htm",
+    "tickers": [
+      "HNASX"
+    ]
+  },
+  {
     "registrant": "FIDELITY ADVISOR SERIES I",
     "fund": "Fidelity Advisor Balanced Fund",
     "series_id": "S000005118",
