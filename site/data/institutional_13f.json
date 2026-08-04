@@ -120,12 +120,6 @@
     "filing_index": "https://www.sec.gov/Archives/edgar/data/1918181/000094787126000735/0000947871-26-000735-index.htm"
   },
   {
-    "manager": "Oakmont Advisory Group, LLC",
-    "form": "13F-HR",
-    "filed": "2026-08-03",
-    "filing_index": "https://www.sec.gov/Archives/edgar/data/2115370/000211537026000008/0002115370-26-000008-index.htm"
-  },
-  {
     "manager": "BankPlus Trust Department",
     "form": "13F-HR",
     "filed": "2026-07-28",
@@ -166,12 +160,6 @@
     "form": "13F-HR",
     "filed": "2026-07-16",
     "filing_index": "https://www.sec.gov/Archives/edgar/data/1008937/000100893726000003/0001008937-26-000003-index.htm"
-  },
-  {
-    "manager": "Archer Investment Corp",
-    "form": "13F-HR",
-    "filed": "2026-08-03",
-    "filing_index": "https://www.sec.gov/Archives/edgar/data/1803804/000116204426000667/0001162044-26-000667-index.htm"
   },
   {
     "manager": "WHITTIER TRUST CO",
@@ -222,70 +210,10 @@
     "filing_index": "https://www.sec.gov/Archives/edgar/data/1851815/000185181526000003/0001851815-26-000003-index.htm"
   },
   {
-    "manager": "ASSET PLANNING SERVICES INC /LA/ /ADV",
-    "form": "13F-HR",
-    "filed": "2026-07-28",
-    "filing_index": "https://www.sec.gov/Archives/edgar/data/811407/000081140726000003/0000811407-26-000003-index.htm"
-  },
-  {
-    "manager": "Private Capital Advisors, Inc.",
-    "form": "13F-HR",
-    "filed": "2026-07-24",
-    "filing_index": "https://www.sec.gov/Archives/edgar/data/1350780/000135078026000003/0001350780-26-000003-index.htm"
-  },
-  {
-    "manager": "Ascentis Independent Advisors",
-    "form": "13F-HR",
-    "filed": "2026-07-30",
-    "filing_index": "https://www.sec.gov/Archives/edgar/data/1845003/000184500326000005/0001845003-26-000005-index.htm"
-  },
-  {
     "manager": "Keystone Global Partners, LLC",
     "form": "13F-HR",
     "filed": "2026-07-16",
     "filing_index": "https://www.sec.gov/Archives/edgar/data/1764057/000176405726000004/0001764057-26-000004-index.htm"
-  },
-  {
-    "manager": "PROATHLETE WEALTH MANAGEMENT LLC",
-    "form": "13F-HR",
-    "filed": "2026-07-21",
-    "filing_index": "https://www.sec.gov/Archives/edgar/data/2012065/000201206526000003/0002012065-26-000003-index.htm"
-  },
-  {
-    "manager": "Providence Wealth Advisors, LLC",
-    "form": "13F-HR",
-    "filed": "2026-07-30",
-    "filing_index": "https://www.sec.gov/Archives/edgar/data/1744955/000110465926088277/0001104659-26-088277-index.htm"
-  },
-  {
-    "manager": "Trivant Custom Portfolio Group, LLC",
-    "form": "13F-HR",
-    "filed": "2026-07-27",
-    "filing_index": "https://www.sec.gov/Archives/edgar/data/1977992/000197799226000003/0001977992-26-000003-index.htm"
-  },
-  {
-    "manager": "AMI ASSET MANAGEMENT CORP",
-    "form": "13F-HR",
-    "filed": "2026-07-21",
-    "filing_index": "https://www.sec.gov/Archives/edgar/data/1369702/000136970226000010/0001369702-26-000010-index.htm"
-  },
-  {
-    "manager": "MILLER WEALTH ADVISORS, LLC",
-    "form": "13F-HR",
-    "filed": "2026-07-23",
-    "filing_index": "https://www.sec.gov/Archives/edgar/data/1908158/000190815826000005/0001908158-26-000005-index.htm"
-  },
-  {
-    "manager": "MILLER WEALTH ADVISORS, LLC",
-    "form": "13F-HR",
-    "filed": "2026-07-29",
-    "filing_index": "https://www.sec.gov/Archives/edgar/data/1908158/000190815826000006/0001908158-26-000006-index.htm"
-  },
-  {
-    "manager": "Peck Wealth Management, LLC",
-    "form": "13F-HR",
-    "filed": "2026-07-31",
-    "filing_index": "https://www.sec.gov/Archives/edgar/data/2135125/000213512526000004/0002135125-26-000004-index.htm"
   },
   {
     "manager": "Main Street Group, LTD",
@@ -294,9 +222,51 @@
     "filing_index": "https://www.sec.gov/Archives/edgar/data/1965796/000196579626000004/0001965796-26-000004-index.htm"
   },
   {
-    "manager": "LOUISBOURG INVESTMENTS INC.",
+    "manager": "Kentucky Trust Co",
     "form": "13F-HR",
-    "filed": "2026-07-23",
-    "filing_index": "https://www.sec.gov/Archives/edgar/data/2053050/000205305026000003/0002053050-26-000003-index.htm"
+    "filed": "2026-07-10",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/2054100/000205410026000003/0002054100-26-000003-index.htm"
+  },
+  {
+    "manager": "FIRST COMMUNITY TRUST NA",
+    "form": "13F-HR",
+    "filed": "2026-07-10",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/1130344/000113034426000004/0001130344-26-000004-index.htm"
+  },
+  {
+    "manager": "Strategic Investment Solutions, Inc. /IL",
+    "form": "13F-HR",
+    "filed": "2026-07-08",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/1960144/000106299326003560/0001062993-26-003560-index.htm"
+  },
+  {
+    "manager": "BEACON FINANCIAL GROUP",
+    "form": "13F-HR",
+    "filed": "2026-07-16",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/1591379/000159137926000003/0001591379-26-000003-index.htm"
+  },
+  {
+    "manager": "Robinswood Financial LLC",
+    "form": "13F-HR",
+    "filed": "2026-07-15",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/2139748/000213974826000014/0002139748-26-000014-index.htm"
+  },
+  {
+    "manager": "KERR FINANCIAL PLANNING Corp",
+    "form": "13F-HR",
+    "filed": "2026-07-02",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/2095947/000209594726000006/0002095947-26-000006-index.htm"
+  },
+  {
+    "manager": "Byrne Asset Management LLC",
+    "form": "13F-HR",
+    "filed": "2026-07-07",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/1911322/000191132226000003/0001911322-26-000003-index.htm"
+  },
+  {
+    "manager": "Financial Management Professionals, Inc.",
+    "form": "13F-HR",
+    "filed": "2026-07-09",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/1568132/000156813226000005/0001568132-26-000005-index.htm"
   }
 ]
