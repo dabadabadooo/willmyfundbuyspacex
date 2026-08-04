@@ -236,6 +236,12 @@
   {
     "manager": "Ascentis Independent Advisors",
     "form": "13F-HR",
+    "filed": "2026-08-04",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/1845003/000184500326000007/0001845003-26-000007-index.htm"
+  },
+  {
+    "manager": "Ascentis Independent Advisors",
+    "form": "13F-HR",
     "filed": "2026-07-30",
     "filing_index": "https://www.sec.gov/Archives/edgar/data/1845003/000184500326000005/0001845003-26-000005-index.htm"
   },
@@ -292,11 +298,5 @@
     "form": "13F-HR",
     "filed": "2026-07-23",
     "filing_index": "https://www.sec.gov/Archives/edgar/data/2053050/000205305026000003/0002053050-26-000003-index.htm"
-  },
-  {
-    "manager": "Main Street Group, LTD",
-    "form": "13F-HR",
-    "filed": "2026-07-13",
-    "filing_index": "https://www.sec.gov/Archives/edgar/data/1965796/000196579626000004/0001965796-26-000004-index.htm"
   }
 ]
