@@ -90,6 +90,12 @@
     "filing_index": "https://www.sec.gov/Archives/edgar/data/939219/000093921926000007/0000939219-26-000007-index.htm"
   },
   {
+    "manager": "Eukles Asset Management",
+    "form": "13F-HR",
+    "filed": "2026-08-05",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/1632553/000163255326000004/0001632553-26-000004-index.htm"
+  },
+  {
     "manager": "CARRET ASSET MANAGEMENT, LLC",
     "form": "13F-HR",
     "filed": "2026-08-04",
@@ -148,6 +154,12 @@
     "form": "13F-HR",
     "filed": "2026-07-14",
     "filing_index": "https://www.sec.gov/Archives/edgar/data/1870761/000187076126000003/0001870761-26-000003-index.htm"
+  },
+  {
+    "manager": "Pinnacle Wealth Management Advisory Group, LLC",
+    "form": "13F-HR",
+    "filed": "2026-08-05",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/1631864/000163186426000003/0001631864-26-000003-index.htm"
   },
   {
     "manager": "FIRST UNITED BANK & TRUST",
@@ -286,17 +298,5 @@
     "form": "13F-HR",
     "filed": "2026-07-21",
     "filing_index": "https://www.sec.gov/Archives/edgar/data/1369702/000136970226000010/0001369702-26-000010-index.htm"
-  },
-  {
-    "manager": "MILLER WEALTH ADVISORS, LLC",
-    "form": "13F-HR",
-    "filed": "2026-07-23",
-    "filing_index": "https://www.sec.gov/Archives/edgar/data/1908158/000190815826000005/0001908158-26-000005-index.htm"
-  },
-  {
-    "manager": "MILLER WEALTH ADVISORS, LLC",
-    "form": "13F-HR",
-    "filed": "2026-07-29",
-    "filing_index": "https://www.sec.gov/Archives/edgar/data/1908158/000190815826000006/0001908158-26-000006-index.htm"
   }
 ]
