@@ -228,6 +228,12 @@
     "filing_index": "https://www.sec.gov/Archives/edgar/data/1851815/000185181526000003/0001851815-26-000003-index.htm"
   },
   {
+    "manager": "Arrow Capital Pty Ltd",
+    "form": "13F-HR",
+    "filed": "2026-08-05",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/2005134/000200513426000006/0002005134-26-000006-index.htm"
+  },
+  {
     "manager": "ASSET PLANNING SERVICES INC /LA/ /ADV",
     "form": "13F-HR",
     "filed": "2026-07-28",
@@ -292,11 +298,5 @@
     "form": "13F-HR",
     "filed": "2026-07-29",
     "filing_index": "https://www.sec.gov/Archives/edgar/data/1908158/000190815826000006/0001908158-26-000006-index.htm"
-  },
-  {
-    "manager": "Peck Wealth Management, LLC",
-    "form": "13F-HR",
-    "filed": "2026-07-31",
-    "filing_index": "https://www.sec.gov/Archives/edgar/data/2135125/000213512526000004/0002135125-26-000004-index.htm"
   }
 ]
