@@ -90,6 +90,12 @@
     "filing_index": "https://www.sec.gov/Archives/edgar/data/939219/000093921926000007/0000939219-26-000007-index.htm"
   },
   {
+    "manager": "CARRET ASSET MANAGEMENT, LLC",
+    "form": "13F-HR",
+    "filed": "2026-08-04",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/791490/000114036126031277/0001140361-26-031277-index.htm"
+  },
+  {
     "manager": "S.A. Mason LLC",
     "form": "13F-HR",
     "filed": "2026-07-31",
@@ -292,11 +298,5 @@
     "form": "13F-HR",
     "filed": "2026-07-31",
     "filing_index": "https://www.sec.gov/Archives/edgar/data/2135125/000213512526000004/0002135125-26-000004-index.htm"
-  },
-  {
-    "manager": "LOUISBOURG INVESTMENTS INC.",
-    "form": "13F-HR",
-    "filed": "2026-07-23",
-    "filing_index": "https://www.sec.gov/Archives/edgar/data/2053050/000205305026000003/0002053050-26-000003-index.htm"
   }
 ]
