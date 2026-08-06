@@ -102,6 +102,12 @@
     "filing_index": "https://www.sec.gov/Archives/edgar/data/791490/000114036126031277/0001140361-26-031277-index.htm"
   },
   {
+    "manager": "Mechanics Financial Corp",
+    "form": "13F-HR",
+    "filed": "2026-08-05",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/1821336/000119312526335211/0001193125-26-335211-index.htm"
+  },
+  {
     "manager": "S.A. Mason LLC",
     "form": "13F-HR",
     "filed": "2026-07-31",
@@ -292,11 +298,5 @@
     "form": "13F-HR",
     "filed": "2026-07-27",
     "filing_index": "https://www.sec.gov/Archives/edgar/data/1977992/000197799226000003/0001977992-26-000003-index.htm"
-  },
-  {
-    "manager": "AMI ASSET MANAGEMENT CORP",
-    "form": "13F-HR",
-    "filed": "2026-07-21",
-    "filing_index": "https://www.sec.gov/Archives/edgar/data/1369702/000136970226000010/0001369702-26-000010-index.htm"
   }
 ]
