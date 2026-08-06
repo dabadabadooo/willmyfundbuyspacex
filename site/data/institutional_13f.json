@@ -30,6 +30,12 @@
     "filing_index": "https://www.sec.gov/Archives/edgar/data/2051605/000205160526000003/0002051605-26-000003-index.htm"
   },
   {
+    "manager": "BAILLIE GIFFORD & CO",
+    "form": "13F-HR",
+    "filed": "2026-08-06",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/1088875/000108887526000057/0001088875-26-000057-index.htm"
+  },
+  {
     "manager": "DAGCO, INC.",
     "form": "13F-HR",
     "filed": "2026-07-10",
@@ -292,11 +298,5 @@
     "form": "13F-HR",
     "filed": "2026-08-04",
     "filing_index": "https://www.sec.gov/Archives/edgar/data/1845003/000184500326000007/0001845003-26-000007-index.htm"
-  },
-  {
-    "manager": "Keystone Global Partners, LLC",
-    "form": "13F-HR",
-    "filed": "2026-07-16",
-    "filing_index": "https://www.sec.gov/Archives/edgar/data/1764057/000176405726000004/0001764057-26-000004-index.htm"
   }
 ]
