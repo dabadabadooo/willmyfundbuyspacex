@@ -96,6 +96,12 @@
     "filing_index": "https://www.sec.gov/Archives/edgar/data/1632553/000163255326000004/0001632553-26-000004-index.htm"
   },
   {
+    "manager": "Canton Hathaway, LLC",
+    "form": "13F-HR",
+    "filed": "2026-08-06",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/1755785/000175578526000006/0001755785-26-000006-index.htm"
+  },
+  {
     "manager": "CARRET ASSET MANAGEMENT, LLC",
     "form": "13F-HR",
     "filed": "2026-08-04",
@@ -168,6 +174,12 @@
     "filing_index": "https://www.sec.gov/Archives/edgar/data/1631864/000163186426000003/0001631864-26-000003-index.htm"
   },
   {
+    "manager": "Winch Advisory Services, LLC",
+    "form": "13F-HR",
+    "filed": "2026-08-06",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/1585822/000158064226004940/0001580642-26-004940-index.htm"
+  },
+  {
     "manager": "FIRST UNITED BANK & TRUST",
     "form": "13F-HR",
     "filed": "2026-07-20",
@@ -222,10 +234,22 @@
     "filing_index": "https://www.sec.gov/Archives/edgar/data/1259969/000114036126028983/0001140361-26-028983-index.htm"
   },
   {
+    "manager": "Mitsubishi UFJ Trust & Banking Corp",
+    "form": "13F-HR",
+    "filed": "2026-08-06",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/1462160/000119312526336568/0001193125-26-336568-index.htm"
+  },
+  {
     "manager": "FIRST HORIZON CORP  (FHN, FHN-PE, FHN-PF, FHN-PH)",
     "form": "13F-HR",
     "filed": "2026-07-20",
     "filing_index": "https://www.sec.gov/Archives/edgar/data/36966/000003696626000144/0000036966-26-000144-index.htm"
+  },
+  {
+    "manager": "Russell Investments Group, Ltd.",
+    "form": "13F-HR",
+    "filed": "2026-08-06",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/1692234/000119312526336961/0001193125-26-336961-index.htm"
   },
   {
     "manager": "MassMutual Private Wealth & Trust, FSB",
@@ -270,33 +294,9 @@
     "filing_index": "https://www.sec.gov/Archives/edgar/data/1845003/000184500326000007/0001845003-26-000007-index.htm"
   },
   {
-    "manager": "Ascentis Independent Advisors",
-    "form": "13F-HR",
-    "filed": "2026-07-30",
-    "filing_index": "https://www.sec.gov/Archives/edgar/data/1845003/000184500326000005/0001845003-26-000005-index.htm"
-  },
-  {
     "manager": "Keystone Global Partners, LLC",
     "form": "13F-HR",
     "filed": "2026-07-16",
     "filing_index": "https://www.sec.gov/Archives/edgar/data/1764057/000176405726000004/0001764057-26-000004-index.htm"
-  },
-  {
-    "manager": "PROATHLETE WEALTH MANAGEMENT LLC",
-    "form": "13F-HR",
-    "filed": "2026-07-21",
-    "filing_index": "https://www.sec.gov/Archives/edgar/data/2012065/000201206526000003/0002012065-26-000003-index.htm"
-  },
-  {
-    "manager": "Providence Wealth Advisors, LLC",
-    "form": "13F-HR",
-    "filed": "2026-07-30",
-    "filing_index": "https://www.sec.gov/Archives/edgar/data/1744955/000110465926088277/0001104659-26-088277-index.htm"
-  },
-  {
-    "manager": "Trivant Custom Portfolio Group, LLC",
-    "form": "13F-HR",
-    "filed": "2026-07-27",
-    "filing_index": "https://www.sec.gov/Archives/edgar/data/1977992/000197799226000003/0001977992-26-000003-index.htm"
   }
 ]
