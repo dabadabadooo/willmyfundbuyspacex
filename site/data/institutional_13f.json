@@ -24,6 +24,12 @@
     "filing_index": "https://www.sec.gov/Archives/edgar/data/2013737/000094787126000716/0000947871-26-000716-index.htm"
   },
   {
+    "manager": "Mosaic Advisors LLC",
+    "form": "13F-HR",
+    "filed": "2026-08-07",
+    "filing_index": "https://www.sec.gov/Archives/edgar/data/1808523/000180852326000004/0001808523-26-000004-index.htm"
+  },
+  {
     "manager": "Berbice Capital Management LLC",
     "form": "13F-HR",
     "filed": "2026-07-23",
@@ -292,11 +298,5 @@
     "form": "13F-HR",
     "filed": "2026-07-24",
     "filing_index": "https://www.sec.gov/Archives/edgar/data/1350780/000135078026000003/0001350780-26-000003-index.htm"
-  },
-  {
-    "manager": "Ascentis Independent Advisors",
-    "form": "13F-HR",
-    "filed": "2026-08-04",
-    "filing_index": "https://www.sec.gov/Archives/edgar/data/1845003/000184500326000007/0001845003-26-000007-index.htm"
   }
 ]
