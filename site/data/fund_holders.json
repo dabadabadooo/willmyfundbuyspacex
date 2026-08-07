@@ -870,18 +870,6 @@
     ]
   },
   {
-    "registrant": "LINCOLN VARIABLE INSURANCE PRODUCTS TRUST",
-    "fund": "LVIP Blended Large Cap Growth Managed Volatility Fund",
-    "series_id": "S000002813",
-    "value_usd": 1862032.28,
-    "pct_of_fund": 0.1171,
-    "period": "2026-06-30",
-    "form": "NPORT-P",
-    "filed": "2026-08-06",
-    "filing_index": "https://www.sec.gov/Archives/edgar/data/914036/000141036826078252/0001410368-26-078252-index.htm",
-    "tickers": []
-  },
-  {
     "registrant": "FIDELITY ADVISOR SERIES I",
     "fund": "Fidelity Advisor Balanced Fund",
     "series_id": "S000005118",
@@ -912,18 +900,6 @@
     "tickers": [
       "FBKFX"
     ]
-  },
-  {
-    "registrant": "LINCOLN VARIABLE INSURANCE PRODUCTS TRUST",
-    "fund": "LVIP ClearBridge Franklin Select Large Cap Managed Volatility Fund",
-    "series_id": "S000042337",
-    "value_usd": 1101363.56,
-    "pct_of_fund": 0.2678,
-    "period": "2026-06-30",
-    "form": "NPORT-P",
-    "filed": "2026-08-06",
-    "filing_index": "https://www.sec.gov/Archives/edgar/data/914036/000141036826078278/0001410368-26-078278-index.htm",
-    "tickers": []
   },
   {
     "registrant": "FIDELITY PURITAN TRUST",
